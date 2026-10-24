@@ -1,0 +1,39 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Feng2023	all	24.0	NA	species	24.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Feng2023	all	24.0	NA	ethnicity	24.0	NA	chinese	NA	NA	NA	NA	NA	NA	NA	NA
+Feng2023	all	24.0	NA	healthy	24.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Feng2023	all	24.0	NA	disease	24.0	NA	t2dm	6.4	NA	3.7	NA	2.0	12.0	yr	NA
+Feng2023	all	24.0	NA	sex	13.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Feng2023	all	24.0	NA	sex	11.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Feng2023	all	24.0	NA	age	24.0	NA	NA	56.3	NA	5.4	NA	50.0	66.0	yr	NA
+Feng2023	all	24.0	NA	weight	24.0	NA	NA	67.1	NA	7.6	NA	51.5	81.0	kg	NA
+Feng2023	all	24.0	NA	bmi	24.0	NA	NA	25.7	NA	2.3	NA	23.1	31.2	kg/m^2	NA
+Feng2023	all	24.0	NA	hba1c	24.0	NA	NA	7.9	NA	1.1	NA	6.6	10.7	percent	NA
+Feng2023	all	24.0	NA	pregnant	24.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Feng2023	all	24.0	NA	gfr	24.0	NA	NA	NA	NA	NA	NA	NA	45.0	ml/min/(1.73 m^2)	estimated glomerular filtration rate
+Feng2023	all	24.0	NA	liver function test	24.0	bilirubin	normal	NA	NA	NA	NA	1.5	NA	NA	total bilirubin level
+Feng2023	all	24.0	NA	liver function test	24.0	alt	normal	NA	NA	NA	NA	2.0	NA	NA	alanine transaminase levels
+Feng2023	placebo	4.0	all	disease	4.0	NA	t2dm	5.3	NA	2.1	NA	3.0	8.0	yr	NA
+Feng2023	placebo	4.0	all	sex	3.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Feng2023	placebo	4.0	all	sex	1.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Feng2023	placebo	4.0	all	age	4.0	NA	NA	56.5	NA	7.5	NA	50.0	63.0	yr	NA
+Feng2023	placebo	4.0	all	weight	4.0	NA	NA	71.3	NA	7.1	NA	64.8	81.0	kg	NA
+Feng2023	placebo	4.0	all	bmi	4.0	NA	NA	26.4	NA	1.8	NA	24.2	28.4	kg/m^2	NA
+Feng2023	placebo	4.0	all	hba1c	4.0	NA	NA	7.8	NA	0.7	NA	7.4	8.9	percent	NA
+Feng2023	placebo	4.0	all	concentration	4.0	glucose	NA	10.2	NA	NA	NA	NA	NA	mmol/l	NA
+Feng2023	cohort1	10.0	all	disease	10.0	NA	t2dm	6.6	NA	4.1	NA	2.0	12.0	yr	NA
+Feng2023	cohort1	10.0	all	sex	4.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Feng2023	cohort1	10.0	all	sex	6.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Feng2023	cohort1	10.0	all	age	10.0	NA	NA	55.8	NA	5.2	NA	50.0	65.0	yr	NA
+Feng2023	cohort1	10.0	all	weight	10.0	NA	NA	65.0	NA	8.5	NA	51.5	77.1	kg	NA
+Feng2023	cohort1	10.0	all	bmi	10.0	NA	NA	26.0	NA	2.9	NA	23.2	31.2	kg/m^2	NA
+Feng2023	cohort1	10.0	all	hba1c	10.0	NA	NA	8.2	NA	1.2	NA	6.6	10.7	percent	NA
+Feng2023	cohort1	10.0	all	concentration	10.0	glucose	NA	10.1	NA	NA	NA	NA	NA	mmol/l	NA
+Feng2023	cohort2	10.0	all	disease	10.0	NA	t2dm	6.6	NA	4.0	NA	2.0	12.0	yr	NA
+Feng2023	cohort2	10.0	all	sex	6.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Feng2023	cohort2	10.0	all	sex	4.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Feng2023	cohort2	10.0	all	age	10.0	NA	NA	56.8	NA	5.4	NA	50.0	66.0	yr	NA
+Feng2023	cohort2	10.0	all	weight	10.0	NA	NA	67.6	NA	6.8	NA	57.6	77.0	kg	NA
+Feng2023	cohort2	10.0	all	bmi	10.0	NA	NA	25.1	NA	1.6	NA	23.1	27.9	kg/m^2	NA
+Feng2023	cohort2	10.0	all	hba1c	10.0	NA	NA	7.7	NA	1.1	NA	6.8	10.3	percent	NA
+Feng2023	cohort2	10.0	all	concentration	10.0	glucose	NA	10.2	NA	NA	NA	NA	NA	mmol/l	NA

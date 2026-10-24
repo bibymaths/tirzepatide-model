@@ -1,0 +1,84 @@
+# Release notes
+
+## Release notes for tirzepatide-model 0.10.0
+
+Made from pkdb_models 3a0b49144b with pkpdsim 0.11.0.
+
+The changes since 0.9.3.
+
+### Core libraries
+
+The versions of the core libraries cannot be compared, there is no lock file in the previous release. The release uses:
+
+- pkpdsim 0.11.0
+- sbmlsim 0.13.0
+- sbmlutils 0.17.0
+
+### Libraries
+
+The versions cannot be compared, there is no lock file in the previous release.
+
+### Data
+
+- Added: `tirzepatide/Coskun2018`, `tirzepatide/Feng2023`, `tirzepatide/Furihata2022`, `tirzepatide/Martin2024`, `tirzepatide/Urva2021`, `tirzepatide/Urva2022`
+
+### Analysis
+
+#### Models
+
+- `tirzepatide_body.xml`: added 4 species, 5 reactions, 10 parameters; changed values `Ksc_tir` 0.000328489 → 0.00142502, `TIR2TM_k` 0.000678272 → 0.000633701
+- `tirzepatide_body_flat.xml`: added 4 species, 6 reactions, 13 parameters; removed 2 species, 3 reactions, 2 parameters; changed values `GU__TMEXC_k` 0.000392063 → 0.002, `Ksc_tir` 0.000328489 → 0.00142502, `TIR2TM_k` 0.000678272 → 0.000633701
+- `tirzepatide_intestine.xml`: changed values `TMEXC_k` 0.000392063 → 0.002
+- `tirzepatide_kidney.xml`: added 3 parameters; removed 1 parameter
+- `tirzepatide_liver.xml`: added 1 reaction, 1 parameter; removed 2 species, 3 reactions, 1 parameter
+
+#### Experiments
+
+No changes.
+
+#### Fits
+
+- `PK`: `PK_20261019_095941__4f772`, no fit record in the previous release
+
+## Release notes for tirzepatide-model v0.9.3
+
+We are pleased to release a new version of the tirzepatide-model including the 
+following changes:
+
+- updated parameter optimization
+- fixed Martin2014 simulation
+- fixed feces excretion
+- added fitting results
+- added simulations
+
+Your tirzepatide-model team
+
+## Release notes for tirzepatide-model v0.9.2
+
+We are pleased to release a new version of the tirzepatide-model including the 
+following changes:
+
+- fixed zenodo metadata
+- included omex link in metadata
+
+Your tirzepatide-model team
+
+## Release notes for tirzepatide-model v0.9.1
+
+We are pleased to release a new version of the tirzepatide-model including the 
+following changes:
+
+- initial model release
+- updated zenodo
+
+Your tirzepatide-model team
+
+## Release notes for tirzepatide-model v0.9.0
+
+We are pleased to release a new version of the tirzepatide-model including the 
+following changes:
+
+- initial model release
+
+Your tirzepatide-model team
+

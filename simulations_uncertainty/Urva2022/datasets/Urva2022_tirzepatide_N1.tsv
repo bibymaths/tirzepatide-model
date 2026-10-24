@@ -1,0 +1,11 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	comments	timeraw	value_unit	count_unit
+Urva2022	N1		1.0	TIR5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_N1	0.0	hr	0.0		0.0	mole/meter^3	dimensionless
+Urva2022	N1		1.0	TIR5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_N1	8.0	hr	6.13312968704748e-05		7.8987341772152	mole/meter^3	dimensionless
+Urva2022	N1		1.0	TIR5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_N1	12.0	hr	7.583627833625926e-05		10.9367088607595	mole/meter^3	dimensionless
+Urva2022	N1		1.0	TIR5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_N1	24.0	hr	6.688831028508597e-05		23.6962025316456	mole/meter^3	dimensionless
+Urva2022	N1		1.0	TIR5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_N1	48.0	hr	5.253903591995994e-05		48.0	mole/meter^3	dimensionless
+Urva2022	N1		1.0	TIR5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_N1	72.0	hr	4.064301342965293e-05		71.0886075949368	mole/meter^3	dimensionless
+Urva2022	N1		1.0	TIR5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_N1	96.0	hr	3.477112565593234e-05		96.0000000000001	mole/meter^3	dimensionless
+Urva2022	N1		1.0	TIR5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_N1	168.0	hr	1.3311227027402921e-05		167.696202531646	mole/meter^3	dimensionless
+Urva2022	N1		1.0	TIR5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_N1	336.0	hr	5.259439844463841e-06		337.822784810127	mole/meter^3	dimensionless
+Urva2022	N1		1.0	TIR5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_N1	672.0	hr	4.996467852240675e-06		675.645569620253	mole/meter^3	dimensionless

@@ -1,0 +1,7 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	timeraw	mean_unit	value_unit	count_unit
+Feng2023		cohort1	10.0	TIR2_5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_2_5_cohort1	0.0	hr		0.0				.	0.0	mole/meter^3	ng/ml	dimensionless
+Feng2023		cohort1	10.0	TIR2_5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_2_5_cohort1	8.0	hr		5.7551775865602916e-05	391.891891891892	2.386293145646924e-05	7.546121505092192e-06		7.48201438848923	mole/meter^3	ng/ml	dimensionless
+Feng2023		cohort1	10.0	TIR2_5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_2_5_cohort1	24.0	hr		6.035917956636391e-05	358.108108108109	1.4037018503805631e-05	4.438895002995476e-06		22.5179856115108	mole/meter^3	ng/ml	dimensionless
+Feng2023		cohort1	10.0	TIR2_5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_2_5_cohort1	48.0	hr		5.1936968464080495e-05	290.540540540541	8.42221110228342e-06	2.663337001797289e-06		47.0503597122303	mole/meter^3	ng/ml	dimensionless
+Feng2023		cohort1	10.0	TIR2_5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_2_5_cohort1	72.0	hr		4.9129564763319495e-05	263.513513513514	5.61480740152221e-06	1.7755580011981756e-06		71.5827338129496	mole/meter^3	ng/ml	dimensionless
+Feng2023		cohort1	10.0	TIR2_5_one	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_2_5_cohort1	168.0	hr		3.088144070837226e-05	175.675675675676	5.61480740152221e-06	1.7755580011981756e-06		167.338129496403	mole/meter^3	ng/ml	dimensionless

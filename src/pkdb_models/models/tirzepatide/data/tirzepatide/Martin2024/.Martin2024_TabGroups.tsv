@@ -1,0 +1,7 @@
+study	name	group_count	parent	measurement_type	count	substance	tissue	choice	mean	median	sd	se	min	max	unit	comments
+Martin2024	all	6	NA	species	6	NA	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Martin2024	all	6	NA	healthy	6	NA	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Martin2024	all	6	NA	sex	6	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Martin2024	all	6	NA	age	6	NA	NA	NA	41.0	NA	NA	NA	30.0	56.0	yr	NA
+Martin2024	all	6	NA	weight	6	NA	NA	NA	78.6	NA	NA	NA	68.6	92.8	kg	NA
+Martin2024	all	6	NA	bmi	6	NA	NA	NA	24.2	NA	NA	NA	21.5	26.2	kg/m^2	NA

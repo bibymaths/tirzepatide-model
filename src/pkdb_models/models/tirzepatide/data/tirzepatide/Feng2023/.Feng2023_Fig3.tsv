@@ -1,0 +1,23 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Feng2023	NA	placebo	4.0	placebo	weight	NA	NA	scale	bodyweight_placebo	0.0	week	NA	71.3	NA	7.1	NA	kg	NA
+Feng2023	NA	placebo	4.0	placebo	weight	NA	NA	scale	bodyweight_placebo	1.0	week	NA	71.3	NA	7.37631344236401	3.688156721182	kg	approximated SD via error propagation
+Feng2023	NA	placebo	4.0	placebo	weight	NA	NA	scale	bodyweight_placebo	4.0	week	NA	71.4764705882353	NA	7.29691730968802	3.64845865484401	kg	approximated SD via error propagation
+Feng2023	NA	placebo	4.0	placebo	weight	NA	NA	scale	bodyweight_placebo	8.0	week	NA	69.8294117647059	NA	7.2519480229017	3.62597401145085	kg	approximated SD via error propagation
+Feng2023	NA	placebo	4.0	placebo	weight	NA	NA	scale	bodyweight_placebo	12.0	week	NA	69.6333333333333	NA	7.10494880477934	3.55247440238967	kg	approximated SD via error propagation
+Feng2023	NA	placebo	4.0	placebo	weight	NA	NA	scale	bodyweight_placebo	16.0	week	NA	70.4176470588235	NA	7.3421437588995	3.67107187944975	kg	approximated SD via error propagation
+Feng2023	NA	placebo	4.0	placebo	weight	NA	NA	scale	bodyweight_placebo	20.0	week	NA	68.6137254901961	NA	7.34160510453423	3.67080255226712	kg	approximated SD via error propagation
+Feng2023	NA	placebo	4.0	placebo	weight	NA	NA	scale	bodyweight_placebo	24.0	week	NA	67.9078431372549	NA	7.56533104046711	3.78266552023355	kg	approximated SD via error propagation
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	weight	NA	NA	scale	bodyweight_cohort1	0.0	week	NA	65.0	NA	8.5	NA	kg	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	weight	NA	NA	scale	bodyweight_cohort1	1.0	week	NA	64.5882352941177	NA	8.50514637104498	2.68956343656177	kg	approximated SD via error propagation
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	weight	NA	NA	scale	bodyweight_cohort1	4.0	week	NA	64.3921568627451	NA	8.53803933846617	2.69996510616704	kg	approximated SD via error propagation
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	weight	NA	NA	scale	bodyweight_cohort1	8.0	week	NA	63.0392156862745	NA	8.54642350421315	2.70261641217112	kg	approximated SD via error propagation
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	weight	NA	NA	scale	bodyweight_cohort1	12.0	week	NA	61.8823529411765	NA	8.53895430342041	2.7002544434905	kg	approximated SD via error propagation
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	weight	NA	NA	scale	bodyweight_cohort1	16.0	week	NA	60.7843137254902	NA	8.6891219692285	2.74774162897696	kg	approximated SD via error propagation
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	weight	NA	NA	scale	bodyweight_cohort2	0.0	week	NA	67.6196078431372	NA	6.8	NA	kg	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	weight	NA	NA	scale	bodyweight_cohort2	1.0	week	NA	66.9921568627451	NA	6.7846987788228	2.1455101379243	kg	approximated SD via error propagation
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	weight	NA	NA	scale	bodyweight_cohort2	4.0	week	NA	66.9333333333333	NA	6.86950288616581	2.17232755133844	kg	approximated SD via error propagation
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	weight	NA	NA	scale	bodyweight_cohort2	8.0	week	NA	64.7372549019608	NA	6.69645855436829	2.11760612887223	kg	approximated SD via error propagation
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	weight	NA	NA	scale	bodyweight_cohort2	12.0	week	NA	63.6980392156863	NA	6.55517253812019	2.07292756758467	kg	approximated SD via error propagation
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	weight	NA	NA	scale	bodyweight_cohort2	16.0	week	NA	63.2078431372549	NA	6.49068213056786	2.05253391007489	kg	approximated SD via error propagation
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	weight	NA	NA	scale	bodyweight_cohort2	20.0	week	NA	62.6980392156863	NA	6.9004304868271	2.18210771740382	kg	approximated SD via error propagation
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	weight	NA	NA	scale	bodyweight_cohort2	24.0	week	NA	60.9333333333333	NA	6.84865099550051	2.16573360453612	kg	approximated SD via error propagation

@@ -1,0 +1,8 @@
+Study identifier	PubMed	PK-DB identifier	Pharmacokinetics	Pharmacodynamics	dose route	substance	dosing	dose [mg]	bodyweight	healthy	renal impairment	hepatic impairment	diabetes mellitus 2	plasma/serum tirzepatide	urine data	feces data	Fasting plasma Glucose	HbA1c	GitHub Issue	Curation status	Priority	Information in Google Docs	Available via repository	upload	simulation	Parameter fitting
+study	pmid	pkdb	pk	pd	route	substance	dosing	dose	bodyweight	healthy	renal impairment	hepatic impairment	t2dm	tirzepatide plasma	tirzepatide urine	tirzepatide feces	FPG	HbA1c	github	status	priority	docs	repo	upload	simulation	fitting
+Coskun2018	30473097	PKDB00967	TRUE	TRUE	SC	tirzepatide	single, multiple	0.25 - 15	TRUE	TRUE	-	-	TRUE	TRUE	-	-	TRUE	TRUE	#1852	check	high	TRUE	TRUE	FALSE	TRUE	TRUE
+Feng2023	37285081	PKDB00962	TRUE	TRUE	SC	tirzepatide	multiple	2.5 - 15	TRUE	-	-	-	TRUE	TRUE	-	-	TRUE	TRUE	#1841	check	high	TRUE	TRUE	TRUE	TRUE	TRUE
+Furihata2022	34647404	PKDB00964	TRUE	TRUE	SC	tirzepatide	multiple	2.5 - 15	TRUE	-	-	-	TRUE	TRUE	-	-	TRUE	TRUE	#1848	check	high	TRUE	TRUE	TRUE	TRUE	TRUE
+Martin2024	39243911	PKDB00968	TRUE	TRUE	SC	tirzepatide - 14C	single	4.1	?	TRUE	-	-	-	TRUE	TRUE	TRUE	-	-	 #1851	check	high	TRUE	TRUE	FALSE	TRUE	TRUE
+Urva2021	33778934	PKDB00963	TRUE	TRUE	SC	tirzepatide	single	5	TRUE	-	TRUE	-	TRUE	TRUE	-	-	-	-	#1849	check	high	TRUE	TRUE	FALSE	TRUE	TRUE
+Urva2022	35674880	PKDB00969	TRUE	TRUE	SC	tirzepatide	single	5	TRUE	-	-	TRUE	TRUE	TRUE	-	-	-	-	#1850	check	high	TRUE	TRUE	FALSE	TRUE	TRUE

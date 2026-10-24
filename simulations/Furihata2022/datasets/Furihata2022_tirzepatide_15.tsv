@@ -1,0 +1,7 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	timeraw	mean_unit	value_unit	count_unit
+Furihata2022		cohort3	16.0	TIR15	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_15	0.0	hr		0.0				A week1	0.0	mole/meter^3	ng/ml	dimensionless
+Furihata2022		cohort3	16.0	TIR15	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_15	8.0	hr		5.753018045251995e-05	367.132867132867	1.8740892117108726e-05	4.685223029277181e-06	A week1	7.75915609813914	mole/meter^3	ng/ml	dimensionless
+Furihata2022		cohort3	16.0	TIR15	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_15	24.0	hr		8.527832304451829e-05	544.755244755245	2.789342082546416e-05	6.97335520636604e-06	A week1	23.7136422899135	mole/meter^3	ng/ml	dimensionless
+Furihata2022		cohort3	16.0	TIR15	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_15	48.0	hr		8.091997604053929e-05	450.34965034965	1.2639206311538505e-05	3.1598015778846263e-06	A week1	47.6064951997155	mole/meter^3	ng/ml	dimensionless
+Furihata2022		cohort3	16.0	TIR15	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_15	72.0	hr		8.208220190826706e-05	464.335664335664	1.4382545113129937e-05	3.5956362782824842e-06	A week1	71.8700960056892	mole/meter^3	ng/ml	dimensionless
+Furihata2022		cohort3	16.0	TIR15	concentration	tirzepatide	plasma	HPLC MS/MS	tirzepatide_15	168.0	hr		4.852292997763054e-05	277.622377622378	9.152528708355433e-06	2.2881321770888583e-06	A week1	168.495910868792	mole/meter^3	ng/ml	dimensionless

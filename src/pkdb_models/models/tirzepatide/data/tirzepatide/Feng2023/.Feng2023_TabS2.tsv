@@ -1,0 +1,19 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Feng2023	NA	placebo	4.0	placebo	hba1c	NA	NA	NR	hba1c_placebo	0.0	week	NA	7.8	NA	NA	NA	percent	NA
+Feng2023	NA	placebo	4.0	placebo	hba1c	NA	NA	NR	hba1c_placebo	16.0	week	NA	8.9	NA	NA	NA	percent	NA
+Feng2023	NA	placebo	4.0	placebo	hba1c	NA	NA	NR	hba1c_placebo	24.0	week	NA	7.6	NA	NA	NA	percent	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	glucose	plasma	NR	fpg_placebo	0.0	week	NA	10.2	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	glucose	plasma	NR	fpg_placebo	16.0	week	NA	10.6	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	glucose	plasma	NR	fpg_placebo	24.0	week	NA	8.8	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	hba1c	NA	NA	NR	hba1c_cohort1	0.0	week	NA	8.2	NA	NA	NA	percent	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	hba1c	NA	NA	NR	hba1c_cohort1	16.0	week	NA	5.8	NA	NA	NA	percent	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	hba1c	NA	NA	NR	hba1c_cohort1	24.0	week	NA	NA	NA	NA	NA	percent	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	glucose	plasma	NR	fpg_cohort1	0.0	week	NA	10.1	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	glucose	plasma	NR	fpg_cohort1	16.0	week	NA	5.5	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	glucose	plasma	NR	fpg_cohort1	24.0	week	NA	NA	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	hba1c	NA	NA	NR	hba1c_cohort2	0.0	week	NA	7.7	NA	NA	NA	percent	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	hba1c	NA	NA	NR	hba1c_cohort2	16.0	week	NA	6.4	NA	NA	NA	percent	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	hba1c	NA	NA	NR	hba1c_cohort2	24.0	week	NA	6.1	NA	NA	NA	percent	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	glucose	plasma	NR	fpg_cohort2	0.0	week	NA	10.2	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	glucose	plasma	NR	fpg_cohort2	16.0	week	NA	7.6	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	glucose	plasma	NR	fpg_cohort2	24.0	week	NA	6.5	NA	NA	NA	mmol/L	NA

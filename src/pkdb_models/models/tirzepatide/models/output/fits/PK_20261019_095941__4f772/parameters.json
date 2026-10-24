@@ -1,0 +1,25 @@
+{
+  "sets": [
+    {
+      "sid": "PK_20261019_095941__4f772_0",
+      "values": {
+        "Ksc_tir": 0.0014250176989114515,
+        "TIR2TM_k": 0.0006337010215867556,
+        "Kp_tir": 0.03554719140834634,
+        "Kp_tm": 0.1469003006190772,
+        "KI__TMEX_f": 0.012164448642719618,
+        "LI__TMBEX_k": 0.0003844465082075737
+      },
+      "units": {
+        "Ksc_tir": "1/(min)",
+        "TIR2TM_k": "l/(min)",
+        "Kp_tir": "dimensionless",
+        "Kp_tm": "dimensionless",
+        "KI__TMEX_f": "dimensionless",
+        "LI__TMBEX_k": "1/(min)"
+      },
+      "cost": 13.587799324121384,
+      "provenance": "optimization 'PK_20261019_095941__4f772', run '0'"
+    }
+  ]
+}

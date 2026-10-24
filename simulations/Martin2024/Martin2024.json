@@ -1,7 +1,9 @@
 {
   "experiment_id": "Martin2024",
-  "base_path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/tirzepatide",
-  "data_path": "[PosixPath('/home/mkoenig/git/pkdb_data/studies/tirzepatide')]",
+  "base_path": "/home/mkoenig/git/tirzepatide-model/src/pkdb_models/models/tirzepatide",
+  "data_path": [
+    "/home/mkoenig/git/tirzepatide-model/src/pkdb_models/models/tirzepatide/data/tirzepatide"
+  ],
   "models": {
     "model": {
       "sid": null,
@@ -9,152 +11,229 @@
       "language": "SBML",
       "language_type": "SBML",
       "source": {
-        "source": "/home/mkoenig/git/pkdb_models/pkdb_models/models/tirzepatide/models/results/models/tirzepatide_body_flat.xml",
-        "path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/tirzepatide/models/results/models/tirzepatide_body_flat.xml",
-        "content": "None"
+        "source": "/home/mkoenig/git/tirzepatide-model/src/pkdb_models/models/tirzepatide/models/output/models/tirzepatide_body_flat.xml",
+        "path": "/home/mkoenig/git/tirzepatide-model/src/pkdb_models/models/tirzepatide/models/output/models/tirzepatide_body_flat.xml",
+        "content": null
       },
-      "changes": {}
+      "base_path": null,
+      "changes": {},
+      "selections": [
+        "Afeces_tm",
+        "Aurine_tm",
+        "BW",
+        "IVDOSE_tir",
+        "KI__f_renal_function",
+        "SCDEPOT_tir",
+        "SCDOSE_tir",
+        "[Cve_tir]",
+        "[Cve_tm]",
+        "[Cve_tmtot]",
+        "f_cirrhosis",
+        "time"
+      ],
+      "parameters": {}
     }
   },
   "tasks": {
-    "task_sc_TIRC14": {
+    "task_sc_tir": {
+      "sid": "model__sc_tir",
+      "name": null,
       "model": "model",
-      "simulation": "sc_TIRC14"
+      "simulation": "sc_tir",
+      "observables": []
     }
   },
+  "observables": {},
   "simulations": {
-    "sc_TIRC14": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0.0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 51840,
-          "steps": 2000,
-          "changes": {
-            "SCDOSE_tir": {
-              "_magnitude": 2.9,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+    "sc_tir": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 900,
+      "preinit_changes": {
+        "BW": {
+          "value": 78.6,
+          "unit": "kilogram"
+        },
+        "SCDOSE_tir": {
+          "value": 2.9,
+          "unit": "milligram"
         }
-      ]
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0.0
     }
   },
   "data": {
-    "task_sc_TIRC14__time": {
+    "task_sc_tir__time": {
       "type": "TASK",
+      "sid": "task_sc_tir__time",
       "index": "time",
+      "selection": "time",
       "unit": null,
-      "task": "task_sc_TIRC14",
+      "task": "task_sc_tir",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_sc_TIRC14__IVDOSE_tir": {
+    "task_sc_tir__IVDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir__IVDOSE_tir",
       "index": "IVDOSE_tir",
+      "selection": "IVDOSE_tir",
       "unit": null,
-      "task": "task_sc_TIRC14",
+      "task": "task_sc_tir",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_sc_TIRC14__SCDOSE_tir": {
+    "task_sc_tir__SCDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir__SCDOSE_tir",
       "index": "SCDOSE_tir",
+      "selection": "SCDOSE_tir",
       "unit": null,
-      "task": "task_sc_TIRC14",
+      "task": "task_sc_tir",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_sc_TIRC14__Cve_tir": {
+    "task_sc_tir__SCDEPOT_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir__SCDEPOT_tir",
+      "index": "SCDEPOT_tir",
+      "selection": "SCDEPOT_tir",
+      "unit": null,
+      "task": "task_sc_tir",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir__conc__Cve_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir__conc__Cve_tir",
       "index": "Cve_tir",
+      "selection": "[Cve_tir]",
       "unit": null,
-      "task": "task_sc_TIRC14",
+      "task": "task_sc_tir",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_sc_TIRC14__Cve_tm": {
+    "task_sc_tir__conc__Cve_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir__conc__Cve_tm",
       "index": "Cve_tm",
+      "selection": "[Cve_tm]",
       "unit": null,
-      "task": "task_sc_TIRC14",
+      "task": "task_sc_tir",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_sc_TIRC14__Cve_tmtot": {
+    "task_sc_tir__conc__Cve_tmtot": {
       "type": "TASK",
+      "sid": "task_sc_tir__conc__Cve_tmtot",
       "index": "Cve_tmtot",
+      "selection": "[Cve_tmtot]",
       "unit": null,
-      "task": "task_sc_TIRC14",
+      "task": "task_sc_tir",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_sc_TIRC14__Aurine_tm": {
+    "task_sc_tir__Aurine_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir__Aurine_tm",
       "index": "Aurine_tm",
+      "selection": "Aurine_tm",
       "unit": null,
-      "task": "task_sc_TIRC14",
+      "task": "task_sc_tir",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_sc_TIRC14__Afeces_tm": {
+    "task_sc_tir__Afeces_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir__Afeces_tm",
       "index": "Afeces_tm",
+      "selection": "Afeces_tm",
       "unit": null,
-      "task": "task_sc_TIRC14",
+      "task": "task_sc_tir",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_sc_TIRC14__KI__f_renal_function": {
+    "task_sc_tir__KI__f_renal_function": {
       "type": "TASK",
+      "sid": "task_sc_tir__KI__f_renal_function",
       "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
       "unit": null,
-      "task": "task_sc_TIRC14",
+      "task": "task_sc_tir",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_sc_TIRC14__f_cirrhosis": {
+    "task_sc_tir__f_cirrhosis": {
       "type": "TASK",
+      "sid": "task_sc_tir__f_cirrhosis",
       "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
       "unit": null,
-      "task": "task_sc_TIRC14",
+      "task": "task_sc_tir",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_sc_TIRC14__BW": {
+    "task_sc_tir__BW": {
       "type": "TASK",
+      "sid": "task_sc_tir__BW",
       "index": "BW",
+      "selection": "BW",
       "unit": null,
-      "task": "task_sc_TIRC14",
+      "task": "task_sc_tir",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     }
   },
   "figures": {
     "Fig3_Fig4": {
       "sid": "Fig3_Fig4",
       "name": "Martin2024",
-      "num_rows": 3,
-      "num_cols": 1,
-      "width": 7.0,
-      "height": 15.0,
+      "num_rows": 2,
+      "num_cols": 2,
+      "width": null,
+      "height": null,
+      "settings": {},
       "subplots": [
         {
           "sid": null,
@@ -176,8 +255,8 @@
             },
             "yaxis": {
               "sid": "Fig3_Fig4__plot0_yaxis",
-              "name": "tirzepatide [nM]",
-              "label": "tirzepatide",
+              "name": "tirzepatide plasma [nM]",
+              "label": "tirzepatide plasma",
               "unit": "nM",
               "scale": "LINEAR",
               "min": null,
@@ -193,11 +272,12 @@
             "curves": [
               {
                 "sid": "Fig3_Fig4__plot0_curve0",
-                "name": "Sim",
-                "x": "task_sc_TIRC14__time",
-                "y": "task_sc_TIRC14__Cve_tmtot",
+                "name": "Sim 2.9 mg SC",
+                "x": "task_sc_tir__time",
+                "y": "task_sc_tir__conc__Cve_tir",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -205,18 +285,18 @@
                   "base_style": null,
                   "line": {
                     "type": "SOLID",
-                    "color": "#000000ff",
+                    "color": "#1f77b4ff",
                     "thickness": 2.0
                   },
                   "marker": {
                     "size": null,
                     "type": "NONE",
-                    "fill": "#000000ff",
+                    "fill": "#1f77b4ff",
                     "line_color": "#000000ff",
                     "line_thickness": null
                   },
                   "fill": {
-                    "color": "#000000ff",
+                    "color": "#1f77b4ff",
                     "second_color": null
                   }
                 },
@@ -224,11 +304,12 @@
               },
               {
                 "sid": "Fig3_Fig4__plot0_curve1",
-                "name": "Data TIRC14 (2.9 mg)\u00b1SD (n=6)",
-                "x": "tir_and_tm_plasma_TIRC14__time",
-                "y": "tir_and_tm_plasma_TIRC14__mean",
+                "name": "Data 2.9 mg\u00b1SD (n=6)",
+                "x": "tirzepatide_plasma_TIR__time",
+                "y": "tirzepatide_plasma_TIR__mean",
                 "xerr": null,
-                "yerr": "tir_and_tm_plasma_TIRC14__mean_sd",
+                "yerr": "tirzepatide_plasma_TIR__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -236,25 +317,26 @@
                   "base_style": null,
                   "line": {
                     "type": "DASH",
-                    "color": "#000000ff",
+                    "color": "#1f77b4ff",
                     "thickness": 1.0
                   },
                   "marker": {
                     "size": null,
                     "type": "SQUARE",
-                    "fill": "#000000ff",
+                    "fill": "#1f77b4ff",
                     "line_color": "#000000ff",
                     "line_thickness": null
                   },
                   "fill": {
-                    "color": "#000000ff",
+                    "color": "#1f77b4ff",
                     "second_color": null
                   }
                 },
                 "order": 1
               }
             ],
-            "areas": []
+            "areas": [],
+            "bands": []
           },
           "row": 1,
           "col": 1,
@@ -281,9 +363,9 @@
             },
             "yaxis": {
               "sid": "Fig3_Fig4__plot1_yaxis",
-              "name": "tirzepatide metabolites\nurine [\u00b5mole]",
-              "label": "tirzepatide metabolites\nurine",
-              "unit": "\u00b5mole",
+              "name": "tirzepatide and metabolites \nplasma [nM]",
+              "label": "tirzepatide and metabolites \nplasma",
+              "unit": "nM",
               "scale": "LINEAR",
               "min": null,
               "max": null,
@@ -298,11 +380,12 @@
             "curves": [
               {
                 "sid": "Fig3_Fig4__plot1_curve0",
-                "name": "Sim",
-                "x": "task_sc_TIRC14__time",
-                "y": "task_sc_TIRC14__Aurine_tm",
+                "name": "Sim 2.9 mg SC",
+                "x": "task_sc_tir__time",
+                "y": "task_sc_tir__conc__Cve_tmtot",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -310,18 +393,18 @@
                   "base_style": null,
                   "line": {
                     "type": "SOLID",
-                    "color": "#ff7f0eff",
+                    "color": "#000000ff",
                     "thickness": 2.0
                   },
                   "marker": {
                     "size": null,
                     "type": "NONE",
-                    "fill": "#ff7f0eff",
+                    "fill": "#000000ff",
                     "line_color": "#000000ff",
                     "line_thickness": null
                   },
                   "fill": {
-                    "color": "#ff7f0eff",
+                    "color": "#000000ff",
                     "second_color": null
                   }
                 },
@@ -329,11 +412,12 @@
               },
               {
                 "sid": "Fig3_Fig4__plot1_curve1",
-                "name": "Data TIRC14 (2.9 mg)\u00b1SD (n=6)",
-                "x": "tm_urine_TIRC14__time",
-                "y": "tm_urine_TIRC14__mean",
+                "name": "Data 2.9 mg\u00b1SD (n=6)",
+                "x": "tir_and_tm_plasma_TIRC14__time",
+                "y": "tir_and_tm_plasma_TIRC14__mean",
                 "xerr": null,
-                "yerr": "tm_urine_TIRC14__mean_sd",
+                "yerr": "tir_and_tm_plasma_TIRC14__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -341,28 +425,29 @@
                   "base_style": null,
                   "line": {
                     "type": "DASH",
-                    "color": "#ff7f0eff",
+                    "color": "#000000ff",
                     "thickness": 1.0
                   },
                   "marker": {
                     "size": null,
                     "type": "SQUARE",
-                    "fill": "#ff7f0eff",
+                    "fill": "#000000ff",
                     "line_color": "#000000ff",
                     "line_thickness": null
                   },
                   "fill": {
-                    "color": "#ff7f0eff",
+                    "color": "#000000ff",
                     "second_color": null
                   }
                 },
                 "order": 1
               }
             ],
-            "areas": []
+            "areas": [],
+            "bands": []
           },
-          "row": 2,
-          "col": 1,
+          "row": 1,
+          "col": 2,
           "row_span": 1,
           "col_span": 1
         },
@@ -386,8 +471,8 @@
             },
             "yaxis": {
               "sid": "Fig3_Fig4__plot2_yaxis",
-              "name": "tirzepatide metabolites\nfeces [\u00b5mole]",
-              "label": "tirzepatide metabolites\nfeces",
+              "name": "tirzepatide metabolites \nurine [\u00b5mole]",
+              "label": "tirzepatide metabolites \nurine",
               "unit": "\u00b5mole",
               "scale": "LINEAR",
               "min": null,
@@ -403,11 +488,120 @@
             "curves": [
               {
                 "sid": "Fig3_Fig4__plot2_curve0",
-                "name": "Sim",
-                "x": "task_sc_TIRC14__time",
-                "y": "task_sc_TIRC14__Afeces_tm",
+                "name": "Sim 2.9 mg SC",
+                "x": "task_sc_tir__time",
+                "y": "task_sc_tir__Aurine_tm",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#ff7f0eff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#ff7f0eff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#ff7f0eff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Fig3_Fig4__plot2_curve1",
+                "name": "Data 2.9 mg\u00b1SD (n=6)",
+                "x": "tm_urine_TIRC14__time",
+                "y": "tm_urine_TIRC14__mean",
+                "xerr": null,
+                "yerr": "tm_urine_TIRC14__mean_sd",
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#ff7f0eff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#ff7f0eff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#ff7f0eff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              }
+            ],
+            "areas": [],
+            "bands": []
+          },
+          "row": 2,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Fig3_Fig4__plot3",
+            "name": null,
+            "xaxis": {
+              "sid": "Fig3_Fig4__plot3_xaxis",
+              "name": "time [hr]",
+              "label": "time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Fig3_Fig4__plot3_yaxis",
+              "name": "tirzepatide metabolites \nfeces [\u00b5mole]",
+              "label": "tirzepatide metabolites \nfeces",
+              "unit": "\u00b5mole",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Fig3_Fig4__plot3_curve0",
+                "name": "Sim 2.9 mg SC",
+                "x": "task_sc_tir__time",
+                "y": "task_sc_tir__Afeces_tm",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -433,12 +627,13 @@
                 "order": 0
               },
               {
-                "sid": "Fig3_Fig4__plot2_curve1",
-                "name": "Data TIRC14 (2.9 mg)\u00b1SD (n=6)",
+                "sid": "Fig3_Fig4__plot3_curve1",
+                "name": "Data 2.9 mg\u00b1SD (n=6)",
                 "x": "tm_feces_TIRC14__time",
                 "y": "tm_feces_TIRC14__mean",
                 "xerr": null,
                 "yerr": "tm_feces_TIRC14__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -464,10 +659,11 @@
                 "order": 1
               }
             ],
-            "areas": []
+            "areas": [],
+            "bands": []
           },
-          "row": 3,
-          "col": 1,
+          "row": 2,
+          "col": 2,
           "row_span": 1,
           "col_span": 1
         }

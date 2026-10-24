@@ -1,0 +1,37 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Feng2023	cohort1	10.0	TIR2_5_one	auc_end	tirzepatide	plasma	HPLC MS/MS	168.0	hr	35100.0	NA	NA	NA	4914.0	1553.94324220674	14.0	ng/ml*hr	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_one	cmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	306.0	NA	NA	NA	85.68	27.0943949923227	28.0	ng/ml	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_one	tmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	24.0	8.0	72.0	NA	NA	NA	hr	NA
+Feng2023	cohort1	10.0	TIR2_5_one	thalf	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	133.0	104.0	164.0	NA	NA	NA	hr	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_one	oral-clearance	tirzepatide	plasma	HPLC MS/MS	NA	NA	0.0384	NA	NA	NA	0.006528	0.00206433485655792	17.0	l/hr	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_one	vd	tirzepatide	plasma	HPLC MS/MS	NA	NA	7.36	NA	NA	NA	0.9568	0.302566726524911	13.0	l	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_four, TIR5_three	auc_end	tirzepatide	plasma	HPLC MS/MS	168.0	hr	125000.0	NA	NA	NA	20000.0	6324.55532033676	16.0	ng/ml*hr	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_four, TIR5_three	cmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	1030.0	NA	NA	NA	133.9	42.3428978696546	13.0	ng/ml	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_four, TIR5_three	tmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	24.0	8.0	24.0	NA	NA	NA	hr	NA
+Feng2023	cohort1	10.0	TIR2_5_four, TIR5_three	thalf	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	139.0	113.0	226.0	NA	NA	NA	hr	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_four, TIR5_three	oral-clearance	tirzepatide	plasma	HPLC MS/MS	NA	NA	0.0399	NA	NA	NA	0.006384	0.00201879805825149	16.0	l/hr	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_four, TIR5_three	vd	tirzepatide	plasma	HPLC MS/MS	NA	NA	8.01	NA	NA	NA	1.5219	0.481267037101026	19.0	l	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	auc_end	tirzepatide	plasma	HPLC MS/MS	168.0	hr	263000.0	NA	NA	NA	44710.0	14138.5434186128	17.0	ng/ml*hr	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	cmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	2200.0	NA	NA	NA	352.0	111.312173637927	16.0	ng/ml	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	tmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	24.0	8.0	48.0	NA	NA	NA	hr	NA
+Feng2023	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	thalf	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	132.0	113.0	153.0	NA	NA	NA	hr	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	oral-clearance	tirzepatide	plasma	HPLC MS/MS	NA	NA	0.0381	NA	NA	NA	0.006477	0.00204820724049106	17.0	l/hr	geometric mean
+Feng2023	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	vd	tirzepatide	plasma	HPLC MS/MS	NA	NA	7.23	NA	NA	NA	0.7953	0.251495942313191	11.0	l	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_one	auc_end	tirzepatide	plasma	HPLC MS/MS	168.0	hr	30900.0	NA	NA	NA	4326.0	1368.00131578884	14.0	ng/ml*hr	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_one	cmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	257.0	NA	NA	NA	43.69	13.8159910972756	17.0	ng/ml	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_one	tmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	23.0	8.0	47.0	NA	NA	NA	hr	NA
+Feng2023	cohort2	10.0	TIR2_5_one	thalf	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	145.0	121.0	173.0	NA	NA	NA	hr	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_one	oral-clearance	tirzepatide	plasma	HPLC MS/MS	NA	NA	0.0428	NA	NA	NA	0.007276	0.00230087322553851	17.0	l/hr	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_one	vd	tirzepatide	plasma	HPLC MS/MS	NA	NA	8.93	NA	NA	NA	1.1609	0.367108813568947	13.0	l	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_four, TIR5_three	auc_end	tirzepatide	plasma	HPLC MS/MS	168.0	hr	110000.0	NA	NA	NA	17600.0	5565.60868189635	16.0	ng/ml*hr	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_four, TIR5_three	cmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	915.0	NA	NA	NA	164.7	52.0827130629732	18.0	ng/ml	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_four, TIR5_three	tmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	24.0	8.0	48.0	NA	NA	NA	hr	NA
+Feng2023	cohort2	10.0	TIR2_5_four, TIR5_three	thalf	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	124.0	91.0	170.0	NA	NA	NA	hr	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_four, TIR5_three	oral-clearance	tirzepatide	plasma	HPLC MS/MS	NA	NA	0.0454	NA	NA	NA	0.007264	0.00229707849234631	16.0	l/hr	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_four, TIR5_three	vd	tirzepatide	plasma	HPLC MS/MS	NA	NA	8.0	NA	NA	NA	2.16	0.68305197459637	27.0	l	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	auc_end	tirzepatide	plasma	HPLC MS/MS	168.0	hr	357000.0	NA	NA	NA	57120.0	18062.9299948818	16.0	ng/ml*hr	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	cmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	2930.0	NA	NA	NA	586.0	185.309470885867	20.0	ng/ml	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	tmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	24.0	24.0	24.0	NA	NA	NA	hr	NA
+Feng2023	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	thalf	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	126.0	114.0	156.0	NA	NA	NA	hr	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	oral-clearance	tirzepatide	plasma	HPLC MS/MS	NA	NA	0.042	NA	NA	NA	0.00672	0.00212505058763315	16.0	l/hr	geometric mean
+Feng2023	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	vd	tirzepatide	plasma	HPLC MS/MS	NA	NA	7.61	NA	NA	NA	0.9893	0.312844128920458	13.0	l	geometric mean

@@ -1,7 +1,9 @@
 {
   "experiment_id": "Furihata2022",
-  "base_path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/tirzepatide",
-  "data_path": "[PosixPath('/home/mkoenig/git/pkdb_data/studies/tirzepatide')]",
+  "base_path": "/home/mkoenig/git/tirzepatide-model/src/pkdb_models/models/tirzepatide",
+  "data_path": [
+    "/home/mkoenig/git/tirzepatide-model/src/pkdb_models/models/tirzepatide/data/tirzepatide"
+  ],
   "models": {
     "model": {
       "sid": null,
@@ -9,3419 +11,1309 @@
       "language": "SBML",
       "language_type": "SBML",
       "source": {
-        "source": "/home/mkoenig/git/pkdb_models/pkdb_models/models/tirzepatide/models/results/models/tirzepatide_body_flat.xml",
-        "path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/tirzepatide/models/results/models/tirzepatide_body_flat.xml",
-        "content": "None"
+        "source": "/home/mkoenig/git/tirzepatide-model/src/pkdb_models/models/tirzepatide/models/output/models/tirzepatide_body_flat.xml",
+        "path": "/home/mkoenig/git/tirzepatide-model/src/pkdb_models/models/tirzepatide/models/output/models/tirzepatide_body_flat.xml",
+        "content": null
       },
-      "changes": {}
+      "base_path": null,
+      "changes": {},
+      "selections": [
+        "Afeces_tm",
+        "Aurine_tm",
+        "BW",
+        "IVDOSE_tir",
+        "KI__f_renal_function",
+        "SCDEPOT_tir",
+        "SCDOSE_tir",
+        "[Cve_tir]",
+        "[Cve_tm]",
+        "[Cve_tmtot]",
+        "f_cirrhosis",
+        "time"
+      ],
+      "parameters": {}
     }
   },
   "tasks": {
-    "task_po_tir_cohort1_5": {
+    "task_sc_tir_week1_5": {
+      "sid": "model__sc_tir_week1_5",
+      "name": null,
       "model": "model",
-      "simulation": "po_tir_cohort1_5"
+      "simulation": "sc_tir_week1_5",
+      "observables": []
     },
-    "task_po_tir_multi_cohort1_5": {
+    "task_sc_tir_week8_5": {
+      "sid": "model__sc_tir_week8_5",
+      "name": null,
       "model": "model",
-      "simulation": "po_tir_multi_cohort1_5"
+      "simulation": "sc_tir_week8_5",
+      "observables": []
     },
-    "task_po_tir_cohort1_10": {
+    "task_sc_tir_week1_10": {
+      "sid": "model__sc_tir_week1_10",
+      "name": null,
       "model": "model",
-      "simulation": "po_tir_cohort1_10"
+      "simulation": "sc_tir_week1_10",
+      "observables": []
     },
-    "task_po_tir_multi_cohort1_10": {
+    "task_sc_tir_week8_10": {
+      "sid": "model__sc_tir_week8_10",
+      "name": null,
       "model": "model",
-      "simulation": "po_tir_multi_cohort1_10"
+      "simulation": "sc_tir_week8_10",
+      "observables": []
     },
-    "task_po_tir_cohort1_15": {
+    "task_sc_tir_week1_15": {
+      "sid": "model__sc_tir_week1_15",
+      "name": null,
       "model": "model",
-      "simulation": "po_tir_cohort1_15"
+      "simulation": "sc_tir_week1_15",
+      "observables": []
     },
-    "task_po_tir_multi_cohort1_15": {
+    "task_sc_tir_week8_15": {
+      "sid": "model__sc_tir_week8_15",
+      "name": null,
       "model": "model",
-      "simulation": "po_tir_multi_cohort1_15"
-    },
-    "task_po_tir_cohort2_5": {
-      "model": "model",
-      "simulation": "po_tir_cohort2_5"
-    },
-    "task_po_tir_multi_cohort2_5": {
-      "model": "model",
-      "simulation": "po_tir_multi_cohort2_5"
-    },
-    "task_po_tir_cohort2_10": {
-      "model": "model",
-      "simulation": "po_tir_cohort2_10"
-    },
-    "task_po_tir_multi_cohort2_10": {
-      "model": "model",
-      "simulation": "po_tir_multi_cohort2_10"
-    },
-    "task_po_tir_cohort2_15": {
-      "model": "model",
-      "simulation": "po_tir_cohort2_15"
-    },
-    "task_po_tir_multi_cohort2_15": {
-      "model": "model",
-      "simulation": "po_tir_multi_cohort2_15"
-    },
-    "task_po_tir_cohort3_5": {
-      "model": "model",
-      "simulation": "po_tir_cohort3_5"
-    },
-    "task_po_tir_multi_cohort3_5": {
-      "model": "model",
-      "simulation": "po_tir_multi_cohort3_5"
-    },
-    "task_po_tir_cohort3_10": {
-      "model": "model",
-      "simulation": "po_tir_cohort3_10"
-    },
-    "task_po_tir_multi_cohort3_10": {
-      "model": "model",
-      "simulation": "po_tir_multi_cohort3_10"
-    },
-    "task_po_tir_cohort3_15": {
-      "model": "model",
-      "simulation": "po_tir_cohort3_15"
-    },
-    "task_po_tir_multi_cohort3_15": {
-      "model": "model",
-      "simulation": "po_tir_multi_cohort3_15"
+      "simulation": "sc_tir_week8_15",
+      "observables": []
     }
   },
+  "observables": {},
   "simulations": {
-    "po_tir_cohort1_5": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 20160,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+    "sc_tir_week1_5": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 178,
+      "preinit_changes": {
+        "BW": {
+          "value": 75.4,
+          "unit": "kilogram"
+        },
+        "SCDOSE_tir": {
+          "value": 5,
+          "unit": "milligram"
         }
-      ]
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0
     },
-    "po_tir_multi_cohort1_5": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": -60480,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+    "sc_tir_week8_5": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 2046,
+      "preinit_changes": {
+        "BW": {
+          "value": 75.4,
+          "unit": "kilogram"
         },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+        "SCDOSE_tir": {
+          "value": 5,
+          "unit": "milligram"
         }
-      ]
+      },
+      "changes": [
+        {
+          "times": [
+            168
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 5.0"
+          }
+        },
+        {
+          "times": [
+            336
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 5.0"
+          }
+        },
+        {
+          "times": [
+            504
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 5.0"
+          }
+        },
+        {
+          "times": [
+            672
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 5.0"
+          }
+        },
+        {
+          "times": [
+            840
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 5.0"
+          }
+        },
+        {
+          "times": [
+            1008
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 5.0"
+          }
+        },
+        {
+          "times": [
+            1176
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 5.0"
+          }
+        }
+      ],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": -1176
     },
-    "po_tir_cohort1_10": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 20160,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 2.5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+    "sc_tir_week1_10": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 178,
+      "preinit_changes": {
+        "BW": {
+          "value": 74.9,
+          "unit": "kilogram"
+        },
+        "SCDOSE_tir": {
+          "value": 2.5,
+          "unit": "milligram"
         }
-      ]
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0
     },
-    "po_tir_multi_cohort1_10": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": -70560,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 2.5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+    "sc_tir_week8_10": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 2046,
+      "preinit_changes": {
+        "BW": {
+          "value": 74.9,
+          "unit": "kilogram"
         },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 2.5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+        "SCDOSE_tir": {
+          "value": 2.5,
+          "unit": "milligram"
         }
-      ]
+      },
+      "changes": [
+        {
+          "times": [
+            168
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 2.5"
+          }
+        },
+        {
+          "times": [
+            336
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 5.0"
+          }
+        },
+        {
+          "times": [
+            504
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 5.0"
+          }
+        },
+        {
+          "times": [
+            672
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 10.0"
+          }
+        },
+        {
+          "times": [
+            840
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 10.0"
+          }
+        },
+        {
+          "times": [
+            1008
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 10.0"
+          }
+        },
+        {
+          "times": [
+            1176
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 10.0"
+          }
+        }
+      ],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": -1176
     },
-    "po_tir_cohort1_15": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 20160,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+    "sc_tir_week1_15": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 178,
+      "preinit_changes": {
+        "BW": {
+          "value": 73.3,
+          "unit": "kilogram"
+        },
+        "SCDOSE_tir": {
+          "value": 5,
+          "unit": "milligram"
         }
-      ]
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0
     },
-    "po_tir_multi_cohort1_15": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": -70560,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+    "sc_tir_week8_15": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 2046,
+      "preinit_changes": {
+        "BW": {
+          "value": 73.3,
+          "unit": "kilogram"
         },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 15,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 15,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 15,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 75.4,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 15,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+        "SCDOSE_tir": {
+          "value": 5,
+          "unit": "milligram"
         }
-      ]
-    },
-    "po_tir_cohort2_5": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0,
-      "timecourses": [
+      },
+      "changes": [
         {
-          "start": 0,
-          "end": 20160,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+          "times": [
+            168
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 5.0"
+          }
+        },
+        {
+          "times": [
+            336
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 10.0"
+          }
+        },
+        {
+          "times": [
+            504
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 10.0"
+          }
+        },
+        {
+          "times": [
+            672
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 10.0"
+          }
+        },
+        {
+          "times": [
+            840
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 10.0"
+          }
+        },
+        {
+          "times": [
+            1008
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 15.0"
+          }
+        },
+        {
+          "times": [
+            1176
+          ],
+          "values": {
+            "SCDOSE_tir": "SCDOSE_tir + 15.0"
+          }
         }
-      ]
-    },
-    "po_tir_multi_cohort2_5": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": -60480,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        }
-      ]
-    },
-    "po_tir_cohort2_10": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 20160,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 2.5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        }
-      ]
-    },
-    "po_tir_multi_cohort2_10": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": -70560,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 2.5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 2.5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        }
-      ]
-    },
-    "po_tir_cohort2_15": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 20160,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        }
-      ]
-    },
-    "po_tir_multi_cohort2_15": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": -70560,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 15,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 15,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 15,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 74.9,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 15,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        }
-      ]
-    },
-    "po_tir_cohort3_5": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 20160,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        }
-      ]
-    },
-    "po_tir_multi_cohort3_5": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": -60480,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        }
-      ]
-    },
-    "po_tir_cohort3_10": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 20160,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 2.5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        }
-      ]
-    },
-    "po_tir_multi_cohort3_10": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": -70560,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 2.5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 2.5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        }
-      ]
-    },
-    "po_tir_cohort3_15": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 20160,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        }
-      ]
-    },
-    "po_tir_multi_cohort3_15": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": -70560,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 10,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 15,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 15,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 10080,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 15,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        },
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 73.3,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 15,
-              "_units": "milligram"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
-        }
-      ]
+      ],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": -1176
     }
   },
   "data": {
-    "task_po_tir_cohort1_5__time": {
+    "task_sc_tir_week1_5__time": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_5__time",
       "index": "time",
+      "selection": "time",
       "unit": null,
-      "task": "task_po_tir_cohort1_5",
+      "task": "task_sc_tir_week1_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_5__IVDOSE_tir": {
+    "task_sc_tir_week1_5__IVDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_5__IVDOSE_tir",
       "index": "IVDOSE_tir",
+      "selection": "IVDOSE_tir",
       "unit": null,
-      "task": "task_po_tir_cohort1_5",
+      "task": "task_sc_tir_week1_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_5__SCDOSE_tir": {
+    "task_sc_tir_week1_5__SCDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_5__SCDOSE_tir",
       "index": "SCDOSE_tir",
+      "selection": "SCDOSE_tir",
       "unit": null,
-      "task": "task_po_tir_cohort1_5",
+      "task": "task_sc_tir_week1_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_5__Cve_tir": {
+    "task_sc_tir_week1_5__SCDEPOT_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_5__SCDEPOT_tir",
+      "index": "SCDEPOT_tir",
+      "selection": "SCDEPOT_tir",
+      "unit": null,
+      "task": "task_sc_tir_week1_5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_week1_5__conc__Cve_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_week1_5__conc__Cve_tir",
       "index": "Cve_tir",
+      "selection": "[Cve_tir]",
       "unit": null,
-      "task": "task_po_tir_cohort1_5",
+      "task": "task_sc_tir_week1_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_5__Cve_tm": {
+    "task_sc_tir_week1_5__conc__Cve_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_5__conc__Cve_tm",
       "index": "Cve_tm",
+      "selection": "[Cve_tm]",
       "unit": null,
-      "task": "task_po_tir_cohort1_5",
+      "task": "task_sc_tir_week1_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_5__Cve_tmtot": {
+    "task_sc_tir_week1_5__conc__Cve_tmtot": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_5__conc__Cve_tmtot",
       "index": "Cve_tmtot",
+      "selection": "[Cve_tmtot]",
       "unit": null,
-      "task": "task_po_tir_cohort1_5",
+      "task": "task_sc_tir_week1_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_5__Aurine_tm": {
+    "task_sc_tir_week1_5__Aurine_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_5__Aurine_tm",
       "index": "Aurine_tm",
+      "selection": "Aurine_tm",
       "unit": null,
-      "task": "task_po_tir_cohort1_5",
+      "task": "task_sc_tir_week1_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_5__Afeces_tm": {
+    "task_sc_tir_week1_5__Afeces_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_5__Afeces_tm",
       "index": "Afeces_tm",
+      "selection": "Afeces_tm",
       "unit": null,
-      "task": "task_po_tir_cohort1_5",
+      "task": "task_sc_tir_week1_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_5__KI__f_renal_function": {
+    "task_sc_tir_week1_5__KI__f_renal_function": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_5__KI__f_renal_function",
       "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
       "unit": null,
-      "task": "task_po_tir_cohort1_5",
+      "task": "task_sc_tir_week1_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_5__f_cirrhosis": {
+    "task_sc_tir_week1_5__f_cirrhosis": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_5__f_cirrhosis",
       "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
       "unit": null,
-      "task": "task_po_tir_cohort1_5",
+      "task": "task_sc_tir_week1_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_5__BW": {
+    "task_sc_tir_week1_5__BW": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_5__BW",
       "index": "BW",
+      "selection": "BW",
       "unit": null,
-      "task": "task_po_tir_cohort1_5",
+      "task": "task_sc_tir_week1_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_5__time": {
+    "task_sc_tir_week8_5__time": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_5__time",
       "index": "time",
+      "selection": "time",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_5",
+      "task": "task_sc_tir_week8_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_5__IVDOSE_tir": {
+    "task_sc_tir_week8_5__IVDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_5__IVDOSE_tir",
       "index": "IVDOSE_tir",
+      "selection": "IVDOSE_tir",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_5",
+      "task": "task_sc_tir_week8_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_5__SCDOSE_tir": {
+    "task_sc_tir_week8_5__SCDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_5__SCDOSE_tir",
       "index": "SCDOSE_tir",
+      "selection": "SCDOSE_tir",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_5",
+      "task": "task_sc_tir_week8_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_5__Cve_tir": {
+    "task_sc_tir_week8_5__SCDEPOT_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_5__SCDEPOT_tir",
+      "index": "SCDEPOT_tir",
+      "selection": "SCDEPOT_tir",
+      "unit": null,
+      "task": "task_sc_tir_week8_5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_week8_5__conc__Cve_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_week8_5__conc__Cve_tir",
       "index": "Cve_tir",
+      "selection": "[Cve_tir]",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_5",
+      "task": "task_sc_tir_week8_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_5__Cve_tm": {
+    "task_sc_tir_week8_5__conc__Cve_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_5__conc__Cve_tm",
       "index": "Cve_tm",
+      "selection": "[Cve_tm]",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_5",
+      "task": "task_sc_tir_week8_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_5__Cve_tmtot": {
+    "task_sc_tir_week8_5__conc__Cve_tmtot": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_5__conc__Cve_tmtot",
       "index": "Cve_tmtot",
+      "selection": "[Cve_tmtot]",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_5",
+      "task": "task_sc_tir_week8_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_5__Aurine_tm": {
+    "task_sc_tir_week8_5__Aurine_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_5__Aurine_tm",
       "index": "Aurine_tm",
+      "selection": "Aurine_tm",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_5",
+      "task": "task_sc_tir_week8_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_5__Afeces_tm": {
+    "task_sc_tir_week8_5__Afeces_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_5__Afeces_tm",
       "index": "Afeces_tm",
+      "selection": "Afeces_tm",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_5",
+      "task": "task_sc_tir_week8_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_5__KI__f_renal_function": {
+    "task_sc_tir_week8_5__KI__f_renal_function": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_5__KI__f_renal_function",
       "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_5",
+      "task": "task_sc_tir_week8_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_5__f_cirrhosis": {
+    "task_sc_tir_week8_5__f_cirrhosis": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_5__f_cirrhosis",
       "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_5",
+      "task": "task_sc_tir_week8_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_5__BW": {
+    "task_sc_tir_week8_5__BW": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_5__BW",
       "index": "BW",
+      "selection": "BW",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_5",
+      "task": "task_sc_tir_week8_5",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_10__time": {
+    "task_sc_tir_week1_10__time": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_10__time",
       "index": "time",
+      "selection": "time",
       "unit": null,
-      "task": "task_po_tir_cohort1_10",
+      "task": "task_sc_tir_week1_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_10__IVDOSE_tir": {
+    "task_sc_tir_week1_10__IVDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_10__IVDOSE_tir",
       "index": "IVDOSE_tir",
+      "selection": "IVDOSE_tir",
       "unit": null,
-      "task": "task_po_tir_cohort1_10",
+      "task": "task_sc_tir_week1_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_10__SCDOSE_tir": {
+    "task_sc_tir_week1_10__SCDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_10__SCDOSE_tir",
       "index": "SCDOSE_tir",
+      "selection": "SCDOSE_tir",
       "unit": null,
-      "task": "task_po_tir_cohort1_10",
+      "task": "task_sc_tir_week1_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_10__Cve_tir": {
+    "task_sc_tir_week1_10__SCDEPOT_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_10__SCDEPOT_tir",
+      "index": "SCDEPOT_tir",
+      "selection": "SCDEPOT_tir",
+      "unit": null,
+      "task": "task_sc_tir_week1_10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_week1_10__conc__Cve_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_week1_10__conc__Cve_tir",
       "index": "Cve_tir",
+      "selection": "[Cve_tir]",
       "unit": null,
-      "task": "task_po_tir_cohort1_10",
+      "task": "task_sc_tir_week1_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_10__Cve_tm": {
+    "task_sc_tir_week1_10__conc__Cve_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_10__conc__Cve_tm",
       "index": "Cve_tm",
+      "selection": "[Cve_tm]",
       "unit": null,
-      "task": "task_po_tir_cohort1_10",
+      "task": "task_sc_tir_week1_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_10__Cve_tmtot": {
+    "task_sc_tir_week1_10__conc__Cve_tmtot": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_10__conc__Cve_tmtot",
       "index": "Cve_tmtot",
+      "selection": "[Cve_tmtot]",
       "unit": null,
-      "task": "task_po_tir_cohort1_10",
+      "task": "task_sc_tir_week1_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_10__Aurine_tm": {
+    "task_sc_tir_week1_10__Aurine_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_10__Aurine_tm",
       "index": "Aurine_tm",
+      "selection": "Aurine_tm",
       "unit": null,
-      "task": "task_po_tir_cohort1_10",
+      "task": "task_sc_tir_week1_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_10__Afeces_tm": {
+    "task_sc_tir_week1_10__Afeces_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_10__Afeces_tm",
       "index": "Afeces_tm",
+      "selection": "Afeces_tm",
       "unit": null,
-      "task": "task_po_tir_cohort1_10",
+      "task": "task_sc_tir_week1_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_10__KI__f_renal_function": {
+    "task_sc_tir_week1_10__KI__f_renal_function": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_10__KI__f_renal_function",
       "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
       "unit": null,
-      "task": "task_po_tir_cohort1_10",
+      "task": "task_sc_tir_week1_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_10__f_cirrhosis": {
+    "task_sc_tir_week1_10__f_cirrhosis": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_10__f_cirrhosis",
       "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
       "unit": null,
-      "task": "task_po_tir_cohort1_10",
+      "task": "task_sc_tir_week1_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_10__BW": {
+    "task_sc_tir_week1_10__BW": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_10__BW",
       "index": "BW",
+      "selection": "BW",
       "unit": null,
-      "task": "task_po_tir_cohort1_10",
+      "task": "task_sc_tir_week1_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_10__time": {
+    "task_sc_tir_week8_10__time": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_10__time",
       "index": "time",
+      "selection": "time",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_10",
+      "task": "task_sc_tir_week8_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_10__IVDOSE_tir": {
+    "task_sc_tir_week8_10__IVDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_10__IVDOSE_tir",
       "index": "IVDOSE_tir",
+      "selection": "IVDOSE_tir",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_10",
+      "task": "task_sc_tir_week8_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_10__SCDOSE_tir": {
+    "task_sc_tir_week8_10__SCDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_10__SCDOSE_tir",
       "index": "SCDOSE_tir",
+      "selection": "SCDOSE_tir",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_10",
+      "task": "task_sc_tir_week8_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_10__Cve_tir": {
+    "task_sc_tir_week8_10__SCDEPOT_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_10__SCDEPOT_tir",
+      "index": "SCDEPOT_tir",
+      "selection": "SCDEPOT_tir",
+      "unit": null,
+      "task": "task_sc_tir_week8_10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_week8_10__conc__Cve_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_week8_10__conc__Cve_tir",
       "index": "Cve_tir",
+      "selection": "[Cve_tir]",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_10",
+      "task": "task_sc_tir_week8_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_10__Cve_tm": {
+    "task_sc_tir_week8_10__conc__Cve_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_10__conc__Cve_tm",
       "index": "Cve_tm",
+      "selection": "[Cve_tm]",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_10",
+      "task": "task_sc_tir_week8_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_10__Cve_tmtot": {
+    "task_sc_tir_week8_10__conc__Cve_tmtot": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_10__conc__Cve_tmtot",
       "index": "Cve_tmtot",
+      "selection": "[Cve_tmtot]",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_10",
+      "task": "task_sc_tir_week8_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_10__Aurine_tm": {
+    "task_sc_tir_week8_10__Aurine_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_10__Aurine_tm",
       "index": "Aurine_tm",
+      "selection": "Aurine_tm",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_10",
+      "task": "task_sc_tir_week8_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_10__Afeces_tm": {
+    "task_sc_tir_week8_10__Afeces_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_10__Afeces_tm",
       "index": "Afeces_tm",
+      "selection": "Afeces_tm",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_10",
+      "task": "task_sc_tir_week8_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_10__KI__f_renal_function": {
+    "task_sc_tir_week8_10__KI__f_renal_function": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_10__KI__f_renal_function",
       "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_10",
+      "task": "task_sc_tir_week8_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_10__f_cirrhosis": {
+    "task_sc_tir_week8_10__f_cirrhosis": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_10__f_cirrhosis",
       "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_10",
+      "task": "task_sc_tir_week8_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_10__BW": {
+    "task_sc_tir_week8_10__BW": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_10__BW",
       "index": "BW",
+      "selection": "BW",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_10",
+      "task": "task_sc_tir_week8_10",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_15__time": {
+    "task_sc_tir_week1_15__time": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_15__time",
       "index": "time",
+      "selection": "time",
       "unit": null,
-      "task": "task_po_tir_cohort1_15",
+      "task": "task_sc_tir_week1_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_15__IVDOSE_tir": {
+    "task_sc_tir_week1_15__IVDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_15__IVDOSE_tir",
       "index": "IVDOSE_tir",
+      "selection": "IVDOSE_tir",
       "unit": null,
-      "task": "task_po_tir_cohort1_15",
+      "task": "task_sc_tir_week1_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_15__SCDOSE_tir": {
+    "task_sc_tir_week1_15__SCDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_15__SCDOSE_tir",
       "index": "SCDOSE_tir",
+      "selection": "SCDOSE_tir",
       "unit": null,
-      "task": "task_po_tir_cohort1_15",
+      "task": "task_sc_tir_week1_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_15__Cve_tir": {
+    "task_sc_tir_week1_15__SCDEPOT_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_15__SCDEPOT_tir",
+      "index": "SCDEPOT_tir",
+      "selection": "SCDEPOT_tir",
+      "unit": null,
+      "task": "task_sc_tir_week1_15",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_week1_15__conc__Cve_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_week1_15__conc__Cve_tir",
       "index": "Cve_tir",
+      "selection": "[Cve_tir]",
       "unit": null,
-      "task": "task_po_tir_cohort1_15",
+      "task": "task_sc_tir_week1_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_15__Cve_tm": {
+    "task_sc_tir_week1_15__conc__Cve_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_15__conc__Cve_tm",
       "index": "Cve_tm",
+      "selection": "[Cve_tm]",
       "unit": null,
-      "task": "task_po_tir_cohort1_15",
+      "task": "task_sc_tir_week1_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_15__Cve_tmtot": {
+    "task_sc_tir_week1_15__conc__Cve_tmtot": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_15__conc__Cve_tmtot",
       "index": "Cve_tmtot",
+      "selection": "[Cve_tmtot]",
       "unit": null,
-      "task": "task_po_tir_cohort1_15",
+      "task": "task_sc_tir_week1_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_15__Aurine_tm": {
+    "task_sc_tir_week1_15__Aurine_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_15__Aurine_tm",
       "index": "Aurine_tm",
+      "selection": "Aurine_tm",
       "unit": null,
-      "task": "task_po_tir_cohort1_15",
+      "task": "task_sc_tir_week1_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_15__Afeces_tm": {
+    "task_sc_tir_week1_15__Afeces_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_15__Afeces_tm",
       "index": "Afeces_tm",
+      "selection": "Afeces_tm",
       "unit": null,
-      "task": "task_po_tir_cohort1_15",
+      "task": "task_sc_tir_week1_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_15__KI__f_renal_function": {
+    "task_sc_tir_week1_15__KI__f_renal_function": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_15__KI__f_renal_function",
       "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
       "unit": null,
-      "task": "task_po_tir_cohort1_15",
+      "task": "task_sc_tir_week1_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_15__f_cirrhosis": {
+    "task_sc_tir_week1_15__f_cirrhosis": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_15__f_cirrhosis",
       "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
       "unit": null,
-      "task": "task_po_tir_cohort1_15",
+      "task": "task_sc_tir_week1_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_cohort1_15__BW": {
+    "task_sc_tir_week1_15__BW": {
       "type": "TASK",
+      "sid": "task_sc_tir_week1_15__BW",
       "index": "BW",
+      "selection": "BW",
       "unit": null,
-      "task": "task_po_tir_cohort1_15",
+      "task": "task_sc_tir_week1_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_15__time": {
+    "task_sc_tir_week8_15__time": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_15__time",
       "index": "time",
+      "selection": "time",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_15",
+      "task": "task_sc_tir_week8_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_15__IVDOSE_tir": {
+    "task_sc_tir_week8_15__IVDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_15__IVDOSE_tir",
       "index": "IVDOSE_tir",
+      "selection": "IVDOSE_tir",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_15",
+      "task": "task_sc_tir_week8_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_15__SCDOSE_tir": {
+    "task_sc_tir_week8_15__SCDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_15__SCDOSE_tir",
       "index": "SCDOSE_tir",
+      "selection": "SCDOSE_tir",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_15",
+      "task": "task_sc_tir_week8_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_15__Cve_tir": {
+    "task_sc_tir_week8_15__SCDEPOT_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_15__SCDEPOT_tir",
+      "index": "SCDEPOT_tir",
+      "selection": "SCDEPOT_tir",
+      "unit": null,
+      "task": "task_sc_tir_week8_15",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_week8_15__conc__Cve_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_week8_15__conc__Cve_tir",
       "index": "Cve_tir",
+      "selection": "[Cve_tir]",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_15",
+      "task": "task_sc_tir_week8_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_15__Cve_tm": {
+    "task_sc_tir_week8_15__conc__Cve_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_15__conc__Cve_tm",
       "index": "Cve_tm",
+      "selection": "[Cve_tm]",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_15",
+      "task": "task_sc_tir_week8_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_15__Cve_tmtot": {
+    "task_sc_tir_week8_15__conc__Cve_tmtot": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_15__conc__Cve_tmtot",
       "index": "Cve_tmtot",
+      "selection": "[Cve_tmtot]",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_15",
+      "task": "task_sc_tir_week8_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_15__Aurine_tm": {
+    "task_sc_tir_week8_15__Aurine_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_15__Aurine_tm",
       "index": "Aurine_tm",
+      "selection": "Aurine_tm",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_15",
+      "task": "task_sc_tir_week8_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_15__Afeces_tm": {
+    "task_sc_tir_week8_15__Afeces_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_15__Afeces_tm",
       "index": "Afeces_tm",
+      "selection": "Afeces_tm",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_15",
+      "task": "task_sc_tir_week8_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_15__KI__f_renal_function": {
+    "task_sc_tir_week8_15__KI__f_renal_function": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_15__KI__f_renal_function",
       "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_15",
+      "task": "task_sc_tir_week8_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_15__f_cirrhosis": {
+    "task_sc_tir_week8_15__f_cirrhosis": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_15__f_cirrhosis",
       "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_15",
+      "task": "task_sc_tir_week8_15",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_po_tir_multi_cohort1_15__BW": {
+    "task_sc_tir_week8_15__BW": {
       "type": "TASK",
+      "sid": "task_sc_tir_week8_15__BW",
       "index": "BW",
+      "selection": "BW",
       "unit": null,
-      "task": "task_po_tir_multi_cohort1_15",
+      "task": "task_sc_tir_week8_15",
       "dataset": null,
       "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_5__time": {
-      "type": "TASK",
-      "index": "time",
-      "unit": null,
-      "task": "task_po_tir_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_5__IVDOSE_tir": {
-      "type": "TASK",
-      "index": "IVDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_5__SCDOSE_tir": {
-      "type": "TASK",
-      "index": "SCDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_5__Cve_tir": {
-      "type": "TASK",
-      "index": "Cve_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_5__Cve_tm": {
-      "type": "TASK",
-      "index": "Cve_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_5__Cve_tmtot": {
-      "type": "TASK",
-      "index": "Cve_tmtot",
-      "unit": null,
-      "task": "task_po_tir_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_5__Aurine_tm": {
-      "type": "TASK",
-      "index": "Aurine_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_5__Afeces_tm": {
-      "type": "TASK",
-      "index": "Afeces_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_5__KI__f_renal_function": {
-      "type": "TASK",
-      "index": "KI__f_renal_function",
-      "unit": null,
-      "task": "task_po_tir_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_5__f_cirrhosis": {
-      "type": "TASK",
-      "index": "f_cirrhosis",
-      "unit": null,
-      "task": "task_po_tir_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_5__BW": {
-      "type": "TASK",
-      "index": "BW",
-      "unit": null,
-      "task": "task_po_tir_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_5__time": {
-      "type": "TASK",
-      "index": "time",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_5__IVDOSE_tir": {
-      "type": "TASK",
-      "index": "IVDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_5__SCDOSE_tir": {
-      "type": "TASK",
-      "index": "SCDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_5__Cve_tir": {
-      "type": "TASK",
-      "index": "Cve_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_5__Cve_tm": {
-      "type": "TASK",
-      "index": "Cve_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_5__Cve_tmtot": {
-      "type": "TASK",
-      "index": "Cve_tmtot",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_5__Aurine_tm": {
-      "type": "TASK",
-      "index": "Aurine_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_5__Afeces_tm": {
-      "type": "TASK",
-      "index": "Afeces_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_5__KI__f_renal_function": {
-      "type": "TASK",
-      "index": "KI__f_renal_function",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_5__f_cirrhosis": {
-      "type": "TASK",
-      "index": "f_cirrhosis",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_5__BW": {
-      "type": "TASK",
-      "index": "BW",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_10__time": {
-      "type": "TASK",
-      "index": "time",
-      "unit": null,
-      "task": "task_po_tir_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_10__IVDOSE_tir": {
-      "type": "TASK",
-      "index": "IVDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_10__SCDOSE_tir": {
-      "type": "TASK",
-      "index": "SCDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_10__Cve_tir": {
-      "type": "TASK",
-      "index": "Cve_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_10__Cve_tm": {
-      "type": "TASK",
-      "index": "Cve_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_10__Cve_tmtot": {
-      "type": "TASK",
-      "index": "Cve_tmtot",
-      "unit": null,
-      "task": "task_po_tir_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_10__Aurine_tm": {
-      "type": "TASK",
-      "index": "Aurine_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_10__Afeces_tm": {
-      "type": "TASK",
-      "index": "Afeces_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_10__KI__f_renal_function": {
-      "type": "TASK",
-      "index": "KI__f_renal_function",
-      "unit": null,
-      "task": "task_po_tir_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_10__f_cirrhosis": {
-      "type": "TASK",
-      "index": "f_cirrhosis",
-      "unit": null,
-      "task": "task_po_tir_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_10__BW": {
-      "type": "TASK",
-      "index": "BW",
-      "unit": null,
-      "task": "task_po_tir_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_10__time": {
-      "type": "TASK",
-      "index": "time",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_10__IVDOSE_tir": {
-      "type": "TASK",
-      "index": "IVDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_10__SCDOSE_tir": {
-      "type": "TASK",
-      "index": "SCDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_10__Cve_tir": {
-      "type": "TASK",
-      "index": "Cve_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_10__Cve_tm": {
-      "type": "TASK",
-      "index": "Cve_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_10__Cve_tmtot": {
-      "type": "TASK",
-      "index": "Cve_tmtot",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_10__Aurine_tm": {
-      "type": "TASK",
-      "index": "Aurine_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_10__Afeces_tm": {
-      "type": "TASK",
-      "index": "Afeces_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_10__KI__f_renal_function": {
-      "type": "TASK",
-      "index": "KI__f_renal_function",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_10__f_cirrhosis": {
-      "type": "TASK",
-      "index": "f_cirrhosis",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_10__BW": {
-      "type": "TASK",
-      "index": "BW",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_15__time": {
-      "type": "TASK",
-      "index": "time",
-      "unit": null,
-      "task": "task_po_tir_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_15__IVDOSE_tir": {
-      "type": "TASK",
-      "index": "IVDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_15__SCDOSE_tir": {
-      "type": "TASK",
-      "index": "SCDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_15__Cve_tir": {
-      "type": "TASK",
-      "index": "Cve_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_15__Cve_tm": {
-      "type": "TASK",
-      "index": "Cve_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_15__Cve_tmtot": {
-      "type": "TASK",
-      "index": "Cve_tmtot",
-      "unit": null,
-      "task": "task_po_tir_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_15__Aurine_tm": {
-      "type": "TASK",
-      "index": "Aurine_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_15__Afeces_tm": {
-      "type": "TASK",
-      "index": "Afeces_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_15__KI__f_renal_function": {
-      "type": "TASK",
-      "index": "KI__f_renal_function",
-      "unit": null,
-      "task": "task_po_tir_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_15__f_cirrhosis": {
-      "type": "TASK",
-      "index": "f_cirrhosis",
-      "unit": null,
-      "task": "task_po_tir_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort2_15__BW": {
-      "type": "TASK",
-      "index": "BW",
-      "unit": null,
-      "task": "task_po_tir_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_15__time": {
-      "type": "TASK",
-      "index": "time",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_15__IVDOSE_tir": {
-      "type": "TASK",
-      "index": "IVDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_15__SCDOSE_tir": {
-      "type": "TASK",
-      "index": "SCDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_15__Cve_tir": {
-      "type": "TASK",
-      "index": "Cve_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_15__Cve_tm": {
-      "type": "TASK",
-      "index": "Cve_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_15__Cve_tmtot": {
-      "type": "TASK",
-      "index": "Cve_tmtot",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_15__Aurine_tm": {
-      "type": "TASK",
-      "index": "Aurine_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_15__Afeces_tm": {
-      "type": "TASK",
-      "index": "Afeces_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_15__KI__f_renal_function": {
-      "type": "TASK",
-      "index": "KI__f_renal_function",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_15__f_cirrhosis": {
-      "type": "TASK",
-      "index": "f_cirrhosis",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort2_15__BW": {
-      "type": "TASK",
-      "index": "BW",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort2_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_5__time": {
-      "type": "TASK",
-      "index": "time",
-      "unit": null,
-      "task": "task_po_tir_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_5__IVDOSE_tir": {
-      "type": "TASK",
-      "index": "IVDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_5__SCDOSE_tir": {
-      "type": "TASK",
-      "index": "SCDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_5__Cve_tir": {
-      "type": "TASK",
-      "index": "Cve_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_5__Cve_tm": {
-      "type": "TASK",
-      "index": "Cve_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_5__Cve_tmtot": {
-      "type": "TASK",
-      "index": "Cve_tmtot",
-      "unit": null,
-      "task": "task_po_tir_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_5__Aurine_tm": {
-      "type": "TASK",
-      "index": "Aurine_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_5__Afeces_tm": {
-      "type": "TASK",
-      "index": "Afeces_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_5__KI__f_renal_function": {
-      "type": "TASK",
-      "index": "KI__f_renal_function",
-      "unit": null,
-      "task": "task_po_tir_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_5__f_cirrhosis": {
-      "type": "TASK",
-      "index": "f_cirrhosis",
-      "unit": null,
-      "task": "task_po_tir_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_5__BW": {
-      "type": "TASK",
-      "index": "BW",
-      "unit": null,
-      "task": "task_po_tir_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_5__time": {
-      "type": "TASK",
-      "index": "time",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_5__IVDOSE_tir": {
-      "type": "TASK",
-      "index": "IVDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_5__SCDOSE_tir": {
-      "type": "TASK",
-      "index": "SCDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_5__Cve_tir": {
-      "type": "TASK",
-      "index": "Cve_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_5__Cve_tm": {
-      "type": "TASK",
-      "index": "Cve_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_5__Cve_tmtot": {
-      "type": "TASK",
-      "index": "Cve_tmtot",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_5__Aurine_tm": {
-      "type": "TASK",
-      "index": "Aurine_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_5__Afeces_tm": {
-      "type": "TASK",
-      "index": "Afeces_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_5__KI__f_renal_function": {
-      "type": "TASK",
-      "index": "KI__f_renal_function",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_5__f_cirrhosis": {
-      "type": "TASK",
-      "index": "f_cirrhosis",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_5__BW": {
-      "type": "TASK",
-      "index": "BW",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_5",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_10__time": {
-      "type": "TASK",
-      "index": "time",
-      "unit": null,
-      "task": "task_po_tir_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_10__IVDOSE_tir": {
-      "type": "TASK",
-      "index": "IVDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_10__SCDOSE_tir": {
-      "type": "TASK",
-      "index": "SCDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_10__Cve_tir": {
-      "type": "TASK",
-      "index": "Cve_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_10__Cve_tm": {
-      "type": "TASK",
-      "index": "Cve_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_10__Cve_tmtot": {
-      "type": "TASK",
-      "index": "Cve_tmtot",
-      "unit": null,
-      "task": "task_po_tir_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_10__Aurine_tm": {
-      "type": "TASK",
-      "index": "Aurine_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_10__Afeces_tm": {
-      "type": "TASK",
-      "index": "Afeces_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_10__KI__f_renal_function": {
-      "type": "TASK",
-      "index": "KI__f_renal_function",
-      "unit": null,
-      "task": "task_po_tir_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_10__f_cirrhosis": {
-      "type": "TASK",
-      "index": "f_cirrhosis",
-      "unit": null,
-      "task": "task_po_tir_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_10__BW": {
-      "type": "TASK",
-      "index": "BW",
-      "unit": null,
-      "task": "task_po_tir_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_10__time": {
-      "type": "TASK",
-      "index": "time",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_10__IVDOSE_tir": {
-      "type": "TASK",
-      "index": "IVDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_10__SCDOSE_tir": {
-      "type": "TASK",
-      "index": "SCDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_10__Cve_tir": {
-      "type": "TASK",
-      "index": "Cve_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_10__Cve_tm": {
-      "type": "TASK",
-      "index": "Cve_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_10__Cve_tmtot": {
-      "type": "TASK",
-      "index": "Cve_tmtot",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_10__Aurine_tm": {
-      "type": "TASK",
-      "index": "Aurine_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_10__Afeces_tm": {
-      "type": "TASK",
-      "index": "Afeces_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_10__KI__f_renal_function": {
-      "type": "TASK",
-      "index": "KI__f_renal_function",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_10__f_cirrhosis": {
-      "type": "TASK",
-      "index": "f_cirrhosis",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_10__BW": {
-      "type": "TASK",
-      "index": "BW",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_10",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_15__time": {
-      "type": "TASK",
-      "index": "time",
-      "unit": null,
-      "task": "task_po_tir_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_15__IVDOSE_tir": {
-      "type": "TASK",
-      "index": "IVDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_15__SCDOSE_tir": {
-      "type": "TASK",
-      "index": "SCDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_15__Cve_tir": {
-      "type": "TASK",
-      "index": "Cve_tir",
-      "unit": null,
-      "task": "task_po_tir_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_15__Cve_tm": {
-      "type": "TASK",
-      "index": "Cve_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_15__Cve_tmtot": {
-      "type": "TASK",
-      "index": "Cve_tmtot",
-      "unit": null,
-      "task": "task_po_tir_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_15__Aurine_tm": {
-      "type": "TASK",
-      "index": "Aurine_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_15__Afeces_tm": {
-      "type": "TASK",
-      "index": "Afeces_tm",
-      "unit": null,
-      "task": "task_po_tir_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_15__KI__f_renal_function": {
-      "type": "TASK",
-      "index": "KI__f_renal_function",
-      "unit": null,
-      "task": "task_po_tir_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_15__f_cirrhosis": {
-      "type": "TASK",
-      "index": "f_cirrhosis",
-      "unit": null,
-      "task": "task_po_tir_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_cohort3_15__BW": {
-      "type": "TASK",
-      "index": "BW",
-      "unit": null,
-      "task": "task_po_tir_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_15__time": {
-      "type": "TASK",
-      "index": "time",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_15__IVDOSE_tir": {
-      "type": "TASK",
-      "index": "IVDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_15__SCDOSE_tir": {
-      "type": "TASK",
-      "index": "SCDOSE_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_15__Cve_tir": {
-      "type": "TASK",
-      "index": "Cve_tir",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_15__Cve_tm": {
-      "type": "TASK",
-      "index": "Cve_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_15__Cve_tmtot": {
-      "type": "TASK",
-      "index": "Cve_tmtot",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_15__Aurine_tm": {
-      "type": "TASK",
-      "index": "Aurine_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_15__Afeces_tm": {
-      "type": "TASK",
-      "index": "Afeces_tm",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_15__KI__f_renal_function": {
-      "type": "TASK",
-      "index": "KI__f_renal_function",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_15__f_cirrhosis": {
-      "type": "TASK",
-      "index": "f_cirrhosis",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
-    },
-    "task_po_tir_multi_cohort3_15__BW": {
-      "type": "TASK",
-      "index": "BW",
-      "unit": null,
-      "task": "task_po_tir_multi_cohort3_15",
-      "dataset": null,
-      "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     }
   },
   "figures": {
@@ -3430,31 +1322,32 @@
       "name": "Furihata2022",
       "num_rows": 2,
       "num_cols": 1,
-      "width": 7.0,
-      "height": 10.0,
+      "width": null,
+      "height": null,
+      "settings": {},
       "subplots": [
         {
           "sid": null,
           "name": null,
           "plot": {
             "sid": "Fig1__plot0",
-            "name": null,
+            "name": "week 1",
             "xaxis": {
               "sid": "Fig1__plot0_xaxis",
-              "name": "time [week]",
+              "name": "time [hr]",
               "label": "time",
-              "unit": "week",
+              "unit": "hr",
               "scale": "LINEAR",
-              "min": -0.1,
-              "max": 2,
+              "min": -5,
+              "max": 178,
               "grid": false,
               "label_visible": true,
               "ticks_visible": true
             },
             "yaxis": {
               "sid": "Fig1__plot0_yaxis",
-              "name": "tirzepatide [nM]",
-              "label": "tirzepatide",
+              "name": "tirzepatide plasma [nM]",
+              "label": "tirzepatide plasma",
               "unit": "nM",
               "scale": "LINEAR",
               "min": null,
@@ -3470,11 +1363,12 @@
             "curves": [
               {
                 "sid": "Fig1__plot0_curve0",
-                "name": "Sim 5 mg tir",
-                "x": "task_po_tir_cohort3_5__time",
-                "y": "task_po_tir_cohort3_5__Cve_tir",
+                "name": "Sim 5 mg group (5 mg)",
+                "x": "task_sc_tir_week1_5__time",
+                "y": "task_sc_tir_week1_5__conc__Cve_tir",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -3501,11 +1395,12 @@
               },
               {
                 "sid": "Fig1__plot0_curve1",
-                "name": "Data 5 mg\u00b1SD (n=12)",
+                "name": "Data 5 mg group\u00b1SD (n=11)",
                 "x": "tirzepatide_5__time",
                 "y": "tirzepatide_5__mean",
                 "xerr": null,
                 "yerr": "tirzepatide_5__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -3532,11 +1427,12 @@
               },
               {
                 "sid": "Fig1__plot0_curve2",
-                "name": "Sim 2.5 mg tir",
-                "x": "task_po_tir_cohort3_10__time",
-                "y": "task_po_tir_cohort3_10__Cve_tir",
+                "name": "Sim 10 mg group (2.5/5/10 mg)",
+                "x": "task_sc_tir_week1_10__time",
+                "y": "task_sc_tir_week1_10__conc__Cve_tir",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -3563,11 +1459,12 @@
               },
               {
                 "sid": "Fig1__plot0_curve3",
-                "name": "Data 2.5 mg\u00b1SD (n=11)",
+                "name": "Data 10 mg group\u00b1SD (n=12)",
                 "x": "tirzepatide_10__time",
                 "y": "tirzepatide_10__mean",
                 "xerr": null,
                 "yerr": "tirzepatide_10__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -3594,11 +1491,12 @@
               },
               {
                 "sid": "Fig1__plot0_curve4",
-                "name": "Sim 5 mg tir",
-                "x": "task_po_tir_cohort3_15__time",
-                "y": "task_po_tir_cohort3_15__Cve_tir",
+                "name": "Sim 15 mg group (5/10/15 mg)",
+                "x": "task_sc_tir_week1_15__time",
+                "y": "task_sc_tir_week1_15__conc__Cve_tir",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -3625,11 +1523,12 @@
               },
               {
                 "sid": "Fig1__plot0_curve5",
-                "name": "Data 5 mg\u00b1SD (n=16)",
+                "name": "Data 15 mg group\u00b1SD (n=16)",
                 "x": "tirzepatide_15__time",
                 "y": "tirzepatide_15__mean",
                 "xerr": null,
                 "yerr": "tirzepatide_15__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -3655,7 +1554,8 @@
                 "order": 5
               }
             ],
-            "areas": []
+            "areas": [],
+            "bands": []
           },
           "row": 1,
           "col": 1,
@@ -3667,23 +1567,23 @@
           "name": null,
           "plot": {
             "sid": "Fig1__plot1",
-            "name": null,
+            "name": "week 8",
             "xaxis": {
               "sid": "Fig1__plot1_xaxis",
-              "name": "time [week]",
+              "name": "time [hr]",
               "label": "time",
-              "unit": "week",
+              "unit": "hr",
               "scale": "LINEAR",
-              "min": -3,
-              "max": 6,
+              "min": -520,
+              "max": 870,
               "grid": false,
               "label_visible": true,
               "ticks_visible": true
             },
             "yaxis": {
               "sid": "Fig1__plot1_yaxis",
-              "name": "tirzepatide [nM]",
-              "label": "tirzepatide",
+              "name": "tirzepatide plasma [nM]",
+              "label": "tirzepatide plasma",
               "unit": "nM",
               "scale": "LINEAR",
               "min": null,
@@ -3699,11 +1599,12 @@
             "curves": [
               {
                 "sid": "Fig1__plot1_curve0",
-                "name": "Sim 5 mg tir",
-                "x": "task_po_tir_multi_cohort3_5__time",
-                "y": "task_po_tir_multi_cohort3_5__Cve_tir",
+                "name": "Sim 5 mg group (5 mg)",
+                "x": "task_sc_tir_week8_5__time",
+                "y": "task_sc_tir_week8_5__conc__Cve_tir",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -3730,11 +1631,12 @@
               },
               {
                 "sid": "Fig1__plot1_curve1",
-                "name": "Data 5 mg\u00b1SD (n=11)",
+                "name": "Data 5 mg group\u00b1SD (n=11)",
                 "x": "tirzepatide_5_multi__time",
                 "y": "tirzepatide_5_multi__mean",
                 "xerr": null,
                 "yerr": "tirzepatide_5_multi__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -3761,11 +1663,12 @@
               },
               {
                 "sid": "Fig1__plot1_curve2",
-                "name": "Sim 2.5 mg tir",
-                "x": "task_po_tir_multi_cohort3_10__time",
-                "y": "task_po_tir_multi_cohort3_10__Cve_tir",
+                "name": "Sim 10 mg group (2.5/5/10 mg)",
+                "x": "task_sc_tir_week8_10__time",
+                "y": "task_sc_tir_week8_10__conc__Cve_tir",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -3792,11 +1695,12 @@
               },
               {
                 "sid": "Fig1__plot1_curve3",
-                "name": "Data 2.5 mg\u00b1SD (n=12)",
+                "name": "Data 10 mg group\u00b1SD (n=11)",
                 "x": "tirzepatide_10_multi__time",
                 "y": "tirzepatide_10_multi__mean",
                 "xerr": null,
                 "yerr": "tirzepatide_10_multi__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -3823,11 +1727,12 @@
               },
               {
                 "sid": "Fig1__plot1_curve4",
-                "name": "Sim 5 mg tir",
-                "x": "task_po_tir_multi_cohort3_15__time",
-                "y": "task_po_tir_multi_cohort3_15__Cve_tir",
+                "name": "Sim 15 mg group (5/10/15 mg)",
+                "x": "task_sc_tir_week8_15__time",
+                "y": "task_sc_tir_week8_15__conc__Cve_tir",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -3854,11 +1759,12 @@
               },
               {
                 "sid": "Fig1__plot1_curve5",
-                "name": "Data 5 mg\u00b1SD (n=16)",
+                "name": "Data 15 mg group\u00b1SD (n=12)",
                 "x": "tirzepatide_15_multi__time",
                 "y": "tirzepatide_15_multi__mean",
                 "xerr": null,
                 "yerr": "tirzepatide_15_multi__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -3884,7 +1790,8 @@
                 "order": 5
               }
             ],
-            "areas": []
+            "areas": [],
+            "bands": []
           },
           "row": 2,
           "col": 1,

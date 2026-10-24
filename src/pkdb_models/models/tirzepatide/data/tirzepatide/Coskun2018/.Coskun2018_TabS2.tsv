@@ -1,0 +1,73 @@
+study	group	count	intervention	measurement_type	substance	value	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Coskun2018	mad	6.0	TIR_mad0_5	auc_end	tirzepatide	0.5	plasma	HPLC MS/MS	24.0	hr	6000.0	NA	NA	NA	1380.0	563.382640840131	23.0	ng/ml*hr	geometric mean
+Coskun2018	mad	4.0	TIR_mad0_5	auc_end	tirzepatide	0.5	plasma	HPLC MS/MS	168.0	hr	10600.0	NA	NA	NA	3604.0	1802.0	34.0	ng/ml*hr	geometric mean
+Coskun2018	mad	6.0	TIR_mad0_5	cmax	tirzepatide	0.5	plasma	HPLC MS/MS	24.0	NA	48.9	NA	NA	NA	13.203	5.39010217899438	27.0	ng/ml	geometric mean
+Coskun2018	mad	4.0	TIR_mad0_5	cmax	tirzepatide	0.5	plasma	HPLC MS/MS	168.0	NA	77.8	NA	NA	NA	27.23	13.615	35.0	ng/ml	geometric mean
+Coskun2018	mad	6.0	TIR_mad0_5	tmax	tirzepatide	0.5	plasma	HPLC MS/MS	24.0	NA	NA	36.0	24.0	48.0	NA	NA	NA	hr	NA
+Coskun2018	mad	4.0	TIR_mad0_5	tmax	tirzepatide	0.5	plasma	HPLC MS/MS	168.0	NA	NA	24.0	24.0	72.0	NA	NA	NA	hr	NA
+Coskun2018	mad	4.0	TIR_mad0_5	thalf	tirzepatide	0.5	plasma	HPLC MS/MS	NA	NA	152.0	NA	149.0	154.0	NA	NA	NA	hr	geometric mean
+Coskun2018	mad	4.0	TIR_mad0_5	oral-clearance	tirzepatide	0.5	plasma	HPLC MS/MS	NA	NA	0.0472	NA	NA	NA	0.016048	0.008024	34.0	l/hr	geometric mean
+Coskun2018	mad	4.0	TIR_mad0_5	vd_ss	tirzepatide	0.5	plasma	HPLC MS/MS	NA	NA	8.99	NA	NA	NA	1.9778	0.9889	22.0	l	geometric mean
+Coskun2018	mad	6.0	TIR_mad1_5	auc_end	tirzepatide	1.5	plasma	HPLC MS/MS	24.0	hr	16300.0	NA	NA	NA	2119.0	865.078127492926	13.0	ng/ml*hr	geometric mean
+Coskun2018	mad	5.0	TIR_mad1_5	auc_end	tirzepatide	1.5	plasma	HPLC MS/MS	168.0	hr	24800.0	NA	NA	NA	3720.0	1663.63457525984	15.0	ng/ml*hr	geometric mean
+Coskun2018	mad	6.0	TIR_mad1_5	cmax	tirzepatide	1.5	plasma	HPLC MS/MS	24.0	NA	136.0	NA	NA	NA	35.36	14.4356595508022	26.0	ng/ml	geometric mean
+Coskun2018	mad	5.0	TIR_mad1_5	cmax	tirzepatide	1.5	plasma	HPLC MS/MS	168.0	NA	198.0	NA	NA	NA	25.74	11.5112779481689	13.0	ng/ml	geometric mean
+Coskun2018	mad	6.0	TIR_mad1_5	tmax	tirzepatide	1.5	plasma	HPLC MS/MS	24.0	NA	NA	36.0	8.0	72.0	NA	NA	NA	hr	NA
+Coskun2018	mad	5.0	TIR_mad1_5	tmax	tirzepatide	1.5	plasma	HPLC MS/MS	168.0	NA	NA	24.0	24.0	24.0	NA	NA	NA	hr	NA
+Coskun2018	mad	5.0	TIR_mad1_5	thalf	tirzepatide	1.5	plasma	HPLC MS/MS	NA	NA	113.0	NA	92.0	124.0	NA	NA	NA	hr	geometric mean
+Coskun2018	mad	5.0	TIR_mad1_5	oral-clearance	tirzepatide	1.5	plasma	HPLC MS/MS	NA	NA	0.0604	NA	NA	NA	0.00906	0.00405175517522962	15.0	l/hr	geometric mean
+Coskun2018	mad	5.0	TIR_mad1_5	vd_ss	tirzepatide	1.5	plasma	HPLC MS/MS	NA	NA	9.83	NA	NA	NA	1.0813	0.483572060814104	11.0	l	geometric mean
+Coskun2018	mad	6.0	TIR_mad4_5	auc_end	tirzepatide	4.5	plasma	HPLC MS/MS	24.0	hr	53300.0	NA	NA	NA	10127.0	4134.33043752754	19.0	ng/ml*hr	geometric mean
+Coskun2018	mad	6.0	TIR_mad4_5	auc_end	tirzepatide	4.5	plasma	HPLC MS/MS	168.0	hr	103000.0	NA	NA	NA	23690.0	9671.40200108892	23.0	ng/ml*hr	geometric mean
+Coskun2018	mad	6.0	TIR_mad4_5	cmax	tirzepatide	4.5	plasma	HPLC MS/MS	24.0	NA	409.0	NA	NA	NA	73.62	30.0552391439496	18.0	ng/ml	geometric mean
+Coskun2018	mad	6.0	TIR_mad4_5	cmax	tirzepatide	4.5	plasma	HPLC MS/MS	168.0	NA	884.0	NA	NA	NA	238.68	97.4407019679148	27.0	ng/ml	geometric mean
+Coskun2018	mad	6.0	TIR_mad4_5	tmax	tirzepatide	4.5	plasma	HPLC MS/MS	24.0	NA	NA	24.0	24.0	48.0	NA	NA	NA	hr	NA
+Coskun2018	mad	6.0	TIR_mad4_5	tmax	tirzepatide	4.5	plasma	HPLC MS/MS	168.0	NA	NA	24.0	24.0	24.0	NA	NA	NA	hr	NA
+Coskun2018	mad	6.0	TIR_mad4_5	thalf	tirzepatide	4.5	plasma	HPLC MS/MS	NA	NA	132.0	NA	108.0	157.0	NA	NA	NA	hr	geometric mean
+Coskun2018	mad	6.0	TIR_mad4_5	oral-clearance	tirzepatide	4.5	plasma	HPLC MS/MS	NA	NA	0.0436	NA	NA	NA	0.010028	0.00409391385677162	23.0	l/hr	geometric mean
+Coskun2018	mad	6.0	TIR_mad4_5	vd_ss	tirzepatide	4.5	plasma	HPLC MS/MS	NA	NA	8.32	NA	NA	NA	1.5808	0.645358897565275	19.0	l	geometric mean
+Coskun2018	mad	7.0	TIR_mad10	auc_end	tirzepatide	10.0	plasma	HPLC MS/MS	24.0	hr	56900.0	NA	NA	NA	5690.0	2150.6178514225	10.0	ng/ml*hr	geometric mean
+Coskun2018	mad	4.0	TIR_mad10	auc_end	tirzepatide	10.0	plasma	HPLC MS/MS	168.0	hr	198000.0	NA	NA	NA	11880.0	5940.0	6.0	ng/ml*hr	geometric mean
+Coskun2018	mad	7.0	TIR_mad10	cmax	tirzepatide	10.0	plasma	HPLC MS/MS	24.0	NA	444.0	NA	NA	NA	39.96	15.1034603414487	9.0	ng/ml	geometric mean
+Coskun2018	mad	4.0	TIR_mad10	cmax	tirzepatide	10.0	plasma	HPLC MS/MS	168.0	NA	1510.0	NA	NA	NA	151.0	75.5	10.0	ng/ml	geometric mean
+Coskun2018	mad	7.0	TIR_mad10	tmax	tirzepatide	10.0	plasma	HPLC MS/MS	24.0	NA	NA	48.0	24.0	72.0	NA	NA	NA	hr	NA
+Coskun2018	mad	4.0	TIR_mad10	tmax	tirzepatide	10.0	plasma	HPLC MS/MS	168.0	NA	NA	24.0	8.0	72.0	NA	NA	NA	hr	NA
+Coskun2018	mad	4.0	TIR_mad10	thalf	tirzepatide	10.0	plasma	HPLC MS/MS	NA	NA	126.0	NA	114.0	194.0	NA	NA	NA	hr	geometric mean
+Coskun2018	mad	4.0	TIR_mad10	oral-clearance	tirzepatide	10.0	plasma	HPLC MS/MS	NA	NA	0.0505	NA	NA	NA	0.00303	0.001515	6.0	l/hr	geometric mean
+Coskun2018	mad	4.0	TIR_mad10	vd_ss	tirzepatide	10.0	plasma	HPLC MS/MS	NA	NA	9.18	NA	NA	NA	0.6426	0.3213	7.0	l	geometric mean
+Coskun2018	poc	9.0	TIR_poc0_5	auc_end	tirzepatide	0.5	plasma	HPLC MS/MS	24.0	hr	4770.0	NA	NA	NA	1431.0	477.0	30.0	ng/ml*hr	geometric mean
+Coskun2018	poc	9.0	TIR_poc0_5	auc_end	tirzepatide	0.5	plasma	HPLC MS/MS	168.0	hr	7200.0	NA	NA	NA	2160.0	720.0	30.0	ng/ml*hr	geometric mean
+Coskun2018	poc	9.0	TIR_poc0_5	cmax	tirzepatide	0.5	plasma	HPLC MS/MS	24.0	NA	36.0	NA	NA	NA	14.04	4.68	39.0	ng/ml	geometric mean
+Coskun2018	poc	9.0	TIR_poc0_5	cmax	tirzepatide	0.5	plasma	HPLC MS/MS	168.0	NA	54.6	NA	NA	NA	15.288	5.096	28.0	ng/ml	geometric mean
+Coskun2018	poc	9.0	TIR_poc0_5	tmax	tirzepatide	0.5	plasma	HPLC MS/MS	24.0	NA	NA	48.0	8.0	72.0	NA	NA	NA	hr	NA
+Coskun2018	poc	9.0	TIR_poc0_5	tmax	tirzepatide	0.5	plasma	HPLC MS/MS	168.0	NA	NA	24.0	24.0	73.0	NA	NA	NA	hr	NA
+Coskun2018	poc	9.0	TIR_poc0_5	thalf	tirzepatide	0.5	plasma	HPLC MS/MS	NA	NA	120.0	NA	107.0	148.0	NA	NA	NA	hr	geometric mean
+Coskun2018	poc	9.0	TIR_poc0_5	oral-clearance	tirzepatide	0.5	plasma	HPLC MS/MS	NA	NA	0.0694	NA	NA	NA	0.02082	0.00694	30.0	l/hr	geometric mean
+Coskun2018	poc	9.0	TIR_poc0_5	vd_ss	tirzepatide	0.5	plasma	HPLC MS/MS	NA	NA	10.4	NA	NA	NA	3.224	1.07466666666667	31.0	l	geometric mean
+Coskun2018	poc	8.0	TIR_poc5	auc_end	tirzepatide	5.0	plasma	HPLC MS/MS	24.0	hr	50500.0	NA	NA	NA	10100.0	3570.88924499206	20.0	ng/ml*hr	geometric mean
+Coskun2018	poc	6.0	TIR_poc5	auc_end	tirzepatide	5.0	plasma	HPLC MS/MS	168.0	hr	81900.0	NA	NA	NA	14742.0	6018.39629801827	18.0	ng/ml*hr	geometric mean
+Coskun2018	poc	8.0	TIR_poc5	cmax	tirzepatide	5.0	plasma	HPLC MS/MS	24.0	NA	379.0	NA	NA	NA	79.59	28.1393143573187	21.0	ng/ml	geometric mean
+Coskun2018	poc	6.0	TIR_poc5	cmax	tirzepatide	5.0	plasma	HPLC MS/MS	168.0	NA	614.0	NA	NA	NA	98.24	40.1063120551699	16.0	ng/ml	geometric mean
+Coskun2018	poc	8.0	TIR_poc5	tmax	tirzepatide	5.0	plasma	HPLC MS/MS	24.0	NA	NA	24.0	24.0	72.0	NA	NA	NA	hr	NA
+Coskun2018	poc	6.0	TIR_poc5	tmax	tirzepatide	5.0	plasma	HPLC MS/MS	168.0	NA	NA	24.0	24.0	24.0	NA	NA	NA	hr	NA
+Coskun2018	poc	6.0	TIR_poc5	thalf	tirzepatide	5.0	plasma	HPLC MS/MS	NA	NA	114.0	NA	103.0	132.0	NA	NA	NA	hr	geometric mean
+Coskun2018	poc	6.0	TIR_poc5	oral-clearance	tirzepatide	5.0	plasma	HPLC MS/MS	NA	NA	0.0611	NA	NA	NA	0.010998	0.00448991469852157	18.0	l/hr	geometric mean
+Coskun2018	poc	6.0	TIR_poc5	vd_ss	tirzepatide	5.0	plasma	HPLC MS/MS	NA	NA	10.0	NA	NA	NA	2.3	0.938971068066885	23.0	l	geometric mean
+Coskun2018	poc	12.0	TIR_poc10	auc_end	tirzepatide	10.0	plasma	HPLC MS/MS	24.0	hr	41900.0	NA	NA	NA	10894.0	3144.82691627589	26.0	ng/ml*hr	geometric mean
+Coskun2018	poc	12.0	TIR_poc10	auc_end	tirzepatide	10.0	plasma	HPLC MS/MS	168.0	hr	131000.0	NA	NA	NA	34060.0	9832.27508429933	26.0	ng/ml*hr	geometric mean
+Coskun2018	poc	12.0	TIR_poc10	cmax	tirzepatide	10.0	plasma	HPLC MS/MS	24.0	NA	320.0	NA	NA	NA	96.0	27.712812921102	30.0	ng/ml	geometric mean
+Coskun2018	poc	12.0	TIR_poc10	cmax	tirzepatide	10.0	plasma	HPLC MS/MS	168.0	NA	1030.0	NA	NA	NA	329.6	95.1473243624503	32.0	ng/ml	geometric mean
+Coskun2018	poc	12.0	TIR_poc10	tmax	tirzepatide	10.0	plasma	HPLC MS/MS	24.0	NA	NA	48.0	24.0	72.0	NA	NA	NA	hr	NA
+Coskun2018	poc	12.0	TIR_poc10	tmax	tirzepatide	10.0	plasma	HPLC MS/MS	168.0	NA	NA	24.0	24.0	72.0	NA	NA	NA	hr	NA
+Coskun2018	poc	12.0	TIR_poc10	thalf	tirzepatide	10.0	plasma	HPLC MS/MS	NA	NA	115.0	NA	95.7	142.0	NA	NA	NA	hr	geometric mean
+Coskun2018	poc	12.0	TIR_poc10	oral-clearance	tirzepatide	10.0	plasma	HPLC MS/MS	NA	NA	0.0762	NA	NA	NA	0.019812	0.00571923176659243	26.0	l/hr	geometric mean
+Coskun2018	poc	12.0	TIR_poc10	vd_ss	tirzepatide	10.0	plasma	HPLC MS/MS	NA	NA	12.6	NA	NA	NA	3.528	1.0184458748505	28.0	l	geometric mean
+Coskun2018	poc	12.0	TIR_poc15	auc_end	tirzepatide	15.0	plasma	HPLC MS/MS	24.0	hr	37900.0	NA	NA	NA	7959.0	2297.56539624012	21.0	ng/ml*hr	geometric mean
+Coskun2018	poc	10.0	TIR_poc15	auc_end	tirzepatide	15.0	plasma	HPLC MS/MS	168.0	hr	164000.0	NA	NA	NA	22960.0	7260.5895077466	14.0	ng/ml*hr	geometric mean
+Coskun2018	poc	12.0	TIR_poc15	cmax	tirzepatide	15.0	plasma	HPLC MS/MS	24.0	NA	286.0	NA	NA	NA	62.92	18.1634394687056	22.0	ng/ml	geometric mean
+Coskun2018	poc	10.0	TIR_poc15	cmax	tirzepatide	15.0	plasma	HPLC MS/MS	168.0	NA	1250.0	NA	NA	NA	250.0	79.0569415042095	20.0	ng/ml	geometric mean
+Coskun2018	poc	12.0	TIR_poc15	tmax	tirzepatide	15.0	plasma	HPLC MS/MS	24.0	NA	NA	48.0	24.0	72.0	NA	NA	NA	hr	NA
+Coskun2018	poc	10.0	TIR_poc15	tmax	tirzepatide	15.0	plasma	HPLC MS/MS	168.0	NA	NA	24.0	24.0	72.0	NA	NA	NA	hr	NA
+Coskun2018	poc	10.0	TIR_poc15	thalf	tirzepatide	15.0	plasma	HPLC MS/MS	NA	NA	104.0	NA	92.7	120.0	NA	NA	NA	hr	geometric mean
+Coskun2018	poc	10.0	TIR_poc15	oral-clearance	tirzepatide	15.0	plasma	HPLC MS/MS	NA	NA	0.0913	NA	NA	NA	0.012782	0.00404202330522722	14.0	l/hr	geometric mean
+Coskun2018	poc	10.0	TIR_poc15	vd_ss	tirzepatide	15.0	plasma	HPLC MS/MS	NA	NA	13.8	NA	NA	NA	2.622	0.829149202496149	19.0	l	geometric mean
