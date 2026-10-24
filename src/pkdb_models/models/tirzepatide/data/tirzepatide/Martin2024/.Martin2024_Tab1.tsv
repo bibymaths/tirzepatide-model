@@ -1,0 +1,13 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Martin2024	all	6.0	TIRC14	auc_inf	tirzepatide_c14	plasma	HPLC MS/MS	180.0	hr	87900.0	NA	NA	NA	11427.0	4665.05321513056	13.0	ng/ml*hr	geometric mean
+Martin2024	all	6.0	TIRC14	cmax	tirzepatide_c14	plasma	HPLC MS/MS	NA	NA	327.0	NA	NA	NA	52.32	21.3595505570693	16.0	ng/ml	geometric mean
+Martin2024	all	6.0	TIRC14	tmax	tirzepatide_c14	plasma	HPLC MS/MS	NA	NA	NA	24.0	23.97	24.0	NA	NA	NA	hr	NA
+Martin2024	all	6.0	TIRC14	thalf	tirzepatide_c14	plasma	HPLC MS/MS	NA	NA	178.0	NA	174.0	183.0	NA	NA	NA	hr	geometric mean
+Martin2024	all	6.0	TIRC14	auc_inf	tirzepatide_c14	blood	HPLC MS/MS	128.0	hr	44000.0	NA	NA	NA	4840.0	1975.9217258451	11.0	ng/ml*hr	geometric mean
+Martin2024	all	6.0	TIRC14	cmax	tirzepatide_c14	blood	HPLC MS/MS	NA	NA	173.0	NA	NA	NA	24.22	9.88777359503476	14.0	ng/ml	geometric mean
+Martin2024	all	6.0	TIRC14	tmax	tirzepatide_c14	blood	HPLC MS/MS	NA	NA	NA	24.0	8.0	72.0	NA	NA	NA	hr	NA
+Martin2024	all	6.0	TIRC14	thalf	tirzepatide_c14	blood	HPLC MS/MS	NA	NA	181.0	NA	177.0	183.0	NA	NA	NA	hr	geometric mean
+Martin2024	all	6.0	TIR	auc_inf	tirzepatide	plasma	HPLC MS/MS	180.0	hr	96100.0	NA	NA	NA	14415.0	5884.89910703659	15.0	ng/ml*hr	geometric mean
+Martin2024	all	6.0	TIR	cmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	453.0	NA	NA	NA	131.37	53.6315779182377	29.0	ng/ml	geometric mean
+Martin2024	all	6.0	TIR	tmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	24.0	8.02	72.0	NA	NA	NA	hr	NA
+Martin2024	all	6.0	TIR	thalf	tirzepatide	plasma	HPLC MS/MS	NA	NA	128.0	NA	115.0	143.0	NA	NA	NA	hr	geometric mean

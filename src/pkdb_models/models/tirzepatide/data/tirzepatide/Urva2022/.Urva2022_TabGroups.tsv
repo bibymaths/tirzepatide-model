@@ -1,0 +1,47 @@
+study	name	group_count	parent	measurement_type	count	substance	tissue	choice	mean	median	sd	se	min	max	unit	comments
+Urva2022	all	32.0	NA	species	32.0	NA	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	all	32.0	NA	ethnicity	4.0	NA	NA	hispanic	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	all	32.0	NA	ethnicity	3.0	NA	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	all	32.0	NA	ethnicity	1.0	NA	NA	asian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	all	32.0	NA	ethnicity	28.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	all	32.0	NA	healthy	32.0	NA	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	all	32.0	NA	disease	3.0	NA	NA	t2dm	NA	NA	NA	NA	NA	NA	yr	NA
+Urva2022	all	32.0	NA	sex	24.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	all	32.0	NA	age	32.0	NA	NA	NA	57.4	NA	10.8	NA	NA	NA	yr	NA
+Urva2022	all	32.0	NA	weight	32.0	NA	NA	NA	92.01	NA	18.08	NA	NA	NA	kg	NA
+Urva2022	all	32.0	NA	height	32.0	NA	NA	NA	174.29	NA	10.15	NA	NA	NA	cm	NA
+Urva2022	all	32.0	NA	bmi	32.0	NA	NA	NA	30.1	NA	4.14	NA	NA	NA	kg/m^2	NA
+Urva2022	normal	13.0	all	ethnicity	2.0	NA	NA	hispanic	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	normal	13.0	all	ethnicity	2.0	NA	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	normal	13.0	all	ethnicity	11.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	normal	13.0	all	sex	10.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	normal	13.0	all	age	13.0	NA	NA	NA	55.8	NA	11.3	NA	NA	NA	yr	NA
+Urva2022	normal	13.0	all	weight	13.0	NA	NA	NA	96.72	NA	18.62	NA	NA	NA	kg	NA
+Urva2022	normal	13.0	all	height	13.0	NA	NA	NA	176.48	NA	9.4	NA	NA	NA	cm	NA
+Urva2022	normal	13.0	all	bmi	13.0	NA	NA	NA	30.88	NA	4.57	NA	NA	NA	kg/m^2	NA
+Urva2022	mild	6.0	all	ethnicity	1.0	NA	NA	hispanic	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	mild	6.0	all	ethnicity	1.0	NA	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	mild	6.0	all	ethnicity	1.0	NA	NA	asian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	mild	6.0	all	ethnicity	4.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	mild	6.0	all	disease	3.0	NA	NA	t2dm	NA	NA	NA	NA	NA	NA	yr	NA
+Urva2022	mild	6.0	all	sex	4.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	mild	6.0	all	age	6.0	NA	NA	NA	63.2	NA	4.5	NA	NA	NA	yr	NA
+Urva2022	mild	6.0	all	weight	6.0	NA	NA	NA	82.75	NA	5.47	NA	NA	NA	kg	NA
+Urva2022	mild	6.0	all	height	6.0	NA	NA	NA	167.55	NA	12.48	NA	NA	NA	cm	NA
+Urva2022	mild	6.0	all	bmi	6.0	NA	NA	NA	29.39	NA	3.63	NA	NA	NA	kg/m^2	NA
+Urva2022	mild	6.0	all	child-pugh score	6.0	NA	NA	child-pugh class A	5.5	NA	0.5	NA	NA	NA	NA	NA
+Urva2022	moderate	6.0	all	ethnicity	1.0	NA	NA	hispanic	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	moderate	6.0	all	ethnicity	6.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	moderate	6.0	all	sex	5.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	moderate	6.0	all	age	6.0	NA	NA	NA	51.3	NA	15.4	NA	NA	NA	yr	NA
+Urva2022	moderate	6.0	all	weight	6.0	NA	NA	NA	95.12	NA	21.31	NA	NA	NA	kg	NA
+Urva2022	moderate	6.0	all	height	6.0	NA	NA	NA	177.08	NA	8.32	NA	NA	NA	cm	NA
+Urva2022	moderate	6.0	all	bmi	6.0	NA	NA	NA	30.11	NA	4.91	NA	NA	NA	kg/m^2	NA
+Urva2022	moderate	6.0	all	child-pugh score	6.0	NA	NA	child-pugh class B	7.8	NA	1.0	NA	NA	NA	NA	NA
+Urva2022	severe	7.0	all	ethnicity	7.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	severe	7.0	all	sex	5.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2022	severe	7.0	all	age	7.0	NA	NA	NA	60.4	NA	6.6	NA	NA	NA	yr	NA
+Urva2022	severe	7.0	all	weight	7.0	NA	NA	NA	88.56	NA	16.14	NA	NA	NA	kg	NA
+Urva2022	severe	7.0	all	height	7.0	NA	NA	NA	173.61	NA	10.17	NA	NA	NA	cm	NA
+Urva2022	severe	7.0	all	bmi	7.0	NA	NA	NA	29.27	NA	3.66	NA	NA	NA	kg/m^2	NA
+Urva2022	severe	7.0	all	child-pugh score	6.0	NA	NA	child-pugh class C	11.0	NA	1.2	NA	NA	NA	NA	NA

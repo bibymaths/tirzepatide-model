@@ -1,0 +1,35 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Urva2021	normal	13.0	TIR5_one	auc_end	tirzepatide	plasma	HPLC MS/MS	168.0	hr	78400.0	NA	NA	NA	18816.0	5218.61944608696	24.0	ng/ml*hr	geometric mean
+Urva2021	normal	13.0	TIR5_one	auc_inf	tirzepatide	plasma	HPLC MS/MS	168.0	hr	80500.0	NA	NA	NA	20125.0	5581.67072451637	25.0	ng/ml*hr	geometric mean
+Urva2021	normal	13.0	TIR5_one	cmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	339.0	NA	NA	NA	71.19	19.744553484637	21.0	ng/ml	geometric mean
+Urva2021	normal	13.0	TIR5_one	tmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	48.0	11.97	96.0	NA	NA	NA	hr	NA
+Urva2021	normal	13.0	TIR5_one	thalf	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	121.0	94.4	145.0	NA	NA	NA	hr	geometric mean
+Urva2021	normal	13.0	TIR5_one	oral-clearance	tirzepatide	plasma	HPLC MS/MS	NA	NA	0.0621	NA	NA	NA	0.015525	0.00430586027319834	25.0	l/hr	geometric mean
+Urva2021	mild	8.0	TIR5_one	auc_end	tirzepatide	plasma	HPLC MS/MS	168.0	hr	81900.0	NA	NA	NA	29484.0	10424.1681682521	36.0	ng/ml*hr	geometric mean
+Urva2021	mild	8.0	TIR5_one	auc_inf	tirzepatide	plasma	HPLC MS/MS	168.0	hr	84200.0	NA	NA	NA	31154.0	11014.6023305429	37.0	ng/ml*hr	geometric mean
+Urva2021	mild	8.0	TIR5_one	auc_ratio	tirzepatide	plasma	HPLC MS/MS	168.0	hr	1.05	NA	0.865	1.26	NA	NA	NA	ng/ml*hr	geometric lsq mean vs normal
+Urva2021	mild	8.0	TIR5_one	cmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	353.0	NA	NA	NA	148.26	52.4178256893588	42.0	ng/ml	geometric mean
+Urva2021	mild	8.0	TIR5_one	tmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	48.0	12.0	96.0	NA	NA	NA	hr	NA
+Urva2021	mild	8.0	TIR5_one	thalf	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	121.0	94.6	138.0	NA	NA	NA	hr	geometric mean
+Urva2021	mild	8.0	TIR5_one	oral-clearance	tirzepatide	plasma	HPLC MS/MS	NA	NA	0.0593	NA	NA	NA	0.021941	0.00775731494300702	37.0	l/hr	geometric mean
+Urva2021	moderate	8.0	TIR5_one	auc_end	tirzepatide	plasma	HPLC MS/MS	168.0	hr	98300.0	NA	NA	NA	31456.0	11121.375454502	32.0	ng/ml*hr	geometric mean
+Urva2021	moderate	8.0	TIR5_one	auc_inf	tirzepatide	plasma	HPLC MS/MS	168.0	hr	104000.0	NA	NA	NA	33280.0	11766.2568389442	32.0	ng/ml*hr	geometric mean
+Urva2021	moderate	8.0	TIR5_one	auc_ratio	tirzepatide	plasma	HPLC MS/MS	168.0	hr	1.25	NA	1.04	1.52	NA	NA	NA	ng/ml*hr	geometric lsq mean vs normal
+Urva2021	moderate	8.0	TIR5_one	cmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	369.0	NA	NA	NA	132.84	46.9660324064105	36.0	ng/ml	geometric mean
+Urva2021	moderate	8.0	TIR5_one	tmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	60.0	12.0	96.0	NA	NA	NA	hr	NA
+Urva2021	moderate	8.0	TIR5_one	thalf	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	147.0	118.0	195.0	NA	NA	NA	hr	geometric mean
+Urva2021	moderate	8.0	TIR5_one	oral-clearance	tirzepatide	plasma	HPLC MS/MS	NA	NA	0.0481	NA	NA	NA	0.015392	0.00544189378801167	32.0	l/hr	geometric mean
+Urva2021	severe	6.0	TIR5_one	auc_end	tirzepatide	plasma	HPLC MS/MS	168.0	hr	81200.0	NA	NA	NA	7308.0	2983.47850670991	9.0	ng/ml*hr	geometric mean
+Urva2021	severe	6.0	TIR5_one	auc_inf	tirzepatide	plasma	HPLC MS/MS	168.0	hr	83000.0	NA	NA	NA	8300.0	3388.46081085006	10.0	ng/ml*hr	geometric mean
+Urva2021	severe	6.0	TIR5_one	auc_ratio	tirzepatide	plasma	HPLC MS/MS	168.0	hr	1.04	NA	0.841	1.28	NA	NA	NA	ng/ml*hr	geometric lsq mean vs normal
+Urva2021	severe	6.0	TIR5_one	cmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	417.0	NA	NA	NA	45.87	18.7263490835774	11.0	ng/ml	geometric mean
+Urva2021	severe	6.0	TIR5_one	tmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	18.0	12.0	48.0	NA	NA	NA	hr	NA
+Urva2021	severe	6.0	TIR5_one	thalf	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	117.0	105.0	128.0	NA	NA	NA	hr	geometric mean
+Urva2021	severe	6.0	TIR5_one	oral-clearance	tirzepatide	plasma	HPLC MS/MS	NA	NA	0.0602	NA	NA	NA	0.00602	0.00245765470859246	10.0	l/hr	geometric mean
+Urva2021	end	8.0	TIR5_one	auc_end	tirzepatide	plasma	HPLC MS/MS	168.0	hr	88500.0	NA	NA	NA	12390.0	4380.52650945066	14.0	ng/ml*hr	geometric mean
+Urva2021	end	8.0	TIR5_one	auc_inf	tirzepatide	plasma	HPLC MS/MS	168.0	hr	93400.0	NA	NA	NA	11208.0	3962.62640176941	12.0	ng/ml*hr	geometric mean
+Urva2021	end	8.0	TIR5_one	auc_ratio	tirzepatide	plasma	HPLC MS/MS	168.0	hr	1.13	NA	0.934	1.36	NA	NA	NA	ng/ml*hr	geometric lsq mean vs normal
+Urva2021	end	8.0	TIR5_one	cmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	347.0	NA	NA	NA	104.1	36.8049079607598	30.0	ng/ml	geometric mean
+Urva2021	end	8.0	TIR5_one	tmax	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	48.0	24.0	96.0	NA	NA	NA	hr	NA
+Urva2021	end	8.0	TIR5_one	thalf	tirzepatide	plasma	HPLC MS/MS	NA	NA	NA	151.0	124.0	206.0	NA	NA	NA	hr	geometric mean
+Urva2021	end	8.0	TIR5_one	oral-clearance	tirzepatide	plasma	HPLC MS/MS	NA	NA	0.0535	NA	NA	NA	0.00642	0.00226981276760882	12.0	l/hr	geometric mean

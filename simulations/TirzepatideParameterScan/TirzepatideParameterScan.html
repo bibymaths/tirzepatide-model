@@ -1,243 +1,451 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-    <title>TirzepatideParameterScan</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
-    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TirzepatideParameterScan | sbmlsim experiment</title>
+<style>
+:root {
+  --bg: #ffffff; --bg-soft: #f6f7f9; --bg-card: #ffffff;
+  --fg: #1b1f24; --fg-soft: #5b6472; --line: #e3e6ea;
+  --accent: #3b5bdb; --training: #2f9e44; --validation: #1c7ed6; --outlier: #e8590c;
+  --excluded: #868e96;
+  --radius: 10px; --shadow: 0 1px 2px rgba(16,24,40,.06), 0 1px 3px rgba(16,24,40,.1);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171c; --bg-soft: #1a1e24; --bg-card: #1a1e24;
+    --fg: #e6e9ee; --fg-soft: #9aa4b2; --line: #2a3038;
+    --accent: #748ffc; --training: #51cf66; --validation: #4dabf7; --outlier: #ff922b;
+    --excluded: #adb5bd;
+    --shadow: none;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header.top {
+  position: sticky; top: 0; z-index: 20; background: var(--bg);
+  border-bottom: 1px solid var(--line); padding: 14px 24px 0;
+}
+.top .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: baseline; }
+.top h1 { margin: 0; font-size: 20px; font-weight: 650; letter-spacing: -.01em; }
+.top .sub { color: var(--fg-soft); font-size: 13px; }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-left: auto; }
+.badge {
+  background: var(--bg-soft); border: 1px solid var(--line); border-radius: 999px;
+  padding: 2px 10px; font-size: 12px; color: var(--fg-soft); white-space: nowrap;
+}
+.badge b { color: var(--fg); font-weight: 600; }
+.badge.failed, .badge.failed b { color: var(--outlier); border-color: var(--outlier); }
+nav.sections { display: flex; gap: 4px; margin-top: 12px; }
+nav.sections a {
+  padding: 8px 14px; border-bottom: 2px solid transparent; color: var(--fg-soft);
+  font-size: 14px; font-weight: 550;
+}
+nav.sections a.active { color: var(--fg); border-bottom-color: var(--accent); }
+.search { display: flex; gap: 8px; align-items: center; padding: 10px 0 12px; }
+.search input {
+  flex: 1; max-width: 460px; padding: 8px 12px; font-size: 14px; color: var(--fg);
+  background: var(--bg-soft); border: 1px solid var(--line); border-radius: 8px;
+}
+.search input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.chip {
+  border: 1px solid var(--line); background: var(--bg-soft); color: var(--fg-soft);
+  border-radius: 999px; padding: 5px 12px; font-size: 12.5px; cursor: pointer;
+}
+.chip[aria-pressed="true"] { color: #fff; border-color: transparent; }
+.chip[data-kind="training"][aria-pressed="true"] { background: var(--training); }
+.chip[data-kind="validation"][aria-pressed="true"] { background: var(--validation); }
+.chip[data-kind="outlier"][aria-pressed="true"] { background: var(--outlier); }
+.chip[data-kind="excluded"][aria-pressed="true"] { background: var(--excluded); }
+#hits { color: var(--fg-soft); font-size: 12.5px; margin-left: auto; }
+
+main { padding: 24px; max-width: 1400px; margin: 0 auto; }
+section { margin-bottom: 44px; scroll-margin-top: 150px; }
+section > h2 {
+  font-size: 17px; font-weight: 650; margin: 0 0 4px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+h3 { font-size: 14px; font-weight: 600; color: var(--fg-soft); margin: 26px 0 10px;
+     text-transform: uppercase; letter-spacing: .04em; }
+.card {
+  background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 16px; margin-bottom: 16px;
+}
+/* a heading which opens a card sits at the padding of the card */
+.card > h3:first-child { margin-top: 0; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        margin-bottom: 16px; }
+/* the gap of the grid is the space between its cards */
+.grid > .card { margin-bottom: 0; }
+.card.wide { grid-column: 1 / -1; }
+
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+/* two tables in one card, e.g. the networks and their arrays */
+table + table { margin-top: 24px; }
+th, td { text-align: left; padding: 7px 12px 7px 0; border-bottom: 1px solid var(--line); }
+th { color: var(--fg-soft); font-weight: 600; white-space: nowrap; }
+th[data-sort] { cursor: pointer; user-select: none; }
+th[data-sort]:hover { color: var(--fg); }
+th[data-sort]::after { content: " ⇅"; opacity: .35; }
+th[data-sort].asc::after { content: " ↑"; opacity: 1; }
+th[data-sort].desc::after { content: " ↓"; opacity: 1; }
+td.num, th.num { text-align: right; padding-right: 18px; font-variant-numeric: tabular-nums; }
+tbody tr:hover { background: var(--bg-soft); }
+tr.total td { font-weight: 650; border-top: 2px solid var(--line); }
+
+.kv { display: grid; grid-template-columns: max-content 1fr; gap: 4px 20px; font-size: 13.5px;
+      margin: 0; }
+.kv dt { color: var(--fg-soft); }
+.kv dd { margin: 0; word-break: break-word; white-space: pre-line; }
+
+.tag { border-radius: 999px; padding: 1px 9px; font-size: 11.5px; font-weight: 600; color: #fff; }
+.tag.training { background: var(--training); }
+.tag.validation { background: var(--validation); }
+.tag.outlier { background: var(--outlier); }
+.tag.excluded { background: var(--excluded); }
+.warn { color: var(--outlier); }
+
+/* what a value means, on the header of a column or next to a figure */
+.hint {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 14px; height: 14px; margin-left: 4px; border-radius: 50%;
+  border: 1px solid var(--line); color: var(--fg-soft);
+  font-size: 10px; font-weight: 700; line-height: 1; cursor: help;
+  position: relative; vertical-align: middle; user-select: none;
+}
+.hint:hover, .hint:focus { border-color: var(--accent); color: var(--accent); }
+.hint::after {
+  content: attr(data-tip);
+  position: absolute; bottom: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%);
+  width: max-content; max-width: 320px; padding: 8px 10px;
+  border-radius: 6px; border: 1px solid var(--line);
+  background: var(--bg); color: var(--fg); box-shadow: 0 4px 16px rgb(0 0 0 / 18%);
+  font-size: 12px; font-weight: 400; line-height: 1.45; text-align: left;
+  white-space: normal; opacity: 0; visibility: hidden; transition: opacity .12s;
+  z-index: 20; pointer-events: none;
+}
+.hint:hover::after, .hint:focus::after { opacity: 1; visibility: visible; }
+/* a tooltip of the last columns would leave the page */
+td:last-child .hint::after, th:last-child .hint::after { left: auto; right: 0; transform: none; }
+/* on a phone a wide table scrolls inside its card and not the page; the
+   tooltips of its header open downwards, into the table, not above the card */
+@media (max-width: 700px) {
+  .card { overflow-x: auto; }
+  th .hint::after { bottom: auto; top: calc(100% + 8px); }
+  /* the header of a phone is not sticky, it would cover half of the screen,
+     and its rows wrap; the gutter is 16px */
+  header.top { position: static; padding: 12px 16px 0; }
+  main { padding: 16px; }
+  footer { padding: 8px 16px 24px; }
+  section { scroll-margin-top: 16px; }
+  nav.sections { overflow-x: auto; }
+  nav.sections a { padding: 8px 10px; white-space: nowrap; }
+  .search { flex-wrap: wrap; }
+  .search input { flex-basis: 100%; max-width: none; }
+}
+
+figure { margin: 0; }
+figure img {
+  width: 100%; height: auto; background: #fff; border: 1px solid var(--line);
+  border-radius: 8px; cursor: zoom-in;
+}
+figcaption { color: var(--fg-soft); font-size: 12.5px; margin-top: 6px; }
+
+.mapping { }
+.mapping header { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; margin-bottom: 10px; }
+.mapping header .name { font-weight: 650; }
+.mapping header .exp { color: var(--fg-soft); font-size: 13px; }
+.mapping .metrics { margin-left: auto; display: flex; gap: 14px; font-size: 12.5px; color: var(--fg-soft); }
+.mapping .metrics b { color: var(--fg); font-weight: 600; }
+.hidden { display: none !important; }
+.failed { color: var(--outlier); }
+.empty { color: var(--fg-soft); font-style: italic; padding: 16px 0; }
+
+pre.code {
+  margin: 0; padding: 14px 16px; overflow-x: auto; max-height: 70vh;
+  background: var(--bg-soft); border: 1px solid var(--line); border-radius: 8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.5px; line-height: 1.5; tab-size: 4;
+}
+#lightbox {
+  position: fixed; inset: 0; background: rgba(8,10,14,.86); z-index: 50;
+  display: none; align-items: center; justify-content: center; padding: 24px; cursor: zoom-out;
+}
+#lightbox.open { display: flex; }
+#lightbox img { max-width: 100%; max-height: 100%; background: #fff; border-radius: 8px; }
+footer { color: var(--fg-soft); font-size: 12.5px; padding: 8px 24px 32px; max-width: 1400px; margin: 0 auto; }
+</style>
+<style>
+  /* an interactive figure is a page of its own, shown in place of the image */
+  figure iframe { width: 100%; height: 520px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg-card); }
+  /* a figure of one panel is not stretched to the width of the page, a figure
+     of many panels still uses it */
+  #figures figure img { width: auto; max-width: 100%; max-height: 70vh; display: block; margin: 0 auto; }
+  .mapping header .exp a + a::before { content: "·"; color: var(--fg-soft); margin: 0 6px; }
+</style>
 </head>
+<body data-items="figures">
 
-<body>
-<div id="app">
-    <!-- Vue app-->
-    <v-app>
-        <v-content>
+<header class="top">
+  <div class="row">
+    <h1>TirzepatideParameterScan</h1>
+    <span class="sub">simulation experiment</span>
+    <div class="badges">
+<span class="badge">models <b>1</b></span>
+<span class="badge">datasets <b>0</b></span>
+<span class="badge">figures <b>6</b></span>
+    </div>
+  </div>
+  <nav class="sections">
+<a href="#overview">Overview</a>
+<a href="#figures">Figures</a>
+<a href="#code">Code</a>
+  </nav>
+  <div class="search">
+    <input id="search" type="search" placeholder="Search figures, models, datasets …" autocomplete="off">
+    <span id="hits"></span>
+  </div>
+</header>
 
-            <a href="../index.html">Experiments</a>
-            <h1>TirzepatideParameterScan</h1>
+<main>
 
-            <h2>Models</h2>
-            <p>
-            <ul>
-                <li><strong>model</strong>: <a href="../../../models/results/models/tirzepatide_body_flat.xml">../../../models/results/models/tirzepatide_body_flat.xml</a></li>
-            </ul>
-            </p>
+<section id="overview">
+  <h2>Overview</h2>
 
-            <h2>Datasets</h2>
-            <p>
-            <ul>
-            </ul>
-            </p>
+  <h3>Models</h3>
+  <div class="card">
+    <table data-filter="row">
+      <thead><tr><th data-sort="text">model</th><th data-sort="text">source</th></tr></thead>
+      <tbody>
+      <tr><td class="mono">model</td><td><a href="../../../../src/pkdb_models/models/tirzepatide/models/output/models/tirzepatide_body_flat.xml" title="../../../../src/pkdb_models/models/tirzepatide/models/output/models/tirzepatide_body_flat.xml">tirzepatide_body_flat.xml</a></td></tr>
+      </tbody>
+    </table>
+  </div>
 
-            <h2>Figures</h2>
-            <p>
-            <ul>
-                <li><strong>timecourse__hepatic_scan</strong>: <a href="TirzepatideParameterScan_timecourse__hepatic_scan.svg">TirzepatideParameterScan_timecourse__hepatic_scan.svg</a></li>
-                <li><strong>timecourse__renal_scan</strong>: <a href="TirzepatideParameterScan_timecourse__renal_scan.svg">TirzepatideParameterScan_timecourse__renal_scan.svg</a></li>
-                <li><strong>timecourse__bodyweight_scan</strong>: <a href="TirzepatideParameterScan_timecourse__bodyweight_scan.svg">TirzepatideParameterScan_timecourse__bodyweight_scan.svg</a></li>
-                <li><strong>pk_hepatic_scan</strong>: <a href="TirzepatideParameterScan_pk_hepatic_scan.svg">TirzepatideParameterScan_pk_hepatic_scan.svg</a></li>
-                <li><strong>pk_renal_scan</strong>: <a href="TirzepatideParameterScan_pk_renal_scan.svg">TirzepatideParameterScan_pk_renal_scan.svg</a></li>
-                <li><strong>pk_bodyweight_scan</strong>: <a href="TirzepatideParameterScan_pk_bodyweight_scan.svg">TirzepatideParameterScan_pk_bodyweight_scan.svg</a></li>
-            </ul>
-            </p>
+  <h3>Datasets</h3>
+  <div class="card">
+    <p class="empty">The experiment has no datasets.</p>
+  </div>
+</section>
 
-            <h3>timecourse__hepatic_scan</h3>
-            <p>
-            <table>
-                <tr>
-                    <td>
-                        <!--<v-img src="TirzepatideParameterScan_timecourse__hepatic_scan.svg" max-width="600" width="600"></v-img>-->
-                        <img src="TirzepatideParameterScan_timecourse__hepatic_scan.svg" width="600">
-                    </td>
-                    <!--
-                    <td>
-                    </td>
-                    -->
-                </tr>
-            </table>
-            </p>
-            <h3>timecourse__renal_scan</h3>
-            <p>
-            <table>
-                <tr>
-                    <td>
-                        <!--<v-img src="TirzepatideParameterScan_timecourse__renal_scan.svg" max-width="600" width="600"></v-img>-->
-                        <img src="TirzepatideParameterScan_timecourse__renal_scan.svg" width="600">
-                    </td>
-                    <!--
-                    <td>
-                    </td>
-                    -->
-                </tr>
-            </table>
-            </p>
-            <h3>timecourse__bodyweight_scan</h3>
-            <p>
-            <table>
-                <tr>
-                    <td>
-                        <!--<v-img src="TirzepatideParameterScan_timecourse__bodyweight_scan.svg" max-width="600" width="600"></v-img>-->
-                        <img src="TirzepatideParameterScan_timecourse__bodyweight_scan.svg" width="600">
-                    </td>
-                    <!--
-                    <td>
-                    </td>
-                    -->
-                </tr>
-            </table>
-            </p>
-            <h3>pk_hepatic_scan</h3>
-            <p>
-            <table>
-                <tr>
-                    <td>
-                        <!--<v-img src="TirzepatideParameterScan_pk_hepatic_scan.svg" max-width="600" width="600"></v-img>-->
-                        <img src="TirzepatideParameterScan_pk_hepatic_scan.svg" width="600">
-                    </td>
-                    <!--
-                    <td>
-                    </td>
-                    -->
-                </tr>
-            </table>
-            </p>
-            <h3>pk_renal_scan</h3>
-            <p>
-            <table>
-                <tr>
-                    <td>
-                        <!--<v-img src="TirzepatideParameterScan_pk_renal_scan.svg" max-width="600" width="600"></v-img>-->
-                        <img src="TirzepatideParameterScan_pk_renal_scan.svg" width="600">
-                    </td>
-                    <!--
-                    <td>
-                    </td>
-                    -->
-                </tr>
-            </table>
-            </p>
-            <h3>pk_bodyweight_scan</h3>
-            <p>
-            <table>
-                <tr>
-                    <td>
-                        <!--<v-img src="TirzepatideParameterScan_pk_bodyweight_scan.svg" max-width="600" width="600"></v-img>-->
-                        <img src="TirzepatideParameterScan_pk_bodyweight_scan.svg" width="600">
-                    </td>
-                    <!--
-                    <td>
-                    </td>
-                    -->
-                </tr>
-            </table>
-            </p>
+<section id="figures">
+  <h2>Figures (6)</h2>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">timecourse__hepatic_scan</span>
+      <span class="exp">
+<a href="TirzepatideParameterScan_timecourse__hepatic_scan.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="TirzepatideParameterScan_timecourse__hepatic_scan.svg" alt="timecourse__hepatic_scan">
+    </figure>
+  </div>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">timecourse__renal_scan</span>
+      <span class="exp">
+<a href="TirzepatideParameterScan_timecourse__renal_scan.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="TirzepatideParameterScan_timecourse__renal_scan.svg" alt="timecourse__renal_scan">
+    </figure>
+  </div>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">timecourse__bodyweight_scan</span>
+      <span class="exp">
+<a href="TirzepatideParameterScan_timecourse__bodyweight_scan.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="TirzepatideParameterScan_timecourse__bodyweight_scan.svg" alt="timecourse__bodyweight_scan">
+    </figure>
+  </div>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">pk_hepatic_scan</span>
+      <span class="exp">
+<a href="TirzepatideParameterScan_pk_hepatic_scan.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="TirzepatideParameterScan_pk_hepatic_scan.svg" alt="pk_hepatic_scan">
+    </figure>
+  </div>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">pk_renal_scan</span>
+      <span class="exp">
+<a href="TirzepatideParameterScan_pk_renal_scan.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="TirzepatideParameterScan_pk_renal_scan.svg" alt="pk_renal_scan">
+    </figure>
+  </div>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">pk_bodyweight_scan</span>
+      <span class="exp">
+<a href="TirzepatideParameterScan_pk_bodyweight_scan.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="TirzepatideParameterScan_pk_bodyweight_scan.svg" alt="pk_bodyweight_scan">
+    </figure>
+  </div>
+  <p class="empty hidden" data-empty>No figure matches the search.</p>
+</section>
 
-            <h2>Code</h2>
-            <p>
-                <a href="../../../experiments/scans/scan_parameters.py">../../../experiments/scans/scan_parameters.py</a>
-            <pre>
-<code class="python">"""Parameter scans tirzepatide."""
-from typing import Dict
+<section id="code">
+  <h2>Code</h2>
+  <div class="card">
+    <p><a href="../../../../src/pkdb_models/models/tirzepatide/experiments/scans/scan_parameters.py" title="../../../../src/pkdb_models/models/tirzepatide/experiments/scans/scan_parameters.py">scan_parameters.py</a></p>
+    <pre class="code"><code>&#34;&#34;&#34;Parameter scans of the tirzepatide model.
 
-import matplotlib.axes
-import matplotlib.cm as cm
+The degree of cirrhosis, the renal function and the body weight are scanned
+after a single subcutaneous dose of tirzepatide. The matplotlib figures show the
+timecourses of the scans and the pharmacokinetic parameters of tirzepatide and
+its metabolites.
 
+In a run over the draws of the fitted parameters (`run_simulation
+pkdb_models.models.tirzepatide --uncertainty`) every point of a scan is
+simulated for every draw; the figures draw the median of the draws with the
+band of their quantiles. The timecourses draw the bands of the reference and
+of the two ends of a scan only: the bands of all points overlap where the
+scanned parameter has no effect (the excreted amounts of the body weight scan)
+and would hide the curves.
+&#34;&#34;&#34;
+
+from typing import ClassVar, Literal, TypedDict, override
+
+import matplotlib
+import matplotlib.pyplot as plt
 import numpy as np
-from sbmlsim.simulation import Timecourse, TimecourseSim, ScanSim, Dimension
-from sbmlsim.plot.serialization_matplotlib import FigureMPL, MatplotlibFigureSerializer
-from sbmlsim.plot.serialization_matplotlib import plt
-from sbmlutils.console import console
+import pandas as pd
+from matplotlib.axes import Axes
+from pkpdsim.scan import point_band, point_timecourse, scan_dimensions, start_values
+from sbmlsim import Q
+from sbmlsim.plot.serialization_matplotlib import FigureMPL
+from sbmlsim.result import ScanResult
+from sbmlsim.simulation import Dimension, Scan, Simulation
+from sbmlsim.units import Quantity
 
+from pkdb_models.models.tirzepatide import MODEL
 from pkdb_models.models.tirzepatide.experiments.base_experiment import (
     TirzepatideSimulationExperiment,
 )
-from pkdb_models.models.tirzepatide.helpers import run_experiments
+from pkdb_models.models.tirzepatide.tirzepatide_pk import summarize
+
+
+class ScanSpec(TypedDict):
+    &#34;&#34;&#34;Definition of a single parameter scan.&#34;&#34;&#34;
+
+    parameter: str
+    #: value of the reference simulation
+    default: float
+    range: np.ndarray
+    scale: Literal[&#34;linear&#34;, &#34;log&#34;]
+    colormap: str
+    units: str
+    label: str
 
 
 class TirzepatideParameterScan(TirzepatideSimulationExperiment):
-    """Scan the effect of parameters on pharmacokinetics."""
+    &#34;&#34;&#34;Scan the effect of parameters on pharmacokinetics.&#34;&#34;&#34;
 
+    #: pharmacokinetic parameters of the scans by simulation key, set by
+    #: `figures_mpl`
+    pk_dfs: dict[str, pd.DataFrame]
 
-    tend = 10 * 7 * 24 * 60  # 10 weeks
-    steps = 2000
+    tend = 10 * 7 * 24 * 60  # 10 weeks [min]
     dose_tir = 5  # [mg]
+    #: the quantiles of the bands of the draws of the fitted parameters
+    quantiles = (0.05, 0.95)
+    #: the opacity of the bands of the draws of the fitted parameters
+    band_alpha = 0.15
 
     num_points = 10
-    scan_map = {
-        "hepatic_scan": {
-            "parameter": "f_cirrhosis",
-            "default": 0.0,
-            "range": np.linspace(0, 0.9, num=num_points),
-            # "range": np.logspace(-2, 2, num=21),
-            "scale": "linear",
-            "colormap": "Reds",
-            "units": "dimensionless",
-            "label": "cirrhosis degree [-]",
+    scan_map: ClassVar[dict[str, ScanSpec]] = {
+        &#34;hepatic_scan&#34;: {
+            &#34;parameter&#34;: &#34;f_cirrhosis&#34;,
+            &#34;default&#34;: 0.0,
+            &#34;range&#34;: np.linspace(0, 0.9, num=num_points),
+            &#34;scale&#34;: &#34;linear&#34;,
+            &#34;colormap&#34;: &#34;Reds&#34;,
+            &#34;units&#34;: &#34;dimensionless&#34;,
+            &#34;label&#34;: &#34;cirrhosis degree [-]&#34;,
         },
-        "renal_scan": {
-            "parameter": "KI__f_renal_function",
-            # "range": np.linspace(0.1, 1.9, num=num_points),
-            "default": 1.0,
-            "range": np.sort(
-                np.append(np.logspace(-1, 1, num=num_points), [1.0])
-            ),  # [10^-1=0.1, 10^1=10]
-            "scale": "log",
-            "colormap": "seismic_r",
-            "units": "dimensionless",
-            "label": "renal function [-]",
+        &#34;renal_scan&#34;: {
+            &#34;parameter&#34;: &#34;KI__f_renal_function&#34;,
+            &#34;default&#34;: 1.0,
+            # end stage renal disease (0.1) to an increased renal function (2)
+            &#34;range&#34;: np.sort(
+                np.append(np.logspace(-1, np.log10(2), num=num_points), [1.0])
+            ),
+            &#34;scale&#34;: &#34;log&#34;,
+            &#34;colormap&#34;: &#34;seismic_r&#34;,
+            &#34;units&#34;: &#34;dimensionless&#34;,
+            &#34;label&#34;: &#34;renal function [-]&#34;,
         },
-        "bodyweight_scan": {
-            "parameter": "BW",
-            # "range": np.linspace(0.1, 1.9, num=num_points),
-            "default": 75.0,
-            "range": np.sort(
-                # np.append(np.logspace(-1, 1, num=num_points), [1.0])
-                np.append(np.linspace(50, 150, num=num_points), [75])
-            ),  # [10^-1=0.1, 10^1=10]
-            "scale": "linear",
-            "colormap": "seismic_r",
-            "units": "kg",
-            "label": "bodyweight [kg]",
+        &#34;bodyweight_scan&#34;: {
+            &#34;parameter&#34;: &#34;BW&#34;,
+            &#34;default&#34;: 75.0,
+            &#34;range&#34;: np.sort(np.append(np.linspace(50, 150, num=num_points), [75])),
+            &#34;scale&#34;: &#34;linear&#34;,
+            &#34;colormap&#34;: &#34;seismic_r&#34;,
+            &#34;units&#34;: &#34;kg&#34;,
+            &#34;label&#34;: &#34;bodyweight [kg]&#34;,
         },
     }
 
-    def simulations(self) -> Dict[str, ScanSim]:
-        Q_ = self.Q_
-        tcscans = {}
+    @override
+    def simulations(self) -&gt; dict[str, Scan]:
+        scans = {}
 
         for scan_key, scan_data in self.scan_map.items():
-
-            tcscans[f"scan_{scan_key}"] = ScanSim(
-                simulation=TimecourseSim(
-                    Timecourse(
-                        start=0,
-                        end=self.tend,
-                        steps=self.steps,
-                        changes={
-                            **self.default_changes(),
-                            "SCDOSE_tir": Q_(self.dose_tir, "mg"),
-                        },
-                    )
+            scans[f&#34;scan_{scan_key}&#34;] = Scan(
+                simulation=Simulation(
+                    time_unit=&#34;min&#34;,
+                    end=self.tend,
+                    preinit_changes={
+                        **self.default_changes(),
+                        &#34;SCDOSE_tir&#34;: Q(self.dose_tir, &#34;mg&#34;),
+                    },
                 ),
                 dimensions=[
                     Dimension(
-                        "dim_scan",
-                        changes={
-                            scan_data["parameter"]: Q_(
-                                scan_data["range"], scan_data["units"]
+                        &#34;dim_scan&#34;,
+                        values={
+                            scan_data[&#34;parameter&#34;]: Q(
+                                scan_data[&#34;range&#34;], scan_data[&#34;units&#34;]
                             )
                         },
                     ),
                 ],
             )
 
-        return tcscans
+        return scans
 
-    def figures_mpl(self) -> Dict[str, FigureMPL]:
-        """Matplotlib figures."""
+    def _across(self) -&gt; str | None:
+        &#34;&#34;&#34;Get the dimension of the draws of the fitted parameters, `None` without.&#34;&#34;&#34;
+        return None if self.uncertainty is None else self.uncertainty.id
+
+    def _scanned(self, res: ScanResult, parameter_id: str) -&gt; Quantity:
+        &#34;&#34;&#34;Get the values of the scanned parameter at the points of the scan.&#34;&#34;&#34;
+        values = start_values(res, parameter_id)
+        across = self._across()
+        if across is not None:
+            values = values.isel({across: 0})
+        return Q(values.values, res.units[parameter_id])
+
+    @override
+    def figures_mpl(self) -&gt; dict[str, FigureMPL]:
         # calculate pharmacokinetic parameters
         self.pk_dfs = self.calculate_tirzepatide_pk()
 
@@ -246,264 +454,353 @@ class TirzepatideParameterScan(TirzepatideSimulationExperiment):
             **self.figures_mpl_pharmacokinetics(),
         }
 
-    def figures_mpl_timecourses(self) -> Dict[str, FigureMPL]:
-        """Timecourse plots for key variables depending on degree of renal impairment."""
-
+    def figures_mpl_timecourses(self) -&gt; dict[str, FigureMPL]:
+        &#34;&#34;&#34;Timecourses of the plasma concentrations and excretion in the scans.&#34;&#34;&#34;
         sids = [
-            "[Cve_tir]",
-            "[Cve_tm]",
-            "Aurine_tm",
-            "Afeces_tm",
+            &#34;[Cve_tir]&#34;,
+            &#34;[Cve_tm]&#34;,
+            &#34;Aurine_tm&#34;,
+            &#34;Afeces_tm&#34;,
         ]
 
         figures = {}
 
         for scan_key, scan_data in self.scan_map.items():
-            range = scan_data["range"]
-            rmin, rmax = range[0], range[-1]
-
-            # cmap_str
-            cmap_str = scan_data["colormap"]
-            cmap = matplotlib.colormaps.get_cmap(cmap_str)
+            values = scan_data[&#34;range&#34;]
+            rmin, rmax = values[0], values[-1]
+            cmap = matplotlib.colormaps[scan_data[&#34;colormap&#34;]]
 
             f, axes = plt.subplots(
                 nrows=1,
                 ncols=len(sids),
                 figsize=(6 * len(sids), 6),
-                # sharey="row",
-                # sharex="col",
                 dpi=150,
-                layout="constrained"
+                layout=&#34;constrained&#34;,
             )
             f.suptitle(
-                f"Scan {scan_data['label']}",
+                f&#34;Scan {scan_data[&#39;label&#39;]}&#34;,
                 fontsize=self.suptitle_font_size,
             )
 
+            res = self.results[f&#34;task_scan_{scan_key}&#34;]
+            units = res.units
+            across = self._across()
+            scandim = scan_dimensions(res, across)[0]
+            par_vec = self._scanned(res, scan_data[&#34;parameter&#34;])
+            time_unit = &#34;day&#34;
+
             for kcol, sid in enumerate(sids):
-                ax: matplotlib.axes.Axes = axes[kcol]
-
-                # get data
-                Q_ = self.Q_
-                xres = self.results[
-                    f"task_scan_{scan_key}"
-                ]
-
-                # scanned dimension
-                scandim = xres._redop_dims()[0]
-                parameter_id = scan_data["parameter"]
-                par_vec = Q_(
-                    xres[parameter_id].values[0], xres.uinfo[parameter_id]
-                )
-                time_unit: str = "day"
-                t_vec = xres.dim_mean("time").to(time_unit)
+                ax: Axes = axes[kcol]
+                t_default = default = None
 
                 for k_par, par in enumerate(par_vec):
-                    c_vec = Q_(
-                        xres[sid].sel({scandim: k_par}).values,
-                        xres.uinfo[sid],
-                    ).to(self.units[sid])
+                    band = None
+                    with_band = k_par in (0, len(par_vec.magnitude) - 1) or np.isclose(
+                        scan_data[&#34;default&#34;], par.magnitude
+                    )
+                    if across is None:
+                        time, values = point_timecourse(res, sid, **{scandim: k_par})
+                    else:
+                        time, lower, values, upper = point_band(
+                            res,
+                            sid,
+                            across=across,
+                            quantiles=self.quantiles,
+                            **{scandim: k_par},
+                        )
+                        if with_band:
+                            band = (
+                                Q(lower, units[sid]).to(self.units[sid]).magnitude,
+                                Q(upper, units[sid]).to(self.units[sid]).magnitude,
+                            )
+                    t_vec = Q(time, units[&#34;time&#34;]).to(time_unit)
+                    c_vec = Q(values, units[sid]).to(self.units[sid])
 
-                    # 0.1 - 1.9
-                    linewidth = 2.0
-                    if np.isclose(scan_data["default"], par.magnitude):
-                        color = "black"
-                        t_vec_default = t_vec
-                        c_vec_default = c_vec
+                    if np.isclose(scan_data[&#34;default&#34;], par.magnitude):
+                        color = &#34;black&#34;
+                        t_default, default = t_vec, c_vec
                     else:
                         # red less function, blue more function
-                        if scan_data["scale"] == "linear":
-                            cvalue = (par.magnitude-rmin)/np.abs(rmax-rmin)
-                        elif scan_data["scale"] == "log":
-                            cvalue = (np.log10(par.magnitude) - np.log10(rmin)) / np.abs(np.log10(rmax) - np.log10(rmin))
-
+                        if scan_data[&#34;scale&#34;] == &#34;linear&#34;:
+                            cvalue = (par.magnitude - rmin) / np.abs(rmax - rmin)
+                        else:
+                            cvalue = (
+                                np.log10(par.magnitude) - np.log10(rmin)
+                            ) / np.abs(np.log10(rmax) - np.log10(rmin))
                         color = cmap(cvalue)
 
+                    if band is not None:
+                        ax.fill_between(
+                            t_vec.magnitude,
+                            *band,
+                            color=color,
+                            alpha=self.band_alpha,
+                            linewidth=0,
+                        )
                     ax.plot(
                         t_vec.magnitude,
                         c_vec.magnitude,
                         color=color,
-                        linewidth=linewidth,
-                        label=f"{par.m:.2f}"
+                        linewidth=2.0,
+                        label=f&#34;{par.m:.2f}&#34;,
                     )
 
-                # plot the reference line in black
-                ax.plot(
-                    t_vec_default.magnitude,
-                    c_vec_default.magnitude,
-                    color="black",
-                    linewidth=2.0,
-                    label="__nolabel__",
-                )
+                # plot the reference line in black on top
+                if t_default is not None and default is not None:
+                    ax.plot(
+                        t_default.magnitude,
+                        default.magnitude,
+                        color=&#34;black&#34;,
+                        linewidth=2.0,
+                        label=&#34;__nolabel__&#34;,
+                    )
                 ax.set_xlabel(
-                    f"{self.label_time} [{time_unit}]",
+                    f&#34;{self.label_time} [{time_unit}]&#34;,
                     fontdict=self.font,
                 )
-                ax.tick_params(axis="x", labelsize=self.tick_font_size)
-                ax.tick_params(axis="y", labelsize=self.tick_font_size)
+                ax.tick_params(axis=&#34;x&#34;, labelsize=self.tick_font_size)
+                ax.tick_params(axis=&#34;y&#34;, labelsize=self.tick_font_size)
 
                 ax.set_ylabel(
-                    f"{self.labels[sid]} [{self.units[sid]}]",
+                    f&#34;{self.labels[sid]} [{self.units[sid]}]&#34;,
                     fontdict=self.font,
                 )
                 if kcol == 0:
                     ax.legend()
 
-            # # --- colorbar ---
-            # # 4-tuple of floats rect = (left, bottom, width, height).
-            # # A new Axes is added with dimensions rect in normalized (0, 1)
-            # engine = f.get_layout_engine()
-            # engine.set(rect=(0.0, 0.05, 0.0, 0.0))
-            # cb_ax = f.add_axes(rect=[0.1, 0.04, 0.8, 0.01])
-            # cb_ax.set_in_layout(True)
-            #
-            # # colorbar range
-            # if scan_data["scale"] == "linear":
-            #     norm = matplotlib.colors.Normalize(vmin=rmin, vmax=rmax, clip=False)
-            # elif scan_data["scale"] == "log":
-            #     norm = matplotlib.colors.LogNorm(vmin=rmin, vmax=rmax, clip=False)
-            #
-            # cbar = f.colorbar(
-            #     cm.ScalarMappable(norm=norm, cmap=cmap_str),
-            #     cax=cb_ax,
-            #     orientation="horizontal",
-            # )
-            #
-            # # ticks
-            # ticks = [rmin, rmax]
-            # if scan_data["default"] not in ticks:
-            #     ticks.append(scan_data["default"])
-            #     ticks = sorted(ticks)
-            # cbar.set_ticks(ticks)
-            # console.print(f"{ticks=}")
-            #
-            # cbar.set_ticklabels(
-            #     ticks, **{"size": 15, "weight": "medium"}
-            # )
-            # cbar.ax.set_xlabel(
-            #     scan_data["label"], **{"size": 15, "weight": "bold"}
-            # )
-            # cbar.ax.axvline(x=scan_data["default"], color="black", linewidth=2)
-
-            figures[f"timecourse__{scan_key}"] = f
-
+            figures[f&#34;timecourse__{scan_key}&#34;] = f
 
         return figures
 
-    def figures_mpl_pharmacokinetics(self):
-        """Visualize dependency of pharmacokinetics parameters."""
-        Q_ = self.Q_
+    def figures_mpl_pharmacokinetics(self) -&gt; dict[str, FigureMPL]:
+        &#34;&#34;&#34;Pharmacokinetic parameters depending on the scanned parameters.&#34;&#34;&#34;
         figures = {}
 
         parameters_info = [
-            ("tirzepatide", "aucinf"),
-            ("tirzepatide", "cmax"),
-            ("tirzepatide metabolites", "aucinf"),
-            ("tirzepatide metabolites", "cmax"),
+            (&#34;tirzepatide&#34;, &#34;auc_inf_obs&#34;),
+            (&#34;tirzepatide&#34;, &#34;cmax&#34;),
+            (&#34;tirzepatide metabolites&#34;, &#34;auc_inf_obs&#34;),
+            (&#34;tirzepatide metabolites&#34;, &#34;cmax&#34;),
         ]
 
         for scan_key, scan_data in self.scan_map.items():
             f, axes = plt.subplots(
-                nrows=1, ncols=len(parameters_info), figsize=(6 * len(parameters_info), 6), dpi=150,
-                layout="constrained"
+                nrows=1,
+                ncols=len(parameters_info),
+                figsize=(6 * len(parameters_info), 6),
+                dpi=150,
+                layout=&#34;constrained&#34;,
             )
             f.suptitle(
-                f"Pharmacokinetics {scan_data['label']}",
+                f&#34;Pharmacokinetics {scan_data[&#39;label&#39;]}&#34;,
                 fontsize=self.suptitle_font_size,
             )
             axes = axes.flatten()
 
+            sim_key = f&#34;scan_{scan_key}&#34;
+            res = self.results[f&#34;task_{sim_key}&#34;]
+            # the scanned parameter
+            x = self._scanned(res, scan_data[&#34;parameter&#34;])
+
             for k, (substance, pk_key) in enumerate(parameters_info):
+                ax: Axes = axes[k]
+                ax.axvline(x=scan_data[&#34;default&#34;], color=&#34;grey&#34;, linestyle=&#34;--&#34;)
 
-                ax = axes[k]
-                ax.axvline(x=scan_data["default"], color="grey", linestyle="--")
-
-                sim_key = f"scan_{scan_key}"
-                xres = self.results[f"task_{sim_key}"]
                 df = self.pk_dfs[sim_key]
                 df = df[df.substance == substance]  # get PK for substance
-
-                # This was scanned
-                parameter_id = scan_data["parameter"]
-                x_vec = Q_(
-                    xres[parameter_id].values[0], xres.uinfo[parameter_id]
-                )
-
-                pk_vec = df[f"{pk_key}"]
-                pk_vec = pk_vec.to_numpy()
-                x = x_vec
-                y = Q_(pk_vec, df[f"{pk_key}_unit"].values[0])
-
-                y = y.to(self.pk_units[pk_key])
+                unit = df[f&#34;{pk_key}_unit&#34;].values[0]
+                top = 0.0
+                if self._across() is None:
+                    y = Q(df[pk_key].to_numpy(), unit).to(self.pk_units[pk_key])
+                else:
+                    stats = summarize(df, pk_key, self.quantiles)
+                    y = Q(stats[&#34;median&#34;].to_numpy(), unit).to(self.pk_units[pk_key])
+                    upper = (
+                        Q(stats[&#34;upper&#34;].to_numpy(), unit)
+                        .to(self.pk_units[pk_key])
+                        .magnitude
+                    )
+                    top = float(np.nanmax(upper))
+                    ax.fill_between(
+                        x.magnitude,
+                        Q(stats[&#34;lower&#34;].to_numpy(), unit)
+                        .to(self.pk_units[pk_key])
+                        .magnitude,
+                        upper,
+                        color=&#34;tab:blue&#34;,
+                        alpha=self.band_alpha,
+                        linewidth=0,
+                    )
                 ax.plot(
-                    x,
-                    y,
-                    marker="o",
-                    linestyle="-",
-                    color="black",
-                    markeredgecolor="black",
-                    markerfacecolor="tab:blue",
+                    x.magnitude,
+                    y.magnitude,
+                    marker=&#34;o&#34;,
+                    linestyle=&#34;-&#34;,
+                    color=&#34;black&#34;,
+                    markeredgecolor=&#34;black&#34;,
+                    markerfacecolor=&#34;tab:blue&#34;,
                     markersize=10,
-                    label=f"{pk_key} {substance}"
+                    label=f&#34;{pk_key} {substance}&#34;,
                 )
 
-                # ax.tick_params(
-                #     axis="x", labelsize=self.tick_font_size
-                # )
-                # ax.tick_params(
-                #     axis="y", labelsize=self.tick_font_size
-                # )
                 ax.set_xlabel(
-                    scan_data["label"],
+                    scan_data[&#34;label&#34;],
                     fontdict=self.scan_font,
                 )
                 ax.set_ylabel(
-                    f"{self.pk_labels[pk_key]} ({substance}) [{self.pk_units[pk_key]}]",
+                    f&#34;{self.pk_labels[pk_key]} ({substance}) [{self.pk_units[pk_key]}]&#34;,
                     fontdict=self.scan_font,
                 )
-                # set axis
-                ax.set_xscale(scan_data["scale"])
-
-                ax.set_ylim(bottom=0, top=1.1 * np.max(y.m))
+                ax.set_xscale(scan_data[&#34;scale&#34;])
+                ax.set_ylim(bottom=0, top=1.1 * max(top, float(np.nanmax(y.magnitude))))
                 ax.legend()
 
-
-            figures[f"pk_{scan_key}"] = f
+            figures[f&#34;pk_{scan_key}&#34;] = f
 
         return figures
 
 
-if __name__ == "__main__":
-    run_experiments(TirzepatideParameterScan, output_dir=TirzepatideParameterScan.__name__)
-</code>
-        </pre>
-            </p>
+if __name__ == &#34;__main__&#34;:
+    MODEL.run_experiments(
+        TirzepatideParameterScan, output_dir=TirzepatideParameterScan.__name__
+    )
+</code></pre>
+  </div>
+</section>
 
-        </v-content>
-    </v-app>
-</div>
+</main>
 
+<footer>
+<a href="../index.html">all experiments</a> · <a href="../../../../src/pkdb_models/models/tirzepatide/experiments/scans/scan_parameters.py" title="../../../../src/pkdb_models/models/tirzepatide/experiments/scans/scan_parameters.py">scan_parameters.py</a>
+</footer>
 
-<!-- loading dependencies -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<div id="lightbox"><img alt=""></div>
 
 <script>
-    const app = new Vue({
-        el: '#app',
-        vuetify: new Vuetify(),
-        delimiters: ['${', '}'],
-        data() {
-            return {}
-        }
-    })
+(function () {
+  "use strict";
+
+  // ---- search and the filter chips ------------------------------------
+  const search = document.getElementById("search");
+  const hits = document.getElementById("hits");
+  const chips = Array.from(document.querySelectorAll(".chip"));
+  const cards = Array.from(document.querySelectorAll('[data-filter="card"]'));
+  const rows = Array.from(document.querySelectorAll('table[data-filter="row"] tbody tr'));
+  const empty = document.querySelector("[data-empty]");
+  const itemLabel = document.body.dataset.items || "items";
+
+  const haystack = new Map();
+  for (const node of [...cards, ...rows]) {
+    haystack.set(node, node.textContent.toLowerCase());
+  }
+
+  function activeKinds() {
+    return new Set(chips.filter((c) => c.getAttribute("aria-pressed") === "true")
+                        .map((c) => c.dataset.kind));
+  }
+
+  function matches(node, query, kinds) {
+    const kind = node.dataset.kind;
+    if (kind && !kinds.has(kind)) return false;
+    return !query || haystack.get(node).includes(query);
+  }
+
+  function apply() {
+    const query = search.value.trim().toLowerCase();
+    const kinds = activeKinds();
+    let shownCards = 0;
+    for (const node of cards) {
+      const show = matches(node, query, kinds);
+      node.classList.toggle("hidden", !show);
+      if (show) shownCards += 1;
+    }
+    for (const node of rows) {
+      node.classList.toggle("hidden", !matches(node, query, kinds));
+    }
+    if (empty) empty.classList.toggle("hidden", shownCards > 0 || cards.length === 0);
+    const filtering = Boolean(query) || (chips.length > 0 && kinds.size < chips.length);
+    hits.textContent = filtering
+      ? shownCards + " / " + cards.length + " " + itemLabel
+      : "";
+  }
+
+  search.addEventListener("input", apply);
+  for (const chip of chips) {
+    chip.addEventListener("click", () => {
+      chip.setAttribute("aria-pressed", chip.getAttribute("aria-pressed") === "true" ? "false" : "true");
+      apply();
+    });
+  }
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "/" && document.activeElement !== search) {
+      event.preventDefault();
+      search.focus();
+    } else if (event.key === "Escape") {
+      if (document.activeElement === search && search.value) { search.value = ""; apply(); }
+      closeLightbox();
+    }
+  });
+
+  // ---- sortable tables -------------------------------------------------
+  function cellValue(row, index, kind) {
+    const text = row.cells[index] ? row.cells[index].textContent.trim() : "";
+    if (kind !== "num") return text.toLowerCase();
+    // the AIC of a perfect fit is -inf, a cell without a value sorts last
+    if (text === "-inf") return Number.NEGATIVE_INFINITY;
+    const value = parseFloat(text);
+    return Number.isNaN(value) ? Number.POSITIVE_INFINITY : value;
+  }
+
+  for (const table of document.querySelectorAll("table")) {
+    const headers = Array.from(table.querySelectorAll("th[data-sort]"));
+    headers.forEach((th, index) => {
+      th.addEventListener("click", () => {
+        const body = table.tBodies[0];
+        if (!body) return;
+        const kind = th.dataset.sort;
+        const descending = th.classList.contains("asc");
+        for (const other of headers) other.classList.remove("asc", "desc");
+        th.classList.add(descending ? "desc" : "asc");
+        const sorted = Array.from(body.rows).sort((a, b) => {
+          const left = cellValue(a, index, kind);
+          const right = cellValue(b, index, kind);
+          if (left < right) return descending ? 1 : -1;
+          if (left > right) return descending ? -1 : 1;
+          return 0;
+        });
+        for (const row of sorted) body.appendChild(row);
+      });
+    });
+  }
+
+  // ---- the section the page is scrolled to -----------------------------
+  // a tab (data-tab) is not a section, its page marks the tab which is shown
+  const links = Array.from(document.querySelectorAll("nav.sections a:not([data-tab])"));
+  const sections = links.map((link) => document.querySelector(link.getAttribute("href")));
+  function scrollspy() {
+    let current = 0;
+    sections.forEach((section, index) => {
+      if (section && section.getBoundingClientRect().top < 200) current = index;
+    });
+    links.forEach((link, index) => link.classList.toggle("active", index === current));
+  }
+  window.addEventListener("scroll", scrollspy, { passive: true });
+  scrollspy();
+
+  // ---- click a figure to enlarge it ------------------------------------
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = lightbox.querySelector("img");
+  function closeLightbox() { lightbox.classList.remove("open"); lightboxImage.src = ""; }
+  for (const image of document.querySelectorAll("figure img")) {
+    image.addEventListener("click", () => {
+      lightboxImage.src = image.getAttribute("src");
+      lightbox.classList.add("open");
+    });
+  }
+  lightbox.addEventListener("click", closeLightbox);
+
+  apply();
+})();
 </script>
-
-
 </body>
 </html>

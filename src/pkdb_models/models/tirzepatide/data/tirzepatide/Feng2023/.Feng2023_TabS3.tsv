@@ -1,0 +1,37 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Feng2023	NA	placebo	4.0	placebo	concentration	cholesterol	plasma	NR	cholesterol_placebo	0.0	week	NA	4.89	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	cholesterol	plasma	NR	cholesterol_placebo	16.0	week	NA	4.41	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	cholesterol	plasma	NR	cholesterol_placebo	24.0	week	NA	4.56	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	hdl	plasma	NR	hdl_placebo	0.0	week	NA	1.02	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	hdl	plasma	NR	hdl_placebo	16.0	week	NA	1.08	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	hdl	plasma	NR	hdl_placebo	24.0	week	NA	1.07	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	ldl	plasma	NR	ldl_placebo	0.0	week	NA	3.13	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	ldl	plasma	NR	ldl_placebo	16.0	week	NA	2.85	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	ldl	plasma	NR	ldl_placebo	24.0	week	NA	3.04	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	triglyceride	plasma	NR	triglyceride_placebo	0.0	week	NA	2.04	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	triglyceride	plasma	NR	triglyceride_placebo	16.0	week	NA	1.71	NA	NA	NA	mmol/L	NA
+Feng2023	NA	placebo	4.0	placebo	concentration	triglyceride	plasma	NR	triglyceride_placebo	24.0	week	NA	1.37	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	cholesterol	plasma	NR	cholesterol_cohort1	0.0	week	NA	5.12	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	cholesterol	plasma	NR	cholesterol_cohort1	16.0	week	NA	4.03	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	cholesterol	plasma	NR	cholesterol_cohort1	24.0	week	NA	NA	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	hdl	plasma	NR	hdl_cohort1	0.0	week	NA	1.13	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	hdl	plasma	NR	hdl_cohort1	16.0	week	NA	1.15	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	hdl	plasma	NR	hdl_cohort1	24.0	week	NA	NA	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	ldl	plasma	NR	ldl_cohort1	0.0	week	NA	2.86	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	ldl	plasma	NR	ldl_cohort1	16.0	week	NA	2.5	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	ldl	plasma	NR	ldl_cohort1	24.0	week	NA	NA	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	triglyceride	plasma	NR	triglyceride_cohort1	0.0	week	NA	2.61	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	triglyceride	plasma	NR	triglyceride_cohort1	16.0	week	NA	1.07	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort1	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_three	concentration	triglyceride	plasma	NR	triglyceride_cohort1	24.0	week	NA	NA	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	cholesterol	plasma	NR	cholesterol_cohort2	0.0	week	NA	4.83	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	cholesterol	plasma	NR	cholesterol_cohort2	16.0	week	NA	4.09	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	cholesterol	plasma	NR	cholesterol_cohort2	24.0	week	NA	3.94	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	hdl	plasma	NR	hdl_cohort2	0.0	week	NA	1.07	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	hdl	plasma	NR	hdl_cohort2	16.0	week	NA	1.09	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	hdl	plasma	NR	hdl_cohort2	24.0	week	NA	1.09	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	ldl	plasma	NR	ldl_cohort2	0.0	week	NA	2.96	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	ldl	plasma	NR	ldl_cohort2	16.0	week	NA	2.6	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	ldl	plasma	NR	ldl_cohort2	24.0	week	NA	2.37	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	triglyceride	plasma	NR	triglyceride_cohort2	0.0	week	NA	2.16	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	triglyceride	plasma	NR	triglyceride_cohort2	16.0	week	NA	1.3	NA	NA	NA	mmol/L	NA
+Feng2023	NA	cohort2	10.0	TIR2_5_four, TIR5_four, TIR7_5_four, TIR10_four, TIR12_5_four, TIR15_three	concentration	triglyceride	plasma	NR	triglyceride_cohort2	24.0	week	NA	1.17	NA	NA	NA	mmol/L	NA

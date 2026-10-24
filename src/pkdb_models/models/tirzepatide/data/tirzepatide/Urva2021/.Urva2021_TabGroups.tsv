@@ -1,0 +1,60 @@
+study	name	group_count	parent	measurement_type	count	substance	tissue	choice	mean	median	sd	se	min	max	unit	comments
+Urva2021	all	45.0	NA	species	45.0	NA	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	all	45.0	NA	ethnicity	14.0	NA	NA	hispanic	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	all	45.0	NA	ethnicity	21.0	NA	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	all	45.0	NA	ethnicity	2.0	NA	NA	asian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	all	45.0	NA	ethnicity	22.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	all	45.0	NA	healthy	45.0	NA	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	all	45.0	NA	disease	6.0	NA	NA	t2dm	NA	NA	NA	NA	NA	NA	yr	NA
+Urva2021	all	45.0	NA	sex	30.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	all	45.0	NA	age	45.0	NA	NA	NA	60.3	NA	10.1	NA	NA	NA	yr	NA
+Urva2021	all	45.0	NA	weight	45.0	NA	NA	NA	87.5	NA	14.4	NA	NA	NA	kg	NA
+Urva2021	all	45.0	NA	height	45.0	NA	NA	NA	173.7	NA	8.7	NA	NA	NA	cm	NA
+Urva2021	all	45.0	NA	bmi	45.0	NA	NA	NA	29.0	NA	3.9	NA	NA	NA	kg/m^2	NA
+Urva2021	normal	14.0	all	ethnicity	2.0	NA	NA	hispanic	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	normal	14.0	all	ethnicity	7.0	NA	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	normal	14.0	all	ethnicity	7.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	normal	14.0	all	sex	9.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	normal	14.0	all	age	14.0	NA	NA	NA	58.1	NA	7.6	NA	NA	NA	yr	NA
+Urva2021	normal	14.0	all	weight	14.0	NA	NA	NA	88.0	NA	11.2	NA	NA	NA	kg	NA
+Urva2021	normal	14.0	all	height	14.0	NA	NA	NA	175.3	NA	10.3	NA	NA	NA	cm	NA
+Urva2021	normal	14.0	all	bmi	14.0	NA	NA	NA	28.6	NA	2.6	NA	NA	NA	kg/m^2	NA
+Urva2021	normal	14.0	all	gfr	14.0	creatine	urine	NA	NA	NA	NA	NA	90.0	NA	ml/min/(1.73 m^2)	estimated glomerular filtration rate
+Urva2021	mild	8.0	all	ethnicity	5.0	NA	NA	hispanic	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	mild	8.0	all	ethnicity	2.0	NA	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	mild	8.0	all	ethnicity	6.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	mild	8.0	all	disease	2.0	NA	NA	t2dm	NA	NA	NA	NA	NA	NA	yr	NA
+Urva2021	mild	8.0	all	sex	5.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	mild	8.0	all	age	8.0	NA	NA	NA	63.3	NA	6.6	NA	NA	NA	yr	NA
+Urva2021	mild	8.0	all	weight	8.0	NA	NA	NA	93.1	NA	19.8	NA	NA	NA	kg	NA
+Urva2021	mild	8.0	all	height	8.0	NA	NA	NA	170.7	NA	7.9	NA	NA	NA	cm	NA
+Urva2021	mild	8.0	all	bmi	8.0	NA	NA	NA	31.7	NA	4.5	NA	NA	NA	kg/m^2	NA
+Urva2021	mild	8.0	all	gfr	8.0	creatine	urine	NA	NA	NA	NA	NA	60.0	89.0	ml/min/(1.73 m^2)	estimated glomerular filtration rate
+Urva2021	moderate	8.0	all	ethnicity	3.0	NA	NA	hispanic	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	moderate	8.0	all	ethnicity	2.0	NA	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	moderate	8.0	all	ethnicity	3.0	NA	NA	asian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	moderate	8.0	all	ethnicity	3.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	moderate	8.0	all	disease	1.0	NA	NA	t2dm	NA	NA	NA	NA	NA	NA	yr	NA
+Urva2021	moderate	8.0	all	sex	4.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	moderate	8.0	all	age	8.0	NA	NA	NA	68.8	NA	14.1	NA	NA	NA	yr	NA
+Urva2021	moderate	8.0	all	weight	8.0	NA	NA	NA	83.8	NA	18.1	NA	NA	NA	kg	NA
+Urva2021	moderate	8.0	all	height	8.0	NA	NA	NA	169.3	NA	8.9	NA	NA	NA	cm	NA
+Urva2021	moderate	8.0	all	bmi	8.0	NA	NA	NA	29.0	NA	4.2	NA	NA	NA	kg/m^2	NA
+Urva2021	moderate	8.0	all	gfr	6.0	creatine	urine	NA	NA	NA	NA	NA	30.0	59.0	ml/min/(1.73 m^2)	estimated glomerular filtration rate
+Urva2021	severe	7.0	all	ethnicity	4.0	NA	NA	hispanic	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	severe	7.0	all	ethnicity	1.0	NA	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	severe	7.0	all	ethnicity	6.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	severe	7.0	all	disease	2.0	NA	NA	t2dm	NA	NA	NA	NA	NA	NA	yr	NA
+Urva2021	severe	7.0	all	sex	6.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	severe	7.0	all	age	7.0	NA	NA	NA	60.3	NA	9.3	NA	NA	NA	yr	NA
+Urva2021	severe	7.0	all	weight	7.0	NA	NA	NA	81.8	NA	8.1	NA	NA	NA	kg	NA
+Urva2021	severe	7.0	all	height	7.0	NA	NA	NA	173.9	NA	6.2	NA	NA	NA	cm	NA
+Urva2021	severe	7.0	all	bmi	7.0	NA	NA	NA	27.2	NA	4.1	NA	NA	NA	kg/m^2	NA
+Urva2021	severe	7.0	all	gfr	6.0	creatine	urine	NA	NA	NA	NA	NA	NA	30.0	ml/min/(1.73 m^2)	NA
+Urva2021	end	8.0	all	ethnicity	8.0	NA	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	end	8.0	all	disease	6.0	NA	NA	t2dm	NA	NA	NA	NA	NA	NA	yr	NA
+Urva2021	end	8.0	all	sex	6.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Urva2021	end	8.0	all	age	8.0	NA	NA	NA	52.9	NA	7.2	NA	NA	NA	yr	NA
+Urva2021	end	8.0	all	weight	8.0	NA	NA	NA	89.6	NA	14.7	NA	NA	NA	kg	NA
+Urva2021	end	8.0	all	height	8.0	NA	NA	NA	178.0	NA	7.2	NA	NA	NA	cm	NA
+Urva2021	end	8.0	all	bmi	8.0	NA	NA	NA	28.3	NA	4.4	NA	NA	NA	kg/m^2	NA

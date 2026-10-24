@@ -1,0 +1,13 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Feng2023	TIR2_5_one	0	NA	week	subcutaneous	single dose	dosing	solution	tirzepatide	5.0	mg	weekly injection, 4 weeks, dose escalation
+Feng2023	TIR2_5_four	0|1|2|3	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	5.0	mg	weekly injection, 4 weeks, dose escalation
+Feng2023	TIR5_three	4|5|6	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	5.0	mg	weekly injection, 4 weeks, dose escalation
+Feng2023	TIR5_four	4|5|6|7	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	5.0	mg	weekly injection, 4 weeks, dose escalation
+Feng2023	TIR7_5_three	8|9|10	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	7.5	mg	weekly injection, 4 weeks, dose escalation
+Feng2023	TIR7_5_four	8|9|10|11	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	7.5	mg	weekly injection, 4 weeks, dose escalation
+Feng2023	TIR10_three	12|13|14	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	10.0	mg	weekly injection, 4 weeks, dose escalation
+Feng2023	TIR10_four	12|13|14|15	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	10.0	mg	weekly injection, 4 weeks, dose escalation
+Feng2023	TIR12_5_four	16|17|18|19	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	12.5	mg	weekly injection, 4 weeks, dose escalation
+Feng2023	TIR15_three	20|21|22	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	15.0	mg	weekly injection, 4 weeks, dose escalation
+Feng2023	TIR15_four	20|21|22|23	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	15.0	mg	weekly injection, 4 weeks, dose escalation
+Feng2023	placebo	NA	NA	NA	subcutaneous	multiple dose	qualitative dosing	solution	placebo	NA	NA	placebo

@@ -1,0 +1,15 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Coskun2018	TIR_sad0_25	0	4	week	subcutaneous	single dose	dosing	solution	tirzepatide	0.25	mg	Single ascending dose (SAD), first dose.
+Coskun2018	TIR_sad0_5	3	7	week	subcutaneous	single dose	dosing	solution	tirzepatide	0.5	mg	SAD, dose escalation.
+Coskun2018	TIR_sad1	4	8	week	subcutaneous	single dose	dosing	solution	tirzepatide	1.0	mg	SAD, dose escalation.
+Coskun2018	TIR_sad2_5	6	10	week	subcutaneous	single dose	dosing	solution	tirzepatide	2.5	mg	SAD, dose escalation.
+Coskun2018	TIR_sad5	8	14	week	subcutaneous	single dose	dosing	solution	tirzepatide	5.0	mg	SAD, dose escalation.
+Coskun2018	TIR_sad8	10	18	week	subcutaneous	single dose	dosing	solution	tirzepatide	8.0	mg	SAD, dose escalation.
+Coskun2018	TIR_mad0_5	6	10	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	0.5	mg	Multiple ascending dose (MAD), weekly injections.
+Coskun2018	TIR_mad1_5	9	14	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	1.5	mg	MAD, dose escalation.
+Coskun2018	TIR_mad4_5	12	18	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	4.5	mg	MAD, dose escalation.
+Coskun2018	TIR_mad10	15	22	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	10.0	mg	MAD, dose escalation.
+Coskun2018	TIR_poc0_5	18	22	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	0.5	mg	Proof of concept (POC) study, multiple weekly doses.
+Coskun2018	TIR_poc5	18	22	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	5.0	mg	POC, dose escalation.
+Coskun2018	TIR_poc10	18	22	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	10.0	mg	POC, dose escalation.
+Coskun2018	TIR_poc15	18	22	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	15.0	mg	POC, dose escalation.

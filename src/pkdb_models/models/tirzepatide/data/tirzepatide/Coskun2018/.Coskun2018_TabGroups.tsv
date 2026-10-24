@@ -1,0 +1,42 @@
+study	name	group_count	parent	measurement_type	count	substance	tissue	choice	mean	median	sd	se	min	max	unit	comments
+Coskun2018	all	56.0	NA	species	56.0	NA	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	EMA GPGA
+Coskun2018	all	56.0	NA	healthy	56.0	NA	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	all	56.0	NA	disease	55.0	NA	NA	t2dm	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	all	56.0	NA	sex	53.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	all	56.0	NA	sex	3.0	NA	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	sad	56.0	all	healthy	55.0	NA	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	sad	56.0	all	disease	55.0	NA	NA	t2dm	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	sad	56.0	all	ethnicity	55.0	NA	NA	asian	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	sad	56.0	all	ethnicity	1.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	sad	56.0	all	sex	53.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	sad	56.0	all	sex	3.0	NA	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	sad	56.0	all	age	56.0	NA	NA	NA	39.4	NA	10.3	1.37639539584899	NA	NA	yr	NA
+Coskun2018	sad	56.0	all	weight	56.0	NA	NA	NA	71.9	NA	11.1	1.48329989261396	NA	NA	kg	NA
+Coskun2018	sad	56.0	all	bmi	56.0	NA	NA	NA	24.7	NA	3.2	0.427617987059879	NA	NA	kg/m^2	NA
+Coskun2018	sad	56.0	all	concentration	56.0	glucose	NA	NA	4.8	NA	0.4	0.0534522483824849	NA	NA	mmol/l	NA
+Coskun2018	sad	56.0	all	heart rate	56.0	NA	NA	NA	55.8	NA	7.1	0.948777408789107	NA	NA	1/s	NA
+Coskun2018	sad	56.0	all	blood pressure diastolic	56.0	NA	NA	NA	69.1	NA	9.9	1.3229431474665	NA	NA	mmHg	NA
+Coskun2018	sad	56.0	all	blood pressure systolic	56.0	NA	NA	NA	113.0	NA	12.1	1.61693051357017	NA	NA	mmHg	NA
+Coskun2018	mad	33.0	all	ethnicity	32.0	NA	NA	asian	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	mad	33.0	all	ethnicity	1.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	mad	33.0	all	sex	33.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	mad	33.0	all	age	33.0	NA	NA	NA	40.3	NA	10.9	1.89744644991711	NA	NA	yr	NA
+Coskun2018	mad	33.0	all	weight	33.0	NA	NA	NA	71.1	NA	9.4	1.63632996598356	NA	NA	kg	NA
+Coskun2018	mad	33.0	all	bmi	33.0	NA	NA	NA	24.3	NA	2.7	0.470009671080384	NA	NA	kg/m^2	NA
+Coskun2018	mad	33.0	all	concentration	33.0	glucose	NA	NA	4.63	NA	0.39	0.0678902858227222	NA	NA	mmol/l	NA
+Coskun2018	mad	33.0	all	heart rate	33.0	NA	NA	NA	55.8	NA	7.8	1.35780571645444	NA	NA	1/s	NA
+Coskun2018	mad	33.0	all	blood pressure diastolic	33.0	NA	NA	NA	68.6	NA	10.1	1.75818432515255	NA	NA	mmHg	NA
+Coskun2018	mad	33.0	all	blood pressure systolic	33.0	NA	NA	NA	113.9	NA	13.6	2.36745612099749	NA	NA	mmHg	NA
+Coskun2018	poc	53.0	all	ethnicity	1.0	NA	NA	american indian	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	poc	53.0	all	ethnicity	7.0	NA	NA	asian	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	poc	53.0	all	ethnicity	41.0	NA	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	poc	53.0	all	sex	28.0	NA	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	poc	53.0	all	sex	25.0	NA	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Coskun2018	poc	53.0	all	age	53.0	NA	NA	NA	56.8	NA	6.9	0.947787891245954	NA	NA	yr	NA
+Coskun2018	poc	53.0	all	weight	53.0	NA	NA	NA	86.0	NA	15.9	2.18403296678416	NA	NA	kg	NA
+Coskun2018	poc	53.0	all	bmi	53.0	NA	NA	NA	31.2	NA	4.0	0.549442255794756	NA	NA	kg/m^2	NA
+Coskun2018	poc	53.0	all	hba1c	53.0	NA	NA	NA	8.4	NA	0.8	0.109888451158951	NA	NA	percent	NA
+Coskun2018	poc	53.0	all	concentration	53.0	glucose	NA	NA	10.25	NA	2.36	0.324170930918906	NA	NA	mmol/l	NA
+Coskun2018	poc	53.0	all	heart rate	53.0	NA	NA	NA	70.6	NA	9.3	1.27745324472281	NA	NA	1/s	NA
+Coskun2018	poc	53.0	all	blood pressure diastolic	53.0	NA	NA	NA	76.3	NA	6.4	0.87910760927161	NA	NA	mmHg	NA
+Coskun2018	poc	53.0	all	blood pressure systolic	53.0	NA	NA	NA	124.4	NA	17.8	2.44501803828666	NA	NA	mmHg	NA

@@ -1,0 +1,25 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Furihata2022	NA	placebo	9.0	placebo	weight	NA	NA	scale	bodyweight_placebo	0.0	week	NA	63.0360479536999	NA	NA	NA	kg	NA
+Furihata2022	NA	placebo	9.0	placebo	weight	NA	NA	scale	bodyweight_placebo	1.0	week	NA	63.8587846217445	NA	NA	NA	kg	NA
+Furihata2022	NA	placebo	9.0	placebo	weight	NA	NA	scale	bodyweight_placebo	2.0	week	NA	64.049441918148	NA	NA	NA	kg	NA
+Furihata2022	NA	placebo	9.0	placebo	weight	NA	NA	scale	bodyweight_placebo	4.0	week	NA	63.9067383216205	NA	NA	NA	kg	NA
+Furihata2022	NA	placebo	9.0	placebo	weight	NA	NA	scale	bodyweight_placebo	6.0	week	NA	64.3592393551054	NA	NA	NA	kg	NA
+Furihata2022	NA	placebo	9.0	placebo	weight	NA	NA	scale	bodyweight_placebo	8.0	week	NA	64.5616370400992	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	weight	NA	NA	scale	bodyweight_cohort1	0.0	week	NA	75.4242248863167	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	weight	NA	NA	scale	bodyweight_cohort1	1.0	week	NA	75.9492352211658	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	weight	NA	NA	scale	bodyweight_cohort1	2.0	week	NA	75.3303017775941	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	weight	NA	NA	scale	bodyweight_cohort1	4.0	week	NA	74.2351384869781	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	weight	NA	NA	scale	bodyweight_cohort1	6.0	week	NA	74.0089293096321	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	weight	NA	NA	scale	bodyweight_cohort1	8.0	week	NA	73.5804878048781	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	weight	NA	NA	scale	bodyweight_cohort2	0.0	week	NA	74.9360479536999	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	weight	NA	NA	scale	bodyweight_cohort2	1.0	week	NA	75.2589086399339	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	weight	NA	NA	scale	bodyweight_cohort2	2.0	week	NA	74.7110789582472	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	weight	NA	NA	scale	bodyweight_cohort2	4.0	week	NA	73.8303844563869	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	weight	NA	NA	scale	bodyweight_cohort2	6.0	week	NA	72.5565522943365	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	weight	NA	NA	scale	bodyweight_cohort2	8.0	week	NA	71.4255890863993	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	weight	NA	NA	scale	bodyweight_cohort3	0.0	week	NA	73.3122364613477	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	weight	NA	NA	scale	bodyweight_cohort3	1.0	week	NA	72.9444811905746	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	weight	NA	NA	scale	bodyweight_cohort3	2.0	week	NA	72.1945018602728	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	weight	NA	NA	scale	bodyweight_cohort3	4.0	week	NA	70.8374948325754	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	weight	NA	NA	scale	bodyweight_cohort3	6.0	week	NA	69.313476643241	NA	NA	NA	kg	NA
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	weight	NA	NA	scale	bodyweight_cohort3	8.0	week	NA	68.2540305911534	NA	NA	NA	kg	NA

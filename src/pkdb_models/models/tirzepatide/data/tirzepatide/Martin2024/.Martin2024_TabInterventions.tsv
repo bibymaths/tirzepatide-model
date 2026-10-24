@@ -1,0 +1,3 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Martin2024	TIR	0	NA	day	subcutaneous	single dose	dosing	solution	tirzepatide	4.1	mg	SC targeted dose of approximately 4.1 mg tirzepatide
+Martin2024	TIRC14	0	NA	day	subcutaneous	single dose	dosing	solution	tirzepatide	2.9	mg	approximately 2.9 mg [14C]-tirzepatide

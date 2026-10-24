@@ -1,0 +1,12 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Furihata2022	TIR5	0	NA	week	subcutaneous	single dose	dosing	solution	tirzepatide	5.0	mg	single injection for week 1
+Furihata2022	TIR10	0	NA	week	subcutaneous	single dose	dosing	solution	tirzepatide	10.0	mg	single injection for week 1
+Furihata2022	TIR15	0	NA	week	subcutaneous	single dose	dosing	solution	tirzepatide	15.0	mg	single injection for week 1
+Furihata2022	TIR5_seven	0|1|2|2|4|5|6|7	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	5.0	mg	weekly injection, 8 weeks, dose escalation
+Furihata2022	TIR2_5_two	0|1	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	2.5	mg	weekly injection, 8 weeks, dose escalation
+Furihata2022	TIR5_two	2|3	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	5.0	mg	weekly injection, 8 weeks, dose escalation
+Furihata2022	TIR10_four	4|5|6|7	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	10.0	mg	weekly injection, 8 weeks, dose escalation
+Furihata2022	TIR5_two	0|1	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	5.0	mg	weekly injection, 8 weeks, dose escalation
+Furihata2022	TIR10_two	2|3	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	10.0	mg	weekly injection, 8 weeks, dose escalation
+Furihata2022	TIR15_four	4|5|6|7	NA	week	subcutaneous	multiple dose	dosing	solution	tirzepatide	15.0	mg	weekly injection, 8 weeks, dose escalation
+Furihata2022	placebo	NA	NA	NA	subcutaneous	single dose	qualitative dosing	solution	placebo	NA	NA	placebo

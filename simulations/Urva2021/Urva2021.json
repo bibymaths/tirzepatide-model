@@ -1,7 +1,9 @@
 {
   "experiment_id": "Urva2021",
-  "base_path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/tirzepatide",
-  "data_path": "[PosixPath('/home/mkoenig/git/pkdb_data/studies/tirzepatide')]",
+  "base_path": "/home/mkoenig/git/tirzepatide-model/src/pkdb_models/models/tirzepatide",
+  "data_path": [
+    "/home/mkoenig/git/tirzepatide-model/src/pkdb_models/models/tirzepatide/data/tirzepatide"
+  ],
   "models": {
     "model": {
       "sid": null,
@@ -9,549 +11,974 @@
       "language": "SBML",
       "language_type": "SBML",
       "source": {
-        "source": "/home/mkoenig/git/pkdb_models/pkdb_models/models/tirzepatide/models/results/models/tirzepatide_body_flat.xml",
-        "path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/tirzepatide/models/results/models/tirzepatide_body_flat.xml",
-        "content": "None"
+        "source": "/home/mkoenig/git/tirzepatide-model/src/pkdb_models/models/tirzepatide/models/output/models/tirzepatide_body_flat.xml",
+        "path": "/home/mkoenig/git/tirzepatide-model/src/pkdb_models/models/tirzepatide/models/output/models/tirzepatide_body_flat.xml",
+        "content": null
       },
-      "changes": {}
+      "base_path": null,
+      "changes": {},
+      "selections": [
+        "Afeces_tm",
+        "Aurine_tm",
+        "BW",
+        "IVDOSE_tir",
+        "KI__f_renal_function",
+        "SCDEPOT_tir",
+        "SCDOSE_tir",
+        "[Cve_tir]",
+        "[Cve_tm]",
+        "[Cve_tmtot]",
+        "f_cirrhosis",
+        "time"
+      ],
+      "parameters": {}
     }
   },
   "tasks": {
-    "task_tir_renal_normal": {
+    "task_sc_tir_renal_normal": {
+      "sid": "model__sc_tir_renal_normal",
+      "name": null,
       "model": "model",
-      "simulation": "tir_renal_normal"
+      "simulation": "sc_tir_renal_normal",
+      "observables": []
     },
-    "task_tir_renal_mild": {
+    "task_sc_tir_renal_mild": {
+      "sid": "model__sc_tir_renal_mild",
+      "name": null,
       "model": "model",
-      "simulation": "tir_renal_mild"
+      "simulation": "sc_tir_renal_mild",
+      "observables": []
     },
-    "task_tir_renal_moderate": {
+    "task_sc_tir_renal_moderate": {
+      "sid": "model__sc_tir_renal_moderate",
+      "name": null,
       "model": "model",
-      "simulation": "tir_renal_moderate"
+      "simulation": "sc_tir_renal_moderate",
+      "observables": []
     },
-    "task_tir_renal_severe": {
+    "task_sc_tir_renal_severe": {
+      "sid": "model__sc_tir_renal_severe",
+      "name": null,
       "model": "model",
-      "simulation": "tir_renal_severe"
+      "simulation": "sc_tir_renal_severe",
+      "observables": []
+    },
+    "task_sc_tir_renal_end": {
+      "sid": "model__sc_tir_renal_end",
+      "name": null,
+      "model": "model",
+      "simulation": "sc_tir_renal_end",
+      "observables": []
     }
   },
+  "observables": {},
   "simulations": {
-    "tir_renal_normal": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0.0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 88.0,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            },
-            "KI__f_renal_function": {
-              "_magnitude": 1.0,
-              "_units": "dimensionless"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+    "sc_tir_renal_normal": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 700,
+      "preinit_changes": {
+        "BW": {
+          "value": 88.0,
+          "unit": "kilogram"
+        },
+        "SCDOSE_tir": {
+          "value": 5,
+          "unit": "milligram"
+        },
+        "KI__f_renal_function": {
+          "value": 1.003960396039604,
+          "unit": "dimensionless"
         }
-      ]
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0.0
     },
-    "tir_renal_mild": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0.0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 93.1,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            },
-            "KI__f_renal_function": {
-              "_magnitude": 0.49504950495049505,
-              "_units": "dimensionless"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+    "sc_tir_renal_mild": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 700,
+      "preinit_changes": {
+        "BW": {
+          "value": 93.1,
+          "unit": "kilogram"
+        },
+        "SCDOSE_tir": {
+          "value": 5,
+          "unit": "milligram"
+        },
+        "KI__f_renal_function": {
+          "value": 0.7138613861386138,
+          "unit": "dimensionless"
         }
-      ]
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0.0
     },
-    "tir_renal_moderate": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0.0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 83.8,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            },
-            "KI__f_renal_function": {
-              "_magnitude": 0.3465346534653465,
-              "_units": "dimensionless"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+    "sc_tir_renal_moderate": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 700,
+      "preinit_changes": {
+        "BW": {
+          "value": 83.8,
+          "unit": "kilogram"
+        },
+        "SCDOSE_tir": {
+          "value": 5,
+          "unit": "milligram"
+        },
+        "KI__f_renal_function": {
+          "value": 0.43663366336633663,
+          "unit": "dimensionless"
         }
-      ]
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0.0
     },
-    "tir_renal_severe": {
-      "type": "TimecourseSim",
-      "selections": null,
-      "reset": true,
-      "time_offset": 0.0,
-      "timecourses": [
-        {
-          "start": 0,
-          "end": 50400,
-          "steps": 2000,
-          "changes": {
-            "BW": {
-              "_magnitude": 81.8,
-              "_units": "kilogram"
-            },
-            "SCDOSE_tir": {
-              "_magnitude": 5,
-              "_units": "milligram"
-            },
-            "KI__f_renal_function": {
-              "_magnitude": 0.19801980198019803,
-              "_units": "dimensionless"
-            }
-          },
-          "model_changes": {},
-          "model_manipulations": {},
-          "discard": false
+    "sc_tir_renal_severe": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 700,
+      "preinit_changes": {
+        "BW": {
+          "value": 81.8,
+          "unit": "kilogram"
+        },
+        "SCDOSE_tir": {
+          "value": 5,
+          "unit": "milligram"
+        },
+        "KI__f_renal_function": {
+          "value": 0.1504950495049505,
+          "unit": "dimensionless"
         }
-      ]
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0.0
+    },
+    "sc_tir_renal_end": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 700,
+      "preinit_changes": {
+        "BW": {
+          "value": 89.6,
+          "unit": "kilogram"
+        },
+        "SCDOSE_tir": {
+          "value": 5,
+          "unit": "milligram"
+        },
+        "KI__f_renal_function": {
+          "value": 0.08118811881188118,
+          "unit": "dimensionless"
+        }
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0.0
     }
   },
   "data": {
-    "task_tir_renal_normal__time": {
+    "task_sc_tir_renal_normal__time": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_normal__time",
       "index": "time",
+      "selection": "time",
       "unit": null,
-      "task": "task_tir_renal_normal",
+      "task": "task_sc_tir_renal_normal",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_normal__IVDOSE_tir": {
+    "task_sc_tir_renal_normal__IVDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_normal__IVDOSE_tir",
       "index": "IVDOSE_tir",
+      "selection": "IVDOSE_tir",
       "unit": null,
-      "task": "task_tir_renal_normal",
+      "task": "task_sc_tir_renal_normal",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_normal__SCDOSE_tir": {
+    "task_sc_tir_renal_normal__SCDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_normal__SCDOSE_tir",
       "index": "SCDOSE_tir",
+      "selection": "SCDOSE_tir",
       "unit": null,
-      "task": "task_tir_renal_normal",
+      "task": "task_sc_tir_renal_normal",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_normal__Cve_tir": {
+    "task_sc_tir_renal_normal__SCDEPOT_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_normal__SCDEPOT_tir",
+      "index": "SCDEPOT_tir",
+      "selection": "SCDEPOT_tir",
+      "unit": null,
+      "task": "task_sc_tir_renal_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_normal__conc__Cve_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_normal__conc__Cve_tir",
       "index": "Cve_tir",
+      "selection": "[Cve_tir]",
       "unit": null,
-      "task": "task_tir_renal_normal",
+      "task": "task_sc_tir_renal_normal",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_normal__Cve_tm": {
+    "task_sc_tir_renal_normal__conc__Cve_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_normal__conc__Cve_tm",
       "index": "Cve_tm",
+      "selection": "[Cve_tm]",
       "unit": null,
-      "task": "task_tir_renal_normal",
+      "task": "task_sc_tir_renal_normal",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_normal__Cve_tmtot": {
+    "task_sc_tir_renal_normal__conc__Cve_tmtot": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_normal__conc__Cve_tmtot",
       "index": "Cve_tmtot",
+      "selection": "[Cve_tmtot]",
       "unit": null,
-      "task": "task_tir_renal_normal",
+      "task": "task_sc_tir_renal_normal",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_normal__Aurine_tm": {
+    "task_sc_tir_renal_normal__Aurine_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_normal__Aurine_tm",
       "index": "Aurine_tm",
+      "selection": "Aurine_tm",
       "unit": null,
-      "task": "task_tir_renal_normal",
+      "task": "task_sc_tir_renal_normal",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_normal__Afeces_tm": {
+    "task_sc_tir_renal_normal__Afeces_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_normal__Afeces_tm",
       "index": "Afeces_tm",
+      "selection": "Afeces_tm",
       "unit": null,
-      "task": "task_tir_renal_normal",
+      "task": "task_sc_tir_renal_normal",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_normal__KI__f_renal_function": {
+    "task_sc_tir_renal_normal__KI__f_renal_function": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_normal__KI__f_renal_function",
       "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
       "unit": null,
-      "task": "task_tir_renal_normal",
+      "task": "task_sc_tir_renal_normal",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_normal__f_cirrhosis": {
+    "task_sc_tir_renal_normal__f_cirrhosis": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_normal__f_cirrhosis",
       "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
       "unit": null,
-      "task": "task_tir_renal_normal",
+      "task": "task_sc_tir_renal_normal",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_normal__BW": {
+    "task_sc_tir_renal_normal__BW": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_normal__BW",
       "index": "BW",
+      "selection": "BW",
       "unit": null,
-      "task": "task_tir_renal_normal",
+      "task": "task_sc_tir_renal_normal",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_mild__time": {
+    "task_sc_tir_renal_mild__time": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_mild__time",
       "index": "time",
+      "selection": "time",
       "unit": null,
-      "task": "task_tir_renal_mild",
+      "task": "task_sc_tir_renal_mild",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_mild__IVDOSE_tir": {
+    "task_sc_tir_renal_mild__IVDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_mild__IVDOSE_tir",
       "index": "IVDOSE_tir",
+      "selection": "IVDOSE_tir",
       "unit": null,
-      "task": "task_tir_renal_mild",
+      "task": "task_sc_tir_renal_mild",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_mild__SCDOSE_tir": {
+    "task_sc_tir_renal_mild__SCDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_mild__SCDOSE_tir",
       "index": "SCDOSE_tir",
+      "selection": "SCDOSE_tir",
       "unit": null,
-      "task": "task_tir_renal_mild",
+      "task": "task_sc_tir_renal_mild",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_mild__Cve_tir": {
+    "task_sc_tir_renal_mild__SCDEPOT_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_mild__SCDEPOT_tir",
+      "index": "SCDEPOT_tir",
+      "selection": "SCDEPOT_tir",
+      "unit": null,
+      "task": "task_sc_tir_renal_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_mild__conc__Cve_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_mild__conc__Cve_tir",
       "index": "Cve_tir",
+      "selection": "[Cve_tir]",
       "unit": null,
-      "task": "task_tir_renal_mild",
+      "task": "task_sc_tir_renal_mild",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_mild__Cve_tm": {
+    "task_sc_tir_renal_mild__conc__Cve_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_mild__conc__Cve_tm",
       "index": "Cve_tm",
+      "selection": "[Cve_tm]",
       "unit": null,
-      "task": "task_tir_renal_mild",
+      "task": "task_sc_tir_renal_mild",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_mild__Cve_tmtot": {
+    "task_sc_tir_renal_mild__conc__Cve_tmtot": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_mild__conc__Cve_tmtot",
       "index": "Cve_tmtot",
+      "selection": "[Cve_tmtot]",
       "unit": null,
-      "task": "task_tir_renal_mild",
+      "task": "task_sc_tir_renal_mild",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_mild__Aurine_tm": {
+    "task_sc_tir_renal_mild__Aurine_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_mild__Aurine_tm",
       "index": "Aurine_tm",
+      "selection": "Aurine_tm",
       "unit": null,
-      "task": "task_tir_renal_mild",
+      "task": "task_sc_tir_renal_mild",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_mild__Afeces_tm": {
+    "task_sc_tir_renal_mild__Afeces_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_mild__Afeces_tm",
       "index": "Afeces_tm",
+      "selection": "Afeces_tm",
       "unit": null,
-      "task": "task_tir_renal_mild",
+      "task": "task_sc_tir_renal_mild",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_mild__KI__f_renal_function": {
+    "task_sc_tir_renal_mild__KI__f_renal_function": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_mild__KI__f_renal_function",
       "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
       "unit": null,
-      "task": "task_tir_renal_mild",
+      "task": "task_sc_tir_renal_mild",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_mild__f_cirrhosis": {
+    "task_sc_tir_renal_mild__f_cirrhosis": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_mild__f_cirrhosis",
       "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
       "unit": null,
-      "task": "task_tir_renal_mild",
+      "task": "task_sc_tir_renal_mild",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_mild__BW": {
+    "task_sc_tir_renal_mild__BW": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_mild__BW",
       "index": "BW",
+      "selection": "BW",
       "unit": null,
-      "task": "task_tir_renal_mild",
+      "task": "task_sc_tir_renal_mild",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_moderate__time": {
+    "task_sc_tir_renal_moderate__time": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_moderate__time",
       "index": "time",
+      "selection": "time",
       "unit": null,
-      "task": "task_tir_renal_moderate",
+      "task": "task_sc_tir_renal_moderate",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_moderate__IVDOSE_tir": {
+    "task_sc_tir_renal_moderate__IVDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_moderate__IVDOSE_tir",
       "index": "IVDOSE_tir",
+      "selection": "IVDOSE_tir",
       "unit": null,
-      "task": "task_tir_renal_moderate",
+      "task": "task_sc_tir_renal_moderate",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_moderate__SCDOSE_tir": {
+    "task_sc_tir_renal_moderate__SCDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_moderate__SCDOSE_tir",
       "index": "SCDOSE_tir",
+      "selection": "SCDOSE_tir",
       "unit": null,
-      "task": "task_tir_renal_moderate",
+      "task": "task_sc_tir_renal_moderate",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_moderate__Cve_tir": {
+    "task_sc_tir_renal_moderate__SCDEPOT_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_moderate__SCDEPOT_tir",
+      "index": "SCDEPOT_tir",
+      "selection": "SCDEPOT_tir",
+      "unit": null,
+      "task": "task_sc_tir_renal_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_moderate__conc__Cve_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_moderate__conc__Cve_tir",
       "index": "Cve_tir",
+      "selection": "[Cve_tir]",
       "unit": null,
-      "task": "task_tir_renal_moderate",
+      "task": "task_sc_tir_renal_moderate",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_moderate__Cve_tm": {
+    "task_sc_tir_renal_moderate__conc__Cve_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_moderate__conc__Cve_tm",
       "index": "Cve_tm",
+      "selection": "[Cve_tm]",
       "unit": null,
-      "task": "task_tir_renal_moderate",
+      "task": "task_sc_tir_renal_moderate",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_moderate__Cve_tmtot": {
+    "task_sc_tir_renal_moderate__conc__Cve_tmtot": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_moderate__conc__Cve_tmtot",
       "index": "Cve_tmtot",
+      "selection": "[Cve_tmtot]",
       "unit": null,
-      "task": "task_tir_renal_moderate",
+      "task": "task_sc_tir_renal_moderate",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_moderate__Aurine_tm": {
+    "task_sc_tir_renal_moderate__Aurine_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_moderate__Aurine_tm",
       "index": "Aurine_tm",
+      "selection": "Aurine_tm",
       "unit": null,
-      "task": "task_tir_renal_moderate",
+      "task": "task_sc_tir_renal_moderate",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_moderate__Afeces_tm": {
+    "task_sc_tir_renal_moderate__Afeces_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_moderate__Afeces_tm",
       "index": "Afeces_tm",
+      "selection": "Afeces_tm",
       "unit": null,
-      "task": "task_tir_renal_moderate",
+      "task": "task_sc_tir_renal_moderate",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_moderate__KI__f_renal_function": {
+    "task_sc_tir_renal_moderate__KI__f_renal_function": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_moderate__KI__f_renal_function",
       "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
       "unit": null,
-      "task": "task_tir_renal_moderate",
+      "task": "task_sc_tir_renal_moderate",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_moderate__f_cirrhosis": {
+    "task_sc_tir_renal_moderate__f_cirrhosis": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_moderate__f_cirrhosis",
       "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
       "unit": null,
-      "task": "task_tir_renal_moderate",
+      "task": "task_sc_tir_renal_moderate",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_moderate__BW": {
+    "task_sc_tir_renal_moderate__BW": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_moderate__BW",
       "index": "BW",
+      "selection": "BW",
       "unit": null,
-      "task": "task_tir_renal_moderate",
+      "task": "task_sc_tir_renal_moderate",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_severe__time": {
+    "task_sc_tir_renal_severe__time": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_severe__time",
       "index": "time",
+      "selection": "time",
       "unit": null,
-      "task": "task_tir_renal_severe",
+      "task": "task_sc_tir_renal_severe",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_severe__IVDOSE_tir": {
+    "task_sc_tir_renal_severe__IVDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_severe__IVDOSE_tir",
       "index": "IVDOSE_tir",
+      "selection": "IVDOSE_tir",
       "unit": null,
-      "task": "task_tir_renal_severe",
+      "task": "task_sc_tir_renal_severe",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_severe__SCDOSE_tir": {
+    "task_sc_tir_renal_severe__SCDOSE_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_severe__SCDOSE_tir",
       "index": "SCDOSE_tir",
+      "selection": "SCDOSE_tir",
       "unit": null,
-      "task": "task_tir_renal_severe",
+      "task": "task_sc_tir_renal_severe",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_severe__Cve_tir": {
+    "task_sc_tir_renal_severe__SCDEPOT_tir": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_severe__SCDEPOT_tir",
+      "index": "SCDEPOT_tir",
+      "selection": "SCDEPOT_tir",
+      "unit": null,
+      "task": "task_sc_tir_renal_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_severe__conc__Cve_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_severe__conc__Cve_tir",
       "index": "Cve_tir",
+      "selection": "[Cve_tir]",
       "unit": null,
-      "task": "task_tir_renal_severe",
+      "task": "task_sc_tir_renal_severe",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_severe__Cve_tm": {
+    "task_sc_tir_renal_severe__conc__Cve_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_severe__conc__Cve_tm",
       "index": "Cve_tm",
+      "selection": "[Cve_tm]",
       "unit": null,
-      "task": "task_tir_renal_severe",
+      "task": "task_sc_tir_renal_severe",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_severe__Cve_tmtot": {
+    "task_sc_tir_renal_severe__conc__Cve_tmtot": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_severe__conc__Cve_tmtot",
       "index": "Cve_tmtot",
+      "selection": "[Cve_tmtot]",
       "unit": null,
-      "task": "task_tir_renal_severe",
+      "task": "task_sc_tir_renal_severe",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_severe__Aurine_tm": {
+    "task_sc_tir_renal_severe__Aurine_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_severe__Aurine_tm",
       "index": "Aurine_tm",
+      "selection": "Aurine_tm",
       "unit": null,
-      "task": "task_tir_renal_severe",
+      "task": "task_sc_tir_renal_severe",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_severe__Afeces_tm": {
+    "task_sc_tir_renal_severe__Afeces_tm": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_severe__Afeces_tm",
       "index": "Afeces_tm",
+      "selection": "Afeces_tm",
       "unit": null,
-      "task": "task_tir_renal_severe",
+      "task": "task_sc_tir_renal_severe",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_severe__KI__f_renal_function": {
+    "task_sc_tir_renal_severe__KI__f_renal_function": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_severe__KI__f_renal_function",
       "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
       "unit": null,
-      "task": "task_tir_renal_severe",
+      "task": "task_sc_tir_renal_severe",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_severe__f_cirrhosis": {
+    "task_sc_tir_renal_severe__f_cirrhosis": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_severe__f_cirrhosis",
       "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
       "unit": null,
-      "task": "task_tir_renal_severe",
+      "task": "task_sc_tir_renal_severe",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
     },
-    "task_tir_renal_severe__BW": {
+    "task_sc_tir_renal_severe__BW": {
       "type": "TASK",
+      "sid": "task_sc_tir_renal_severe__BW",
       "index": "BW",
+      "selection": "BW",
       "unit": null,
-      "task": "task_tir_renal_severe",
+      "task": "task_sc_tir_renal_severe",
       "dataset": null,
       "function": null,
-      "variables": null
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_end__time": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_end__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_sc_tir_renal_end",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_end__IVDOSE_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_end__IVDOSE_tir",
+      "index": "IVDOSE_tir",
+      "selection": "IVDOSE_tir",
+      "unit": null,
+      "task": "task_sc_tir_renal_end",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_end__SCDOSE_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_end__SCDOSE_tir",
+      "index": "SCDOSE_tir",
+      "selection": "SCDOSE_tir",
+      "unit": null,
+      "task": "task_sc_tir_renal_end",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_end__SCDEPOT_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_end__SCDEPOT_tir",
+      "index": "SCDEPOT_tir",
+      "selection": "SCDEPOT_tir",
+      "unit": null,
+      "task": "task_sc_tir_renal_end",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_end__conc__Cve_tir": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_end__conc__Cve_tir",
+      "index": "Cve_tir",
+      "selection": "[Cve_tir]",
+      "unit": null,
+      "task": "task_sc_tir_renal_end",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_end__conc__Cve_tm": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_end__conc__Cve_tm",
+      "index": "Cve_tm",
+      "selection": "[Cve_tm]",
+      "unit": null,
+      "task": "task_sc_tir_renal_end",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_end__conc__Cve_tmtot": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_end__conc__Cve_tmtot",
+      "index": "Cve_tmtot",
+      "selection": "[Cve_tmtot]",
+      "unit": null,
+      "task": "task_sc_tir_renal_end",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_end__Aurine_tm": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_end__Aurine_tm",
+      "index": "Aurine_tm",
+      "selection": "Aurine_tm",
+      "unit": null,
+      "task": "task_sc_tir_renal_end",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_end__Afeces_tm": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_end__Afeces_tm",
+      "index": "Afeces_tm",
+      "selection": "Afeces_tm",
+      "unit": null,
+      "task": "task_sc_tir_renal_end",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_end__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_end__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_sc_tir_renal_end",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_end__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_end__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_sc_tir_renal_end",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_sc_tir_renal_end__BW": {
+      "type": "TASK",
+      "sid": "task_sc_tir_renal_end__BW",
+      "index": "BW",
+      "selection": "BW",
+      "unit": null,
+      "task": "task_sc_tir_renal_end",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
     }
   },
   "figures": {
@@ -560,8 +987,9 @@
       "name": "Urva2021 (renal impairment)",
       "num_rows": 1,
       "num_cols": 1,
-      "width": 7.0,
-      "height": 5.0,
+      "width": null,
+      "height": null,
+      "settings": {},
       "subplots": [
         {
           "sid": null,
@@ -571,20 +999,20 @@
             "name": null,
             "xaxis": {
               "sid": "Fig2__plot0_xaxis",
-              "name": "time [week]",
+              "name": "time [hr]",
               "label": "time",
-              "unit": "week",
+              "unit": "hr",
               "scale": "LINEAR",
-              "min": null,
-              "max": null,
+              "min": -10,
+              "max": 700,
               "grid": false,
               "label_visible": true,
               "ticks_visible": true
             },
             "yaxis": {
               "sid": "Fig2__plot0_yaxis",
-              "name": "tirzepatide [nM]",
-              "label": "tirzepatide",
+              "name": "tirzepatide plasma [nM]",
+              "label": "tirzepatide plasma",
               "unit": "nM",
               "scale": "LINEAR",
               "min": null,
@@ -600,11 +1028,12 @@
             "curves": [
               {
                 "sid": "Fig2__plot0_curve0",
-                "name": "normal",
-                "x": "task_tir_renal_normal__time",
-                "y": "task_tir_renal_normal__Cve_tir",
+                "name": "Sim normal (eGFR 101.4)",
+                "x": "task_sc_tir_renal_normal__time",
+                "y": "task_sc_tir_renal_normal__conc__Cve_tir",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -631,11 +1060,12 @@
               },
               {
                 "sid": "Fig2__plot0_curve1",
-                "name": "mild",
-                "x": "task_tir_renal_mild__time",
-                "y": "task_tir_renal_mild__Cve_tir",
+                "name": "Sim mild (eGFR 72.1)",
+                "x": "task_sc_tir_renal_mild__time",
+                "y": "task_sc_tir_renal_mild__conc__Cve_tir",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -662,11 +1092,12 @@
               },
               {
                 "sid": "Fig2__plot0_curve2",
-                "name": "moderate",
-                "x": "task_tir_renal_moderate__time",
-                "y": "task_tir_renal_moderate__Cve_tir",
+                "name": "Sim moderate (eGFR 44.1)",
+                "x": "task_sc_tir_renal_moderate__time",
+                "y": "task_sc_tir_renal_moderate__conc__Cve_tir",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -693,11 +1124,12 @@
               },
               {
                 "sid": "Fig2__plot0_curve3",
-                "name": "severe",
-                "x": "task_tir_renal_severe__time",
-                "y": "task_tir_renal_severe__Cve_tir",
+                "name": "Sim severe (eGFR 15.2)",
+                "x": "task_sc_tir_renal_severe__time",
+                "y": "task_sc_tir_renal_severe__conc__Cve_tir",
                 "xerr": null,
                 "yerr": null,
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -724,11 +1156,44 @@
               },
               {
                 "sid": "Fig2__plot0_curve4",
-                "name": "normal\u00b1SD (n=13)",
+                "name": "Sim end (eGFR 8.2)",
+                "x": "task_sc_tir_renal_end__time",
+                "y": "task_sc_tir_renal_end__conc__Cve_tir",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#006d5eff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#006d5eff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#006d5eff",
+                    "second_color": null
+                  }
+                },
+                "order": 4
+              },
+              {
+                "sid": "Fig2__plot0_curve5",
+                "name": "Data normal\u00b1SD (n=13)",
                 "x": "tirzepatide_normal__time",
                 "y": "tirzepatide_normal__mean",
                 "xerr": null,
                 "yerr": "tirzepatide_normal__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -751,15 +1216,16 @@
                     "second_color": null
                   }
                 },
-                "order": 4
+                "order": 5
               },
               {
-                "sid": "Fig2__plot0_curve5",
-                "name": "mild\u00b1SD (n=8)",
+                "sid": "Fig2__plot0_curve6",
+                "name": "Data mild\u00b1SD (n=8)",
                 "x": "tirzepatide_mild__time",
                 "y": "tirzepatide_mild__mean",
                 "xerr": null,
                 "yerr": "tirzepatide_mild__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -782,15 +1248,16 @@
                     "second_color": null
                   }
                 },
-                "order": 5
+                "order": 6
               },
               {
-                "sid": "Fig2__plot0_curve6",
-                "name": "moderate\u00b1SD (n=8)",
+                "sid": "Fig2__plot0_curve7",
+                "name": "Data moderate\u00b1SD (n=8)",
                 "x": "tirzepatide_moderate__time",
                 "y": "tirzepatide_moderate__mean",
                 "xerr": null,
                 "yerr": "tirzepatide_moderate__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -813,15 +1280,16 @@
                     "second_color": null
                   }
                 },
-                "order": 6
+                "order": 7
               },
               {
-                "sid": "Fig2__plot0_curve7",
-                "name": "severe\u00b1SD (n=6)",
+                "sid": "Fig2__plot0_curve8",
+                "name": "Data severe\u00b1SD (n=6)",
                 "x": "tirzepatide_severe__time",
                 "y": "tirzepatide_severe__mean",
                 "xerr": null,
                 "yerr": "tirzepatide_severe__mean_sd",
+                "over": [],
                 "yaxis_position": null,
                 "style": {
                   "sid": null,
@@ -844,10 +1312,43 @@
                     "second_color": null
                   }
                 },
-                "order": 7
+                "order": 8
+              },
+              {
+                "sid": "Fig2__plot0_curve9",
+                "name": "Data end\u00b1SD (n=8)",
+                "x": "tirzepatide_end__time",
+                "y": "tirzepatide_end__mean",
+                "xerr": null,
+                "yerr": "tirzepatide_end__mean_sd",
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#006d5eff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#006d5eff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#006d5eff",
+                    "second_color": null
+                  }
+                },
+                "order": 9
               }
             ],
-            "areas": []
+            "areas": [],
+            "bands": []
           },
           "row": 1,
           "col": 1,

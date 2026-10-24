@@ -1,0 +1,41 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments	timeraw
+Furihata2022	NA	placebo	9.0	placebo	concentration	glucose	plasma	NR	glucose_placebo	0.0	week	NA	173.897132719257	NA	NA	NA	mg/dl	NA	0.0258055266836316
+Furihata2022	NA	placebo	9.0	placebo	concentration	glucose	plasma	NR	glucose_placebo	0.3	week	NA	166.418547722304	NA	NA	NA	mg/dl	NA	0.333070499265259
+Furihata2022	NA	placebo	9.0	placebo	concentration	glucose	plasma	NR	glucose_placebo	1.0	week	NA	161.219450915738	NA	NA	NA	mg/dl	NA	1.12494175835992
+Furihata2022	NA	placebo	9.0	placebo	concentration	glucose	plasma	NR	glucose_placebo	2.0	week	NA	165.885233504175	NA	NA	NA	mg/dl	NA	2.1328984624207
+Furihata2022	NA	placebo	9.0	placebo	concentration	glucose	plasma	NR	glucose_placebo	4.0	week	NA	166.440052327874	NA	NA	NA	mg/dl	NA	4.13952904913802
+Furihata2022	NA	placebo	9.0	placebo	concentration	glucose	plasma	NR	glucose_placebo	6.0	week	NA	165.994906992581	NA	NA	NA	mg/dl	NA	6.1458370667718
+Furihata2022	NA	placebo	9.0	placebo	concentration	glucose	plasma	NR	glucose_placebo	8.0	week	NA	169.327404035698	NA	NA	NA	mg/dl	NA	8.15336367872119
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	concentration	glucose	plasma	NR	glucose_cohort1	0.0	week	NA	164.5	NA	NA	NA	mg/dl	NA	0.0321493853266909
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	concentration	glucose	plasma	NR	glucose_cohort1	0.3	week	NA	131.907619798574	NA	NA	NA	mg/dl	NA	0.331421812838249
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	concentration	glucose	plasma	NR	glucose_cohort1	1.0	week	NA	129.820239417942	NA	NA	NA	mg/dl	NA	1.11784523852192
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	concentration	glucose	plasma	NR	glucose_cohort1	2.0	week	NA	112.043098813663	NA	NA	NA	mg/dl	NA	2.11211067703667
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	concentration	glucose	plasma	NR	glucose_cohort1	4.0	week	NA	103.819737643812	NA	NA	NA	mg/dl	NA	4.12236120569155
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	concentration	glucose	plasma	NR	glucose_cohort1	6.0	week	NA	104.818268162431	NA	NA	NA	mg/dl	NA	6.13558653811691
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	concentration	glucose	plasma	NR	glucose_cohort1	8.0	week	NA	107.263341815706	NA	NA	NA	mg/dl	NA	8.12992365865023
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	concentration	glucose	plasma	NR	glucose_cohort2	0.0	week	NA	181.2	NA	NA	NA	mg/dl	NA	0.0321493853266909
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	concentration	glucose	plasma	NR	glucose_cohort2	0.3	week	NA	162.052299200745	NA	NA	NA	mg/dl	NA	0.329307193290563
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	concentration	glucose	plasma	NR	glucose_cohort2	1.0	week	NA	142.075237446687	NA	NA	NA	mg/dl	NA	1.12286297982151
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	concentration	glucose	plasma	NR	glucose_cohort2	2.0	week	NA	132.075595856779	NA	NA	NA	mg/dl	NA	2.11963728898606
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	concentration	glucose	plasma	NR	glucose_cohort2	4.0	week	NA	123.075201605677	NA	NA	NA	mg/dl	NA	4.12318554890506
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	concentration	glucose	plasma	NR	glucose_cohort2	6.0	week	NA	117.962840041576	NA	NA	NA	mg/dl	NA	6.13443962581986
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	concentration	glucose	plasma	NR	glucose_cohort2	8.0	week	NA	107.295122038637	NA	NA	NA	mg/dl	NA	8.14390165227053
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	concentration	glucose	plasma	NR	glucose_cohort3	0.0	week	NA	170.7	NA	NA	NA	mg/dl	NA	0.0321493853266909
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	concentration	glucose	plasma	NR	glucose_cohort3	0.3	week	NA	132.997408695029	NA	NA	NA	mg/dl	NA	0.323321744740332
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	concentration	glucose	plasma	NR	glucose_cohort3	1.0	week	NA	124.242883767607	NA	NA	NA	mg/dl	NA	1.11404609153794
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	concentration	glucose	plasma	NR	glucose_cohort3	2.0	week	NA	114.909168130175	NA	NA	NA	mg/dl	NA	2.11748682842909
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	concentration	glucose	plasma	NR	glucose_cohort3	4.0	week	NA	97.1313107057095	NA	NA	NA	mg/dl	NA	4.11820364861474
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	concentration	glucose	plasma	NR	glucose_cohort3	6.0	week	NA	96.2424536754955	NA	NA	NA	mg/dl	NA	6.11791692054048
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	concentration	glucose	plasma	NR	glucose_cohort3	8.0	week	NA	97.0194867567471	NA	NA	NA	mg/dl	NA	8.12461918927637
+Furihata2022	NA	placebo	9.0	placebo	hba1c	NA	NA	NR	hba1c_placebo	0.0	week	NA	7.79990668595157	NA	NA	NA	percent	NA	0.0
+Furihata2022	NA	placebo	9.0	placebo	hba1c	NA	NA	NR	hba1c_placebo	4.0	week	NA	7.51651192086969	NA	NA	NA	percent	NA	4.05636168525172
+Furihata2022	NA	placebo	9.0	placebo	hba1c	NA	NA	NR	hba1c_placebo	8.0	week	NA	7.34973638781318	NA	NA	NA	percent	NA	8.02566136331825
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	hba1c	NA	NA	NR	hba1c_cohort1	0.0	week	NA	7.69636075211123	NA	NA	NA	percent	NA	0.0
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	hba1c	NA	NA	NR	hba1c_cohort1	4.0	week	NA	6.6044697429198	NA	NA	NA	percent	NA	4.06046750338263
+Furihata2022	NA	cohort1	11.0	TIR5, TIR5_seven	hba1c	NA	NA	NR	hba1c_cohort1	8.0	week	NA	6.10442308589558	NA	NA	NA	percent	NA	8.04731022255401
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	hba1c	NA	NA	NR	hba1c_cohort2	0.0	week	NA	8.10699855363225	NA	NA	NA	percent	NA	0.0
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	hba1c	NA	NA	NR	hba1c_cohort2	4.0	week	NA	7.33778752391172	NA	NA	NA	percent	NA	4.05608174310642
+Furihata2022	NA	cohort2	12.0	TIR10, TIR2_5_two, TIR5_two, TIR10_four	hba1c	NA	NA	NR	hba1c_cohort2	8.0	week	NA	6.34837866840853	NA	NA	NA	percent	NA	8.04278449120515
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	hba1c	NA	NA	NR	hba1c_cohort3	0.0	week	NA	8.192838146783	NA	NA	NA	percent	NA	0.0
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	hba1c	NA	NA	NR	hba1c_cohort3	4.0	week	NA	6.96620165165866	NA	NA	NA	percent	NA	4.06886576774133
+Furihata2022	NA	cohort3	16.0	TIR15, TIR5_two, TIR10_two, TIR15_four	hba1c	NA	NA	NR	hba1c_cohort3	8.0	week	NA	6.17891102505482	NA	NA	NA	percent	NA	8.05290906545981
